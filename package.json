@@ -1,0 +1,28 @@
+{
+  "name": "dai-css",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dai.scss",
+  "scripts": {
+    "dist": "sass src/dai.scss:dist/dai.min.css --style compressed",
+    "start": "npm run scss | npm run serve",
+    "serve": "browser-sync start --server 'public' --files 'public'",
+    "scss": "sass --watch src/dai.scss:public/assets/dai.css --style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conacyt-dai/dai-css.git"
+  },
+  "author": "flkt.crnpio@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conacyt-dai/dai-css/issues"
+  },
+  "homepage": "https://github.com/conacyt-dai/dai-css#readme",
+  "dependencies": {
+    "sass": "^1.49.10"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.9"
+  }
+}
