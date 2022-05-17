@@ -1,2 +1,14 @@
 @charset 'UTF-8';
+@import '_variables';
 @import '_normalizar';
+@import '_mixins';
+
+// modulos
+@import 'reticula/contenedores';
+@import 'reticula/columnas';
+@import 'reticula/margenes';
+
+// a11y 
+// todo lo de accesibilidad debe cargar al final
+// para que pueda sobre escribir todos los estilos
+@import 'accesibilidad/simplificada';

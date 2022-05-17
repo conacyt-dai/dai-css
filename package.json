@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/conacyt-dai/dai-css#readme",
   "dependencies": {
-    "sass": "^1.49.10"
+    "sass": "1.49.10"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.9"
+    "browser-sync": "2.27.9"
   }
 }

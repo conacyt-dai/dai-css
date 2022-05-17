@@ -1,0 +1,16 @@
+
+.a11y-simplificada {
+  .a11y-simplificada-contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: $contenedor-lectura;
+  }
+  @include mediaquery('esc') {
+    .a11y-simplificada-contenedor {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: $espaciado-col;
+      max-width: calc(($contenedor-lectura * 2) - ($espaciado-col));
+    }
+  }
+}

@@ -1,0 +1,92 @@
+
+[class^='columns'] {
+  column-gap: $espaciado-col;
+}
+
+.grid {
+  display: grid;
+  column-gap: $espaciado-col;
+}
+@each $dispositivo, $col in $columnas {
+  @include mediaquery($dispositivo) {
+    .grid {
+      grid-template-columns: repeat($col, 1fr);
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  margin-left: $espaciado-col*-.5;
+  margin-right: $espaciado-col*-.5;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+[class^='flex-basis-'] {
+  flex-basis: 100%;
+  padding-left: $espaciado-col*.5;
+  padding-right: $espaciado-col*.5;
+}
+
+@for $i from 1 through 12 {
+  .columns-#{$i} {
+    column-count: $i;
+  }
+  .grid-column-#{$i} {
+    grid-column: span $i;
+  }
+}
+
+@each $dispositivo, $col in $columnas {
+  @include mediaquery($dispositivo) {
+    @for $i from 1 through 12 {
+      .grid-column-#{$i}-#{$dispositivo} {
+        grid-column: span $i;
+      }
+      .columns-#{$i}-#{$dispositivo} {
+        column-count: $i;
+      }
+    }
+    @for $i from 1 through $col {
+      .flex-basis-#{$i} {
+        flex-basis: calc((100% * $i / $col));
+      }
+      .flex-basis-#{$i}-#{$dispositivo} {
+        flex-basis: calc((100% * $i / $col));
+      }
+    }
+  }
+}
+
+// gap
+@each $id, $valor in $espaciado {
+  .gap-#{$id} {
+    column-gap: $valor;
+  }
+  .flex-gap-#{$id} {
+    margin-left: $valor*-.5;
+    margin-right: $valor*-.5;
+    [class^='flex-basis-'] {
+      padding-left: $valor*.5;
+      padding-right: $valor*.5;
+    }
+  }
+}
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    @each $id, $valor in $espaciado {
+      .gap-#{$id}-#{$dispositivo} {
+        column-gap: $valor; 
+      }
+      .flex-gap-#{$id}-#{$dispositivo} {
+        margin-left: $valor*-.5;
+        margin-right: $valor*-.5;
+        [class^='flex-basis-'] {
+          padding-left: $valor*.5;
+          padding-right: $valor*.5;
+        }
+      }
+    }
+  }
+}
