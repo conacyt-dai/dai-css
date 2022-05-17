@@ -9,8 +9,8 @@
     .a11y-simplificada-contenedor {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: $espaciado-col;
-      max-width: calc(($contenedor-lectura * 2) - ($espaciado-col));
+      column-gap: $columnas-espaciado;
+      max-width: calc(($contenedor-lectura * 2) - ($columnas-espaciado));
     }
   }
 }

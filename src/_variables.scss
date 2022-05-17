@@ -36,7 +36,6 @@ $contenedores: (
     'margen-interior': map-get($espaciado, '5'),
   ),
 );
-
 $contenedor-lectura: 720px;
 
 $columnas: (
@@ -44,6 +43,4 @@ $columnas: (
   'tab': 8,
   'esc': 12
 );
-
-
-$espaciado-col: map-get($espaciado, '3');
+$columnas-espaciado: map-get($espaciado, '3');

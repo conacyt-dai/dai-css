@@ -1,11 +1,11 @@
 
 [class^='columns'] {
-  column-gap: $espaciado-col;
+  column-gap: $columnas-espaciado;
 }
 
 .grid {
   display: grid;
-  column-gap: $espaciado-col;
+  column-gap: $columnas-espaciado;
 }
 @each $dispositivo, $col in $columnas {
   @include mediaquery($dispositivo) {
@@ -17,16 +17,16 @@
 
 .flex {
   display: flex;
-  margin-left: $espaciado-col*-.5;
-  margin-right: $espaciado-col*-.5;
+  margin-left: $columnas-espaciado*-.5;
+  margin-right: $columnas-espaciado*-.5;
 }
 .flex-wrap {
   flex-wrap: wrap;
 }
 [class^='flex-basis-'] {
   flex-basis: 100%;
-  padding-left: $espaciado-col*.5;
-  padding-right: $espaciado-col*.5;
+  padding-left: $columnas-espaciado*.5;
+  padding-right: $columnas-espaciado*.5;
 }
 
 @for $i from 1 through 12 {
