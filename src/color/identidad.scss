@@ -1,0 +1,26 @@
+@each $nombre, $color in map-get($color-gobmx, 'identidad') {
+  .fondo-#{$nombre} {
+    background-color: $color;
+  }
+  .borde-#{$nombre} {
+    border-color: $color;
+  }
+  .texto-#{$nombre} {
+    color: $color;
+  }
+}
+
+@each $nombre, $color in map-get($color-conacyt, 'identidad') {
+  .fondo-#{$nombre} {
+    background-color: $color;
+  }
+  .borde-#{$nombre} {
+    border-color: $color;
+  }
+  .texto-#{$nombre} {
+    color: $color;
+  }
+}
+.fondo-conacyt-degradado {
+  background-image: map-get($color-conacyt, 'conacyt-degradado');
+}

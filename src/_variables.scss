@@ -1,3 +1,37 @@
+// COLOR
+$color-gobmx: (
+  'identidad': (
+    'gobmx-verde': #1F5D50, //header gobierno
+    'gobmx-pino': #18302D, // footer gobierno
+    'gobmx-beige': #DFC9A1, // enlaces gobierno
+    'gobmx-dorado': #BD9558, // hover enlaces gobierno
+    'gobmx-tinto': #9E2148,
+  ),
+  'utiles': (
+    'gobmx-gris-0': #404041, // hover de boton
+    'gobmx-gris-1': #6F7271, // texto secundario
+    'gobmx-gris-2': #A9A8A9, // textos deshabilitados
+    'gobmx-gris-3': #DDD, // fondo en cajas
+    'gobmx-gris-4': #F6F6F6,
+    'gobmx-blanco': #FFF, // fondo general // textos footer gobierno
+  ),
+);
+
+$color-conacyt: (
+  'conacyt-degradado': linear-gradient(to bottom, #003384, #002663, #001c4a), // footer conacyt // este es especial na mas pa fondos
+  'identidad': (
+    'conacyt-azul': #022563,
+    'conacyt-gris': #8C8D8E,
+  ),
+  'utiles': (
+    'conacyt-negro': #141414, // cuerpo de texto
+    'conacyt-gris': #d5d5d5, // enlaces conacyt
+    'conacyt-blanco': #fff, // texto footer conacyt
+    'conacyt-cian': #13aff0, // hover enlaces conacyt
+  ),
+);
+
+// RETICULA
 $espaciado: ( // base 8
   '0': 0,
   '1': 8px,

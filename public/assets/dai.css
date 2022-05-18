@@ -1,3 +1,20 @@
+:root {
+  --pagina-fondo: #fff;
+  --pagina-texto: #141414;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --pagina-fondo: #234;
+    --pagina-texto: #fff;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --pagina-fondo: #fff;
+    --pagina-texto: #141414;
+  }
+}
+
 html {
   line-height: 1.15;
   scroll-behavior: smooth;
@@ -4527,6 +4544,99 @@ img {
     padding-bottom: 120px;
   }
 }
+body {
+  background-color: var(--pagina-fondo);
+  color: var(--pagina-texto);
+}
+
+.fondo-gobmx-verde {
+  background-color: #1F5D50;
+}
+
+.borde-gobmx-verde {
+  border-color: #1F5D50;
+}
+
+.texto-gobmx-verde {
+  color: #1F5D50;
+}
+
+.fondo-gobmx-pino {
+  background-color: #18302D;
+}
+
+.borde-gobmx-pino {
+  border-color: #18302D;
+}
+
+.texto-gobmx-pino {
+  color: #18302D;
+}
+
+.fondo-gobmx-beige {
+  background-color: #DFC9A1;
+}
+
+.borde-gobmx-beige {
+  border-color: #DFC9A1;
+}
+
+.texto-gobmx-beige {
+  color: #DFC9A1;
+}
+
+.fondo-gobmx-dorado {
+  background-color: #BD9558;
+}
+
+.borde-gobmx-dorado {
+  border-color: #BD9558;
+}
+
+.texto-gobmx-dorado {
+  color: #BD9558;
+}
+
+.fondo-gobmx-tinto {
+  background-color: #9E2148;
+}
+
+.borde-gobmx-tinto {
+  border-color: #9E2148;
+}
+
+.texto-gobmx-tinto {
+  color: #9E2148;
+}
+
+.fondo-conacyt-azul {
+  background-color: #022563;
+}
+
+.borde-conacyt-azul {
+  border-color: #022563;
+}
+
+.texto-conacyt-azul {
+  color: #022563;
+}
+
+.fondo-conacyt-gris {
+  background-color: #8C8D8E;
+}
+
+.borde-conacyt-gris {
+  border-color: #8C8D8E;
+}
+
+.texto-conacyt-gris {
+  color: #8C8D8E;
+}
+
+.fondo-conacyt-degradado {
+  background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
+}
+
 .a11y-simplificada .a11y-simplificada-contenedor {
   display: grid;
   grid-template-columns: 1fr;
