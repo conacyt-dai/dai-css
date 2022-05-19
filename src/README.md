@@ -163,7 +163,7 @@ ___
         'gobmx-gris-2': #A9A8A9, // textos deshabilitados
         'gobmx-gris-3': #DDD, // fondo en cajas
         'gobmx-gris-4': #F6F6F6,
-        'gobmx-blanco': #FFF, // fondo general // textos footer gobierno
+        'gobmx-blanco': #FFF, // textos footer gobierno
       ),
     );
     ```
@@ -189,3 +189,29 @@ ___
       ),
     );
     ```
+
+___
+TODO: borrar despues
+___
+
+
+links sistema de diseño:
+
+* [xd](https://xd.adobe.com/view/b6b1d14e-1cf2-46c0-b71c-7dafcbbb8f07-e3e2/screen/76c66b70-bf9e-4ab8-bd9b-3d8e3eaf0927)
+* [Versionamiento semántico](https://docs.google.com/document/d/1ffunL1Akk6f6yqXq3y2uLk4_KisYeMBiRN3vbWeFd0I/edit#heading=h.r2y7od6bg3l
+)
+* [nomenclatura](https://docs.google.com/spreadsheets/d/1EDwGW3xMajoiKuCOLf5sWCgniFdMoBsn-MvIYNU6vHY/edit#gid=2004573639)
+* [estructura atomicdesign lista funciones entregables](https://docs.google.com/spreadsheets/d/1DZpWRgh3sMFbYymkyoGmvcDIUGQkEwN2j5ySe1svcOc/edit#gid=510888881)
+* [miro](https://miro.com/app/board/uXjVOA_KQJ8=/)
+* [drive doc](https://drive.google.com/drive/u/0/folders/1pI9NMhXMRtvPNsfBhsczHSBm12agzHTr)
+* [mdn variables css1](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+* [mdn variables css2](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+* [mdn variables css3](https://developer.mozilla.org/en-US/docs/Web/CSS/var)
+
+links doc color themas switch
+
+* [exploracion color](https://docs.google.com/spreadsheets/d/1fEzL0wHeZSFvr-qk1IHAgBaRMCdDHNE1IGYBBr6SZeE/edit#gid=0)
+* [codepen switch checkbox](https://codepen.io/michellebarker/pen/GzzrGJ)
+* [swich data-tema](https://lukelowrey.com/css-variable-theme-switcher/)
+* [mdn :root](https://developer.mozilla.org/en-US/docs/Web/CSS/:root)
+* [mdn: media color scheme](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme)

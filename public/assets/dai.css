@@ -1,18 +1,5 @@
 :root {
-  --pagina-fondo: #fff;
-  --pagina-texto: #141414;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --pagina-fondo: #234;
-    --pagina-texto: #fff;
-  }
-}
-@media (prefers-color-scheme: light) {
-  :root {
-    --pagina-fondo: #fff;
-    --pagina-texto: #141414;
-  }
+  --tipografia: "Montserrat", sans-serif;
 }
 
 html {
@@ -84,6 +71,10 @@ sup {
 
 img {
   border: none;
+}
+
+body {
+  font-family: var(--tipografia, "sans-serif");
 }
 
 .contenedor {
@@ -4544,11 +4535,6 @@ img {
     padding-bottom: 120px;
   }
 }
-body {
-  background-color: var(--pagina-fondo);
-  color: var(--pagina-texto);
-}
-
 .fondo-gobmx-verde {
   background-color: #1F5D50;
 }
@@ -4649,6 +4635,10 @@ body {
     column-gap: 24px;
     max-width: 1416px;
   }
+}
+
+.a11y-tipografia {
+  --tipografia: "Atkinson Hyperlegible", sans-serif;
 }
 
 /*# sourceMappingURL=dai.css.map */

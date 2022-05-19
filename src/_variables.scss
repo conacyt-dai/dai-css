@@ -1,3 +1,7 @@
+:root {
+  --tipografia: 'Montserrat', sans-serif;
+}
+
 // COLOR
 $color-gobmx: (
   'identidad': (
@@ -13,7 +17,7 @@ $color-gobmx: (
     'gobmx-gris-2': #A9A8A9, // textos deshabilitados
     'gobmx-gris-3': #DDD, // fondo en cajas
     'gobmx-gris-4': #F6F6F6,
-    'gobmx-blanco': #FFF, // fondo general // textos footer gobierno
+    'gobmx-blanco': #FFF, // textos footer gobierno
   ),
 );
 
