@@ -1,0 +1,49 @@
+// titulos visualizaciones
+[class^='vis-'] {
+  color: var(--tipografia-color);
+  font-family: var(--tipografia-familia, 'sans-serif');
+  line-height: calc(1em * 1.2);
+  margin-top: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '1');
+}
+.vis-titulo-proyecto {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.vis-titulo-visualizacion {
+  font-size: 1.125rem; // 18px
+  font-weight: 600;
+  @include mq-tablet-escritorio {
+    font-size: 1.5rem; // 24px
+  }
+}
+.vis-titulo-leyenda {
+  font-size: 1rem; // 16px
+  font-weight: 600;
+}
+.vis-titulo-ejes {
+  font-size: 	0.75rem; // 12px
+  font-weight: 600;
+}
+.vis-valores-ejes {
+  font-size: 	0.75rem; // 12px
+  font-weight: 500;
+}
+.vis-fecha-actualizacion {
+  color: var(--tipografia-color-secundario);
+  font-size: 	0.75rem; // 12px
+  font-weight: 500;
+}
+.vis-instruccional {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.vis-leyenda {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: calc(1em * 1.3);
+  @include mq-tablet-escritorio {
+    line-height: calc(1em * 1.5);
+  }
+}
+.vis-notas {}

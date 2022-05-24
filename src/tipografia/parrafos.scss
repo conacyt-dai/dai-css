@@ -1,0 +1,29 @@
+p, 
+.parrafo-general {
+  line-height: calc(1em * 1.3);
+  @include mq-tablet-escritorio {
+    line-height: calc(1em * 1.5);
+  }
+}
+.parrafo-texto-alto {
+  font-size: 1.125rem; // 18px
+  font-weight: 500;
+}
+.parrafo-texto-secundario {
+  color: var(--tipografia-color-secundario);
+  line-height: calc(1em * 1.3);
+}
+.parrafo-texto-entresacado {
+  color: var(--tipografia-color-terciario);
+  font-size: 1.125rem; // 18px
+  @include mq-tablet-escritorio {
+    font-size: 1.5rem; // 24px
+  }
+}
+.parrafo-texto-desplazado {
+  font-size: 1rem; // 16px
+  font-weight: 500;
+  @include mq-tablet-escritorio {
+    font-size: 1.125rem; // 18px
+  }
+}

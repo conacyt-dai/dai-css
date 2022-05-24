@@ -15,3 +15,9 @@
     }
   }
 }
+
+@mixin mq-tablet-escritorio {
+  @media screen and (min-width: map-get($breakpoints, 'tab')) {
+    @content;
+  }
+}

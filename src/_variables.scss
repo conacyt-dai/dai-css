@@ -1,5 +1,10 @@
 :root {
-  --tipografia: 'Montserrat', sans-serif;
+  --tipografia-familia: 'Montserrat', sans-serif;
+  --tipografia-tamanio: 16px;
+
+  --tipografia-color: #141414;
+  --tipografia-color-secundario: #6f7271;
+  --tipografia-color-terciario: #404041;
 }
 
 // COLOR
@@ -12,10 +17,10 @@ $color-gobmx: (
     'gobmx-tinto': #9E2148,
   ),
   'utiles': (
-    'gobmx-gris-0': #404041, // hover de boton
+    'gobmx-gris-0': #404041, // hover de boton // texto terciario
     'gobmx-gris-1': #6F7271, // texto secundario
     'gobmx-gris-2': #A9A8A9, // textos deshabilitados
-    'gobmx-gris-3': #DDD, // fondo en cajas
+    'gobmx-gris-3': #DDD, // fondo en cajasx
     'gobmx-gris-4': #F6F6F6,
     'gobmx-blanco': #FFF, // textos footer gobierno
   ),

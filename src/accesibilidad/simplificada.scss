@@ -1,5 +1,5 @@
 .a11y-simplificada { //poner en el body pa cambiar
-  .a11y-simplificada-contenedor { // todos los contenedores que se llamen a11y-simplificada-contenedor se reformatearan cuando la a11y-simplificada este en el body
+  .a11y-simplificada-contenedor { // los contenedores que se llamen a11y-simplificada-contenedor se reformatearan cuando la a11y-simplificada este en el body
     display: grid;
     grid-template-columns: 1fr;
     max-width: $contenedor-lectura;
@@ -12,8 +12,4 @@
       max-width: calc(($contenedor-lectura * 2) - ($columnas-espaciado));
     }
   }
-}
-
-.a11y-tipografia { //poner en el body pa cambiar toda la tipografia de la página
-  --tipografia: 'Atkinson Hyperlegible', sans-serif;
 }

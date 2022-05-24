@@ -5,6 +5,10 @@
 
 // modulos
 @import 'tipografia/general';
+@import 'tipografia/titulos';
+@import 'tipografia/parrafos';
+@import 'tipografia/notas';
+@import 'tipografia/visualizaciones';
 
 @import 'reticula/contenedores';
 @import 'reticula/columnas';
@@ -13,6 +17,7 @@
 @import 'color/identidad';
 
 // a11y 
-// todo lo de accesibilidad debe cargar al final
-// para que pueda sobre escribir todos los estilos
+// accesibilidad debe cargar al final
+// para que pueda sobre escribir los estilos
 @import 'accesibilidad/simplificada';
+@import 'accesibilidad/tipografia';
