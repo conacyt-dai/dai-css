@@ -12,4 +12,12 @@
       max-width: calc(($contenedor-lectura * 2) - ($columnas-espaciado));
     }
   }
+
+  button,
+  input[type=button],
+  input[type=submit],
+  input[type=reset],
+  [class^='boton'] {
+    @extend .hipervinculo;
+  }
 }
