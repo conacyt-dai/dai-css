@@ -17,7 +17,7 @@
   input[type=button],
   input[type=submit],
   input[type=reset],
-  [class^='boton'] {
+  [class^='boton'] { // los botones se ven como links
     @extend .hipervinculo;
   }
 }
