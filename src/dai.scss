@@ -4,11 +4,15 @@
 @import '_mixins';
 
 // modulos
-@import 'tipografia/general';
+@import 'tipografia/base';
 @import 'tipografia/titulos';
 @import 'tipografia/parrafos';
 @import 'tipografia/notas';
 @import 'tipografia/visualizaciones';
+
+@import 'boton/base';
+@import 'boton/iconos';
+@import 'boton/compuestos';
 
 @import 'reticula/contenedores';
 @import 'reticula/columnas';
@@ -21,3 +25,4 @@
 // para que pueda sobre escribir los estilos
 @import 'accesibilidad/simplificada';
 @import 'accesibilidad/tipografia';
+@import 'accesibilidad/lectura';
