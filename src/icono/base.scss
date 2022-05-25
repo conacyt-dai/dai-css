@@ -1,0 +1,15 @@
+@each $id, $valor in $espaciado {
+  .icono-#{$id} {
+    font-size: $valor;
+  }
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    @each $id, $valor in $espaciado {
+      .icono-#{$id}-#{$dispositivo} {
+        font-size: $valor;
+      }
+    }
+  }
+}
