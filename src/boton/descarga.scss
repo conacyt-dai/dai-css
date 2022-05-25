@@ -1,0 +1,30 @@
+.boton-descarga {
+  @extend .boton-primario;
+  border-radius: map-get($espaciado, '1');
+  display: block;
+  padding: map-get($espaciado, '4');
+  text-align: left;
+  width: 100%;
+  .titulo {
+    font-weight: 600;
+    line-height: calc(1em * 1.2);
+    margin: 0 0 map-get($espaciado, '1');
+  }
+  .descripcion {
+    display: flex;
+    font-weight: 300;
+    line-height: calc(1em * 1.2);
+    margin: 0;
+    align-items: center;
+    justify-content: space-around;
+    .texto {
+      flex: 1;
+      margin: 0;
+      font-size: 0.875rem; // 14px
+    }
+    .icono {
+      font-size: 2rem; // 32px
+      padding-left: map-get($espaciado, '4');
+    }
+  }
+}

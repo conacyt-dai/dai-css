@@ -5,6 +5,40 @@
   --tipografia-color: #141414;
   --tipografia-color-secundario: #6f7271;
   --tipografia-color-terciario: #404041;
+
+  --boton-primario-fondo: #141414;
+  --boton-primario-borde: #141414;
+  --boton-primario-color: #fff;
+  --boton-primario-sombra: transparent;
+    --boton-primario-deshabilitado-fondo: #ddd;
+    --boton-primario-deshabilitado-borde: #ddd;
+    --boton-primario-deshabilitado-color: #a9a8a9;
+    --boton-primario-deshabilitado-sombra: transparent;
+      --boton-primario-hover-fondo: #404041;
+      --boton-primario-hover-borde: #404041;
+      --boton-primario-hover-color: #fff;
+      --boton-primario-hover-sombra: #00000033;
+        --boton-primario-focus-fondo: #141414;
+        --boton-primario-focus-borde: #005DFF;
+        --boton-primario-focus-color: #fff;
+        --boton-primario-focus-sombra: #005DFF;
+
+  --boton-secundario-fondo: #fff;
+  --boton-secundario-borde: #141414;
+  --boton-secundario-color: #141414;
+  --boton-secundario-sombra: transparent;
+    --boton-secundario-deshabilitado-fondo: #fff;
+    --boton-secundario-deshabilitado-borde: #ddd;
+    --boton-secundario-deshabilitado-color: #a9a8a9;
+    --boton-secundario-deshabilitado-sombra: transparent;
+      --boton-secundario-hover-fondo: #fff;
+      --boton-secundario-hover-borde: #141414;
+      --boton-secundario-hover-color: #141414;
+      --boton-secundario-hover-sombra: #00000033;
+        --boton-secundario-focus-fondo: #fff;
+        --boton-secundario-focus-borde: #005DFF;
+        --boton-secundario-focus-color: #141414;
+        --boton-secundario-focus-sombra: #005DFF;
 }
 
 // COLOR
@@ -20,8 +54,8 @@ $color-gobmx: (
     'gobmx-gris-0': #404041, // hover de boton // texto terciario
     'gobmx-gris-1': #6F7271, // texto secundario
     'gobmx-gris-2': #A9A8A9, // textos deshabilitados
-    'gobmx-gris-3': #DDD, // fondo en cajasx
-    'gobmx-gris-4': #F6F6F6,
+    'gobmx-gris-3': #DDD, // fondo en cajas
+    'gobmx-gris-4': #F6F6F6, // boton conacyt
     'gobmx-blanco': #FFF, // textos footer gobierno
   ),
 );

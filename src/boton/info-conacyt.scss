@@ -1,0 +1,34 @@
+.boton-info {
+  @extend .boton-primario;
+  border-radius: 0;
+  border-width: 0;
+  font-size: 0.875rem; // 14px
+  display: block;
+  padding: map-get($espaciado, '1');
+  width: 100%;
+}
+.boton-conacyt {
+  background-color: #F6F6F6;
+  border-radius: 0 0 map-get($espaciado, '1') map-get($espaciado, '1');
+  border-width: 0;
+  box-shadow: 3px 3px 4px transparent;
+  display: flex;
+  color: #003384;
+  filter: grayscale(100%);
+  padding: calc(map-get($espaciado, '1') * .5) map-get($espaciado, '1');
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  img {
+    height: 28px;
+    opacity: .5;
+    transition: all .25s ease-in-out;
+  }
+  &:hover,
+  &:focus {
+    filter: grayscale(0%);
+    img {
+      opacity: 1;
+    }
+  }
+}
