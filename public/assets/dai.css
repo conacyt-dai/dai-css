@@ -52,6 +52,12 @@
   --boton-terciario-focus-borde: #005DFF;
   --boton-terciario-focus-color: #141414;
   --boton-terciario-focus-sombra: #005DFF;
+  --hipervinculo-color: #005DFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #005DFF;
+  --hipervinculo-focus-sombra: #005DFF;
 }
 
 html {
@@ -335,6 +341,36 @@ p,
   }
 }
 
+a,
+.hipervinculo {
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 2px var(--hipervinculo-sombra);
+  box-sizing: border-box;
+  color: var(--hipervinculo-color);
+  font-family: var(--tipografia-familia, "sans-serif");
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: inherit;
+  padding: 0;
+  text-decoration: underline;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.27s ease-in-out;
+}
+a:hover,
+.hipervinculo:hover {
+  color: var(--hipervinculo-hover-color);
+  box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
+}
+a:focus,
+.hipervinculo:focus {
+  color: var(--hipervinculo-focus-color);
+  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
+  outline: none;
+}
+
 button,
 input[type=button],
 input[type=submit],
@@ -456,8 +492,7 @@ input[type=reset]:disabled,
   padding: 24px;
 }
 
-button .icon,
-.boton .icon {
+[class^=boton-] .icon {
   display: inline-flex;
   align-items: center;
   padding-left: 8px;
