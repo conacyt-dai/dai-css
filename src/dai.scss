@@ -11,8 +11,8 @@
 @import 'tipografia/visualizaciones';
 
 @import 'boton/base';
-@import 'boton/descarga';
-@import 'boton/info-conacyt';
+@import 'boton/iconos';
+@import 'boton/compuestos';
 
 @import 'reticula/contenedores';
 @import 'reticula/columnas';
@@ -25,3 +25,4 @@
 // para que pueda sobre escribir los estilos
 @import 'accesibilidad/simplificada';
 @import 'accesibilidad/tipografia';
+@import 'accesibilidad/lectura';

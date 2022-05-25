@@ -6,9 +6,8 @@ input[type=reset],
   border-style: solid;
   border-width: 1px;
   border-radius: calc(map-get($espaciado, '1') * .5);
-  // box-sizing: content-box;
   box-shadow: 3px 3px 4px transparent;
-  // display: inline-block;
+  box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');
   font-size: 1rem;
   font-weight: 500;
@@ -16,6 +15,8 @@ input[type=reset],
   padding: map-get($espaciado, '2') map-get($espaciado, '3');
   text-decoration: none;
   text-align: center;
+  display: inline-flex;
+  align-items: center;
   &:not(:disabled) {
     cursor: pointer;
     transition: all .27s ease-in-out;
@@ -25,7 +26,6 @@ input[type=reset],
   }
 }
 
-// colores
 .boton-primario {
   background-color: var(--boton-primario-fondo);
   border-color: var(--boton-primario-borde);
@@ -50,6 +50,7 @@ input[type=reset],
     outline: none;
   }
 }
+
 .boton-secundario {
   background-color: var(--boton-secundario-fondo);
   border-color: var(--boton-secundario-borde);
@@ -75,13 +76,39 @@ input[type=reset],
   }
 }
 
-// tamaños
+.boton-terciario {
+  background-color: var(--boton-terciario-fondo);
+  border-color: var(--boton-terciario-borde);
+  color: var(--boton-terciario-color);
+  &:disabled {
+    background-color: var(--boton-terciario-deshabilitado-fondo);
+    border-color: var(--boton-terciario-deshabilitado-borde);
+    box-shadow: 3px 3px 4px var(--boton-terciario-deshabilitado-sombra);
+    color: var(--boton-terciario-deshabilitado-color);
+  }
+  &:not(:disabled):hover {
+    background-color: var(--boton-terciario-hover-fondo);
+    border-color: var(--boton-terciario-hover-borde);
+    box-shadow: 3px 3px 4px var(--boton-terciario-hover-sombra);
+    color: var(--boton-terciario-hover-color);
+  }
+  &:not(:disabled):focus {
+    background-color: var(--boton-terciario-focus-fondo);
+    border-color: var(--boton-terciario-focus-borde);
+    box-shadow: 0 0 8px var(--boton-terciario-focus-sombra);
+    color: var(--boton-terciario-focus-color);
+    outline: none;
+  }
+}
+
 .boton-chico {
+  // TODO: confirmar con diseño el tamaño de la tipograria
   font-size: 0.875rem; // 14px
   padding: map-get($espaciado, '1') map-get($espaciado, '2');
 }
 
 .boton-grande {
+  // TODO: confirmar con diseño el tamaño de la tipograria
   font-size: 1.125rem; // 18px
   padding: map-get($espaciado, '3');
 }
