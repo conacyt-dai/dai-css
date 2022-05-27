@@ -1,9 +1,12 @@
 :root {
+  --pagina-fondo: #fff;
+  --pagina-fondo-inverso: #000;
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
   --tipografia-color: #141414;
   --tipografia-color-secundario: #6f7271;
   --tipografia-color-terciario: #404041;
+  --tipografia-color-inverso: #fff;
   --boton-primario-fondo: #141414;
   --boton-primario-borde: #141414;
   --boton-primario-color: #fff;
@@ -5365,6 +5368,38 @@ a:focus,
 
 .fondo-conacyt-degradado {
   background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
+}
+
+.fondo-color-primario {
+  background-color: var(--pagina-fondo);
+}
+
+.fondo-color-inverso {
+  background-color: var(--pagina-fondo-inverso);
+}
+
+.texto-color-primario {
+  color: var(--tipografia-color);
+}
+
+.texto-color-secundario {
+  color: var(--tipografia-color-secundario);
+}
+
+.texto-color-terciario {
+  color: var(--tipografia-color-terciario);
+}
+
+.texto-color-inverso {
+  color: var(--tipografia-color-inverso);
+}
+
+.borde-color-primario {
+  border-color: var(--pagina-fondo);
+}
+
+.borde-color-inverso {
+  border-color: var(--pagina-fondo-inverso);
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {

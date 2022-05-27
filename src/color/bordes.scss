@@ -1,0 +1,10 @@
+$borde-colores: (
+  'primario': var(--pagina-fondo),
+  'inverso': var(--pagina-fondo-inverso),
+);
+
+@each $nombre, $variable in $borde-colores {
+  .borde-color-#{$nombre} {
+    border-color: $variable;
+  }
+}
