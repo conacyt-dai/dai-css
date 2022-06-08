@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/conacyt-dai/dai-css.git"
+    "url": "git+https://github.com/conacyt-dai/daicss.git"
   },
   "author": "flkt.crnpio@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/conacyt-dai/dai-css/issues"
+    "url": "https://github.com/conacyt-dai/daicss/issues"
   },
-  "homepage": "https://github.com/conacyt-dai/dai-css#readme",
+  "homepage": "https://github.com/conacyt-dai/daicss#readme",
   "dependencies": {
     "sass": "1.49.10"
   },
