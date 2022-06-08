@@ -1,11 +1,7 @@
 {
-  "name": "dai-css",
-<<<<<<< HEAD
-  "version": "0.9.2",
-=======
+  "name": "daicss",
   "version": "0.9.3",
->>>>>>> develop
-  "description": "",
+  "description": "Librería de estilos base del Sistema de Diseño para DAI Conacyt",
   "main": "dai.scss",
   "scripts": {
     "dist": "sass src/dai.scss:dist/dai.min.css --style compressed",
