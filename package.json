@@ -1,7 +1,7 @@
 {
-  "name": "dai-css",
-  "version": "0.9.0",
-  "description": "",
+  "name": "daicss",
+  "version": "0.9.5",
+  "description": "Librería de estilos base del Sistema de Diseño para DAI Conacyt",
   "main": "dai.scss",
   "scripts": {
     "dist": "sass src/dai.scss:dist/dai.min.css --style compressed",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/conacyt-dai/dai-css.git"
+    "url": "git+https://github.com/conacyt-dai/daicss.git"
   },
   "author": "flkt.crnpio@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/conacyt-dai/dai-css/issues"
+    "url": "https://github.com/conacyt-dai/daicss/issues"
   },
-  "homepage": "https://github.com/conacyt-dai/dai-css#readme",
+  "homepage": "https://github.com/conacyt-dai/daicss#readme",
   "dependencies": {
     "sass": "1.49.10"
   },
   "devDependencies": {
-    "browser-sync": "2.27.9"
+    "browser-sync": "2.27.10"
   }
 }
