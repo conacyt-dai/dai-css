@@ -1,6 +1,7 @@
 $borde-colores: (
-  'primario': var(--pagina-fondo),
-  'inverso': var(--pagina-fondo-inverso),
+  'primario': var(--borde-color-primario),
+  'secundario': var(--borde-color-secundario),
+  'terciario': var(--borde-color-terciario),
 );
 
 @each $nombre, $variable in $borde-colores {

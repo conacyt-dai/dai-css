@@ -7,6 +7,9 @@
   --tipografia-color-secundario: #6f7271;
   --tipografia-color-terciario: #404041;
   --tipografia-color-inverso: #fff;
+  --borde-color-primario: #141414;
+  --borde-color-secundario: #6f7271;
+  --borde-color-terciario: #a9a8a9;
   --boton-primario-fondo: #141414;
   --boton-primario-borde: #141414;
   --boton-primario-color: #fff;
@@ -5395,11 +5398,15 @@ a:focus,
 }
 
 .borde-color-primario {
-  border-color: var(--pagina-fondo);
+  border-color: var(--borde-color-primario);
 }
 
-.borde-color-inverso {
-  border-color: var(--pagina-fondo-inverso);
+.borde-color-secundario {
+  border-color: var(--borde-color-secundario);
+}
+
+.borde-color-terciario {
+  border-color: var(--borde-color-terciario);
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {
