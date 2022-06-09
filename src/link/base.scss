@@ -17,19 +17,16 @@ a,
   transition: all .27s ease-in-out;
   &:disabled {
     background-color: transparent;
-    border: none;
     color: var(--hipervinculo-deshabilitado-color);
     box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
   }
   &:hover {
     background-color: transparent;
-    border: none;
     color: var(--hipervinculo-hover-color);
     box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
   }
   &:focus {
     background-color: transparent;
-    border: none;
     color: var(--hipervinculo-focus-color);
     box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
     outline: none;
