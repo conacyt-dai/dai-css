@@ -24,6 +24,9 @@ input[type=reset],
   &:disabled {
     pointer-events: none;
   }
+  &:not(:last-child) {
+    margin-right:  map-get($espaciado, '1');
+  }
 }
 
 .boton-primario {
