@@ -151,6 +151,10 @@ body {
   line-height: 1.3em;
 }
 
+body * {
+  font-family: var(--tipografia-familia, "sans-serif");
+}
+
 b,
 strong {
   font-weight: 600;
@@ -594,6 +598,13 @@ input[type=submit]:disabled,
 input[type=reset]:disabled,
 .boton:disabled {
   pointer-events: none;
+}
+button:not(:last-child),
+input[type=button]:not(:last-child),
+input[type=submit]:not(:last-child),
+input[type=reset]:not(:last-child),
+.boton:not(:last-child) {
+  margin-right: 8px;
 }
 
 .boton-primario, .boton-info, .boton-descarga, .boton-icono {

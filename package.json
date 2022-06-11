@@ -2,12 +2,14 @@
   "name": "daicss",
   "version": "0.10.2",
   "description": "Librería de estilos base del Sistema de Diseño para DAI Conacyt",
-  "main": "dai.scss",
+  "main": "src/dai.scss",
   "scripts": {
+    "start": "concurrently \"npm run scss\" \"npm run docs\" ",
     "dist": "sass src/dai.scss:dist/dai.min.css --style compressed",
-    "start": "npm run scss | npm run serve",
-    "serve": "browser-sync start --server 'public' --files 'public'",
-    "scss": "sass --watch src/dai.scss:public/assets/dai.css --style expanded"
+    "build:docs": "cd docs && npm run build",
+    "docs": "cd docs && npm run dev",
+    "install:docs": "cd docs && npm install",
+    "scss": "sass --watch src/dai.scss:docs/src/assets/dai.css --style expanded"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,12 @@
   "dependencies": {
     "sass": "1.49.10"
   },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
   "devDependencies": {
-    "browser-sync": "2.27.10"
+    "concurrently": "7.2.1"
   }
 }
