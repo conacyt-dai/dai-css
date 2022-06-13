@@ -5,7 +5,7 @@
   "main": "src/dai.scss",
   "scripts": {
     "start": "concurrently \"npm run scss\" \"npm run docs\" ",
-    "dist": "sass src/dai.scss:dist/dai.min.css --style compressed",
+    "build": "sass src/dai.scss:dist/dai.min.css --style compressed",
     "build:docs": "cd docs && npm run build",
     "docs": "cd docs && npm run dev",
     "install:docs": "cd docs && npm install",
