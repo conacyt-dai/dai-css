@@ -1,6 +1,6 @@
 {
   "name": "daicss",
-  "version": "0.11.4",
+  "version": "0.11.5",
   "description": "Librería de estilos base del Sistema de Diseño para DAI Conacyt",
   "main": "src/dai.scss",
   "scripts": {
