@@ -38,6 +38,11 @@ const router = createRouter({
       path: '/hipervinculos',
       name: 'hipervinculos',
       component: () => import('../views/HipervinculosView.vue')
+    },
+    {
+      path: '/listas',
+      name: 'listas',
+      component: () => import('../views/ListasView.vue')
     }
   ]
 })

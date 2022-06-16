@@ -1,0 +1,31 @@
+ol,
+ul,
+dl {
+  font-size: 1rem;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0 0 0 32px;
+  li {
+    margin-top: 16px;
+  }
+  ol,
+  ul {
+    padding: 0 0 0 16px;
+    li {
+      margin-top: 8px;
+    }
+  }
+}
+
+dl {
+  dt {
+    font-weight: 500;
+    margin: 16px 0 0 0;
+  }
+  dd {
+    margin: 8px 0 0 0;
+  }
+}

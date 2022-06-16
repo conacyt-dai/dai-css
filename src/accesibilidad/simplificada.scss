@@ -20,4 +20,17 @@
   [class^='boton'] { // los botones se ven como links
     @extend .hipervinculo;
   }
+
+  ul,
+  ol,
+  .lista-avatar,
+  .lista-logo {
+    .avatar,
+    .logo,
+    img,
+    svg,
+    picture {
+      display: none;
+    }
+  }
 }

@@ -28,11 +28,12 @@ function toggleA11yView() {
       <RouterLink class="m-x-1" to="/iconografia">Iconografia</RouterLink>
       <RouterLink class="m-x-1" to="/botones">Botones</RouterLink>
       <RouterLink class="m-x-1" to="/hipervinculos">Hipervínculos</RouterLink>
+      <RouterLink class="m-x-1" to="/listas">Listas</RouterLink>
     </nav>
     <aside role="complementary" class="contenedor p-y-1">
       a11y
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">Cambiar vista</button>
+      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
     </aside>
     <main role="main">
       <RouterView />

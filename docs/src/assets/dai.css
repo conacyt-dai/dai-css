@@ -245,6 +245,14 @@ h6, .h6 {
   }
 }
 
+.titulo-lista {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
 p,
 .parrafo-general {
   line-height: 1.3em;
@@ -833,6 +841,108 @@ a:focus,
   color: var(--hipervinculo-focus-color);
   box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
   outline: none;
+}
+
+ol,
+ul,
+dl {
+  font-size: 1rem;
+  margin: 0;
+}
+
+ol,
+ul {
+  padding: 0 0 0 32px;
+}
+ol li,
+ul li {
+  margin-top: 16px;
+}
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  padding: 0 0 0 16px;
+}
+ol ol li,
+ol ul li,
+ul ol li,
+ul ul li {
+  margin-top: 8px;
+}
+
+dl dt {
+  font-weight: 500;
+  margin: 16px 0 0 0;
+}
+dl dd {
+  margin: 8px 0 0 0;
+}
+
+.lista-compuesta, .lista-logo, .lista-avatar, .lista-icono {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
+  display: flex;
+  padding: 16px 16px 16px 0;
+}
+.lista-compuesta li .avatar, .lista-logo li .avatar, .lista-avatar li .avatar, .lista-icono li .avatar {
+  flex: 0 0 64px;
+}
+.lista-compuesta li .texto, .lista-logo li .texto, .lista-avatar li .texto, .lista-icono li .texto {
+  flex: 1 1;
+  font-size: 1rem;
+  display: block;
+}
+.lista-compuesta li .texto > *, .lista-logo li .texto > *, .lista-avatar li .texto > *, .lista-icono li .texto > * {
+  margin: 0;
+}
+.lista-compuesta li .texto .texto-primario, .lista-logo li .texto .texto-primario, .lista-avatar li .texto .texto-primario, .lista-icono li .texto .texto-primario {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.lista-compuesta li .texto .texto-terciario, .lista-logo li .texto .texto-terciario, .lista-avatar li .texto .texto-terciario, .lista-icono li .texto .texto-terciario {
+  color: var(--tipografia-color-secundario);
+}
+
+.lista-icono li::before {
+  margin: 4px 16px 8px 0;
+}
+
+.lista-avatar .avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  overflow: hidden;
+  margin: 4px 24px 4px 0;
+}
+.lista-avatar .avatar img,
+.lista-avatar .avatar svg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.lista-logo .logo {
+  width: 120px;
+  height: 64px;
+  margin: 0 16px 0 0;
+  overflow: hidden;
+  text-align: center;
+}
+.lista-logo .logo img,
+.lista-logo .logo svg {
+  height: 100%;
+  max-width: 100%;
+  padding: 0;
+  object-fit: fill;
+}
+.lista-logo .nombre {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
 }
 
 .contenedor {
@@ -5430,6 +5540,29 @@ a:focus,
     max-width: 1416px;
   }
 }
+.a11y-simplificada ul .avatar,
+.a11y-simplificada ul .logo,
+.a11y-simplificada ul img,
+.a11y-simplificada ul svg,
+.a11y-simplificada ul picture,
+.a11y-simplificada ol .avatar,
+.a11y-simplificada ol .logo,
+.a11y-simplificada ol img,
+.a11y-simplificada ol svg,
+.a11y-simplificada ol picture,
+.a11y-simplificada .lista-avatar .avatar,
+.a11y-simplificada .lista-avatar .logo,
+.a11y-simplificada .lista-avatar img,
+.a11y-simplificada .lista-avatar svg,
+.a11y-simplificada .lista-avatar picture,
+.a11y-simplificada .lista-logo .avatar,
+.a11y-simplificada .lista-logo .logo,
+.a11y-simplificada .lista-logo img,
+.a11y-simplificada .lista-logo svg,
+.a11y-simplificada .lista-logo picture {
+  display: none;
+}
+
 .a11y-tipografia {
   --tipografia-familia: "Atkinson Hyperlegible", sans-serif;
 }

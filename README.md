@@ -22,8 +22,24 @@ Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que e
 ```
 
 
+## Cómo instalar la biblioteca en tu proyecto
 
-## Para la instalación local del proyecto
+1. Instala la biblioteca
+    ``` sh
+    npm i github:conacyt-dai/daicss
+    ```
+
+2. Importala la libreria
+    ``` css
+    @import 'daicss/src/dai.scss';
+    ```
+    2.2 Opcional*  Se pueden importar las variables para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
+    ``` css
+    @import 'daicss/src/_variables.scss';
+    ```
+
+
+## Para la edición local del proyecto
 
 0. Prerequisitos:
 

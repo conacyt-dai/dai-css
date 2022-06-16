@@ -1,0 +1,74 @@
+.lista-compuesta {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    display: flex;
+    padding: map-get($espaciado, '2') map-get($espaciado, '2') map-get($espaciado, '2') 0;
+    .avatar {
+      flex: 0 0 map-get($espaciado, '8');
+    }
+    .texto {
+      flex: 1 1;
+      font-size: 1rem;
+      display: block;
+      > * {
+        margin: 0;
+      }
+      .texto-primario {
+        font-size: 1rem;
+        font-weight: 500;
+      }
+      .texto-terciario {
+        color: var(--tipografia-color-secundario);
+      }
+    }
+  }
+}
+
+.lista-icono {
+  @extend .lista-compuesta;
+  li::before {
+    margin: map-get($espaciado, '1')*.5 map-get($espaciado, '2') map-get($espaciado, '2')*.5 0;
+  }
+}
+
+.lista-avatar {
+  @extend .lista-compuesta;
+  .avatar {
+    width: map-get($espaciado, '8');
+    height: map-get($espaciado, '8');
+    border-radius: map-get($espaciado, '4');
+    overflow: hidden;
+    margin: map-get($espaciado, '1')*.5 map-get($espaciado, '3') map-get($espaciado, '1')*.5 0;
+    img,
+    svg {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.lista-logo {
+  @extend .lista-compuesta;
+  .logo {
+    width: calc(map-get($espaciado,'12'));
+    height: map-get($espaciado, '8');
+    margin: 0 map-get($espaciado, '2') 0 0;
+    overflow: hidden;
+    text-align: center;
+    img,
+    svg {
+      height: 100%;
+      max-width: 100%;
+      padding: 0;
+      object-fit: fill;
+    }
+  }
+  .nombre {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+  }
+}
