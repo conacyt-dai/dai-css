@@ -43,5 +43,5 @@ function toggleA11yView() {
 </template>
 
 <style>
-  @import '@/assets/dai.css';
+  @import '@/assets/eni.css';
 </style>

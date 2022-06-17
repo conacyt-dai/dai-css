@@ -1,26 +1,26 @@
 {
-  "name": "daicss",
+  "name": "dadsig-css",
   "version": "0.12.0",
-  "description": "Librería de estilos base del Sistema de Diseño para DAI Conacyt",
-  "main": "src/dai.scss",
+  "description": "Biblioteca de estilos base CSS del Sistema de Diseño para Herramientas ENI del Conacyt",
+  "main": "src/eni.scss",
   "scripts": {
     "start": "concurrently \"npm run scss\" \"npm run docs\" ",
-    "build": "sass src/dai.scss:dist/dai.min.css --style compressed",
+    "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
     "build:docs": "cd docs && npm run build",
     "docs": "cd docs && npm run dev",
     "install:docs": "cd docs && npm install",
-    "scss": "sass --watch src/dai.scss:docs/src/assets/dai.css --style expanded"
+    "scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/conacyt-dai/daicss.git"
+    "url": "git+https://github.com/conacyt-dai/dadsig-css.git"
   },
   "author": "flkt.crnpio@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/conacyt-dai/daicss/issues"
+    "url": "https://github.com/conacyt-dai/dadsig-css/issues"
   },
-  "homepage": "https://github.com/conacyt-dai/daicss#readme",
+  "homepage": "https://github.com/conacyt-dai/dadsig-css#readme",
   "dependencies": {
     "sass": "1.49.10"
   },

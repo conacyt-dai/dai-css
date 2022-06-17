@@ -1,13 +1,13 @@
-# DAIcss
+# Dadsig css
 
 Biblioteca de estilos en scss con [sass](https://sass-lang.com/) para el Sitema de Diseño basado en los requerimientos de los Ecosistemas Nacionales Informáticos del Conacyt. 
+Desarrollado por la Dirección de análisis de datos y sistemas de información geográfica.
 
 
-
-## Cómo utilizar la biblioteca en tu proyecto
+## Cómo utilizar la biblioteca en un proyecto estático
 Esta biblioteca utiliza las tipografias de Montserrat y Atkinson Hyperlegible de Google fonts y una tipografía de íconos publicada a través de Fontastic.
 
-Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que en orden de aparición son primero los links de las tipografías de Google Fonts, seguido de la tipografía para los íconos (aun en desarrollo) y al final la liga de la hoja de estilos DAIcss (también en desarrollo)
+Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que en orden de aparición son primero los links de las tipografías de Google Fonts, seguido de la tipografía para los íconos (aun en desarrollo) y al final la liga de la hoja de estilos (también en desarrollo)
 
 ``` html
 
@@ -17,25 +17,25 @@ Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que e
   
   <link href="https://file.myfontastic.com/9MnddkmwxGrfDcGqsLYbKP/icons.css" rel="stylesheet">
   
-  <link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dai-css/dist/dai.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css" rel="stylesheet">
 
 ```
 
 
-## Cómo instalar la biblioteca en tu proyecto
+## Cómo instalar la biblioteca en un proyecto
 
 1. Instala la biblioteca
     ``` sh
-    npm i github:conacyt-dai/daicss
+    npm i github:conacyt-dai/dadsig-css
     ```
 
 2. Importala la libreria
     ``` css
-    @import 'daicss/src/dai.scss';
+    @import 'dadsig-css/src/eni.scss';
     ```
     2.2 Opcional*  Se pueden importar las variables para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
     ``` css
-    @import 'daicss/src/_variables.scss';
+    @import 'dadsig-css/src/_variables.scss';
     ```
 
 
@@ -52,7 +52,7 @@ Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que e
 1. Clona el repositorio con la siguiente linea en la terminal
 
     ``` sh
-    git clone git@github.com:conacyt-dai/daicss.git
+    git clone git@github.com:conacyt-dai/dadsig-css.git
     ```
     Si por alguna razón no pudiste clonar, puedes leer la 
     [documentación de Githug acerca de cómo clonar un repositorio](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)

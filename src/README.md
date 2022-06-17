@@ -5,7 +5,7 @@ Listado de los elementos de la librería en proceso de desarrollo y documencaci�
   - [x] __mixins_
   - [x] __normalizar_
   - [x] __variables_
-  - [x] _dai_
+  - [x] _eni_
 - Accesibilidad
   - [x] Vista simplificada
   - [x] Cambio de tipografía
