@@ -1,0 +1,50 @@
+table {
+  border-collapse: collapse;
+  text-align: left;
+  caption {
+    text-align: left;
+    padding: map-get($espaciado, '2') map-get($espaciado, '3') map-get($espaciado, '3');
+  }
+  th,
+  td {
+    padding: map-get($espaciado, '2') map-get($espaciado, '3');
+  }
+  th {
+    padding-top: 0;
+  }
+  thead {
+    tr {
+      border-bottom: 1px solid var(--borde-color-secundario);
+    }
+  }
+  tbody {
+    tr:nth-child(odd) {
+      background-color: var(--tabla-fondo-impar);
+    }
+  }
+  tfoot {
+    tr {
+      background-color: var(--tabla-fondo-notas);
+    }
+  }
+}
+
+.tabla-condensada {
+  th,
+  td {
+    padding: map-get($espaciado, '1') map-get($espaciado, '3');
+  }
+  th {
+    padding-top: 0;
+  }
+}
+
+.tabla-expandida {
+  th,
+  td {
+    padding: map-get($espaciado, '3');
+  }
+  th {
+    padding-top: 0;
+  }
+}

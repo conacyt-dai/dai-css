@@ -43,6 +43,11 @@ const router = createRouter({
       path: '/listas',
       name: 'listas',
       component: () => import('../views/ListasView.vue')
+    },
+    {
+      path: '/tablas',
+      name: 'tablas',
+      component: () => import('../views/TablasView.vue')
     }
   ]
 })

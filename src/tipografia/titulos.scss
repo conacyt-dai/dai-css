@@ -71,6 +71,13 @@ h6,.h6 {
   font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.3em;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top:  map-get($espaciado, '3');
+  margin-bottom:  map-get($espaciado, '2');
+}
+
+.titulo-tabla {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin:  map-get($espaciado, '3')  map-get($espaciado, '2')  map-get($espaciado, '2');
 }

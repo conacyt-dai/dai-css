@@ -1,6 +1,8 @@
 :root {
   --pagina-fondo: #fff;
   --pagina-fondo-inverso: #000;
+  --tabla-fondo-impar: #f6f6f6;
+  --tabla-fondo-notas: #a9a8a9;
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
   --tipografia-color: #141414;
@@ -251,6 +253,13 @@ h6, .h6 {
   line-height: 1.3em;
   margin-top: 24px;
   margin-bottom: 16px;
+}
+
+.titulo-tabla {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: 24px 16px 16px;
 }
 
 p,
@@ -943,6 +952,47 @@ dl dd {
   display: flex;
   align-items: center;
   font-weight: 500;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+table caption {
+  text-align: left;
+  padding: 16px 24px 24px;
+}
+table th,
+table td {
+  padding: 16px 24px;
+}
+table th {
+  padding-top: 0;
+}
+table thead tr {
+  border-bottom: 1px solid var(--borde-color-secundario);
+}
+table tbody tr:nth-child(odd) {
+  background-color: var(--tabla-fondo-impar);
+}
+table tfoot tr {
+  background-color: var(--tabla-fondo-notas);
+}
+
+.tabla-condensada th,
+.tabla-condensada td {
+  padding: 8px 24px;
+}
+.tabla-condensada th {
+  padding-top: 0;
+}
+
+.tabla-expandida th,
+.tabla-expandida td {
+  padding: 24px;
+}
+.tabla-expandida th {
+  padding-top: 0;
 }
 
 .contenedor {
