@@ -1,11 +1,22 @@
-
+// columns
 [class^='columns'] {
   column-gap: $columnas-espaciado;
 }
+@for $i from 1 through 12 {
+  .columns-#{$i} {
+    column-count: $i;
+  }
+}
 
+// grid 
 .grid {
   display: grid;
   column-gap: $columnas-espaciado;
+}
+@for $i from 1 through 12 {
+  .grid-column-#{$i} {
+    grid-column: span $i;
+  }
 }
 @each $dispositivo, $col in $columnas {
   @include mediaquery($dispositivo) {
@@ -15,6 +26,7 @@
   }
 }
 
+// flex
 .flex {
   display: flex;
   margin-left: $columnas-espaciado*-.5;
@@ -28,16 +40,17 @@
   padding-left: $columnas-espaciado*.5;
   padding-right: $columnas-espaciado*.5;
 }
-
-@for $i from 1 through 12 {
-  .columns-#{$i} {
-    column-count: $i;
-  }
-  .grid-column-#{$i} {
-    grid-column: span $i;
+@each $dispositivo, $col in $columnas {
+  @include mediaquery($dispositivo) {
+    @for $i from 1 through $col {
+      .flex-basis-#{$i} {
+        flex-basis: calc((100% * $i / $col));
+      }
+    }
   }
 }
 
+// column grid flex responsivo
 @each $dispositivo, $col in $columnas {
   @include mediaquery($dispositivo) {
     @for $i from 1 through 12 {
@@ -49,9 +62,6 @@
       }
     }
     @for $i from 1 through $col {
-      .flex-basis-#{$i} {
-        flex-basis: calc((100% * $i / $col));
-      }
       .flex-basis-#{$i}-#{$dispositivo} {
         flex-basis: calc((100% * $i / $col));
       }
@@ -73,6 +83,7 @@
     }
   }
 }
+// gap responsivo
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
     @each $id, $valor in $espaciado {

@@ -1036,9 +1036,105 @@ table tfoot tr {
   column-gap: 24px;
 }
 
+.columns-1 {
+  column-count: 1;
+}
+
+.columns-2 {
+  column-count: 2;
+}
+
+.columns-3 {
+  column-count: 3;
+}
+
+.columns-4 {
+  column-count: 4;
+}
+
+.columns-5 {
+  column-count: 5;
+}
+
+.columns-6 {
+  column-count: 6;
+}
+
+.columns-7 {
+  column-count: 7;
+}
+
+.columns-8 {
+  column-count: 8;
+}
+
+.columns-9 {
+  column-count: 9;
+}
+
+.columns-10 {
+  column-count: 10;
+}
+
+.columns-11 {
+  column-count: 11;
+}
+
+.columns-12 {
+  column-count: 12;
+}
+
 .grid {
   display: grid;
   column-gap: 24px;
+}
+
+.grid-column-1 {
+  grid-column: span 1;
+}
+
+.grid-column-2 {
+  grid-column: span 2;
+}
+
+.grid-column-3 {
+  grid-column: span 3;
+}
+
+.grid-column-4 {
+  grid-column: span 4;
+}
+
+.grid-column-5 {
+  grid-column: span 5;
+}
+
+.grid-column-6 {
+  grid-column: span 6;
+}
+
+.grid-column-7 {
+  grid-column: span 7;
+}
+
+.grid-column-8 {
+  grid-column: span 8;
+}
+
+.grid-column-9 {
+  grid-column: span 9;
+}
+
+.grid-column-10 {
+  grid-column: span 10;
+}
+
+.grid-column-11 {
+  grid-column: span 11;
+}
+
+.grid-column-12 {
+  grid-column: span 12;
 }
 
 @media screen and (max-width: 767px) {
@@ -1072,102 +1168,105 @@ table tfoot tr {
   padding-right: 12px;
 }
 
-.columns-1 {
-  column-count: 1;
-}
+@media screen and (max-width: 767px) {
+  .flex-basis-1 {
+    flex-basis: 25%;
+  }
 
-.grid-column-1 {
-  grid-column: span 1;
-}
+  .flex-basis-2 {
+    flex-basis: 50%;
+  }
 
-.columns-2 {
-  column-count: 2;
-}
+  .flex-basis-3 {
+    flex-basis: 75%;
+  }
 
-.grid-column-2 {
-  grid-column: span 2;
+  .flex-basis-4 {
+    flex-basis: 100%;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1495px) {
+  .flex-basis-1 {
+    flex-basis: 12.5%;
+  }
 
-.columns-3 {
-  column-count: 3;
+  .flex-basis-2 {
+    flex-basis: 25%;
+  }
+
+  .flex-basis-3 {
+    flex-basis: 37.5%;
+  }
+
+  .flex-basis-4 {
+    flex-basis: 50%;
+  }
+
+  .flex-basis-5 {
+    flex-basis: 62.5%;
+  }
+
+  .flex-basis-6 {
+    flex-basis: 75%;
+  }
+
+  .flex-basis-7 {
+    flex-basis: 87.5%;
+  }
+
+  .flex-basis-8 {
+    flex-basis: 100%;
+  }
 }
+@media screen and (min-width: 1496px) {
+  .flex-basis-1 {
+    flex-basis: 8.3333333333%;
+  }
 
-.grid-column-3 {
-  grid-column: span 3;
+  .flex-basis-2 {
+    flex-basis: 16.6666666667%;
+  }
+
+  .flex-basis-3 {
+    flex-basis: 25%;
+  }
+
+  .flex-basis-4 {
+    flex-basis: 33.3333333333%;
+  }
+
+  .flex-basis-5 {
+    flex-basis: 41.6666666667%;
+  }
+
+  .flex-basis-6 {
+    flex-basis: 50%;
+  }
+
+  .flex-basis-7 {
+    flex-basis: 58.3333333333%;
+  }
+
+  .flex-basis-8 {
+    flex-basis: 66.6666666667%;
+  }
+
+  .flex-basis-9 {
+    flex-basis: 75%;
+  }
+
+  .flex-basis-10 {
+    flex-basis: 83.3333333333%;
+  }
+
+  .flex-basis-11 {
+    flex-basis: 91.6666666667%;
+  }
+
+  .flex-basis-12 {
+    flex-basis: 100%;
+  }
 }
-
-.columns-4 {
-  column-count: 4;
-}
-
-.grid-column-4 {
-  grid-column: span 4;
-}
-
-.columns-5 {
-  column-count: 5;
-}
-
-.grid-column-5 {
-  grid-column: span 5;
-}
-
-.columns-6 {
-  column-count: 6;
-}
-
-.grid-column-6 {
-  grid-column: span 6;
-}
-
-.columns-7 {
-  column-count: 7;
-}
-
-.grid-column-7 {
-  grid-column: span 7;
-}
-
-.columns-8 {
-  column-count: 8;
-}
-
-.grid-column-8 {
-  grid-column: span 8;
-}
-
-.columns-9 {
-  column-count: 9;
-}
-
-.grid-column-9 {
-  grid-column: span 9;
-}
-
-.columns-10 {
-  column-count: 10;
-}
-
-.grid-column-10 {
-  grid-column: span 10;
-}
-
-.columns-11 {
-  column-count: 11;
-}
-
-.grid-column-11 {
-  grid-column: span 11;
-}
-
-.columns-12 {
-  column-count: 12;
-}
-
-.grid-column-12 {
-  grid-column: span 12;
-}
-
 @media screen and (max-width: 767px) {
   .grid-column-1-mov {
     grid-column: span 1;
@@ -1265,32 +1364,16 @@ table tfoot tr {
     column-count: 12;
   }
 
-  .flex-basis-1 {
-    flex-basis: 25%;
-  }
-
   .flex-basis-1-mov {
     flex-basis: 25%;
-  }
-
-  .flex-basis-2 {
-    flex-basis: 50%;
   }
 
   .flex-basis-2-mov {
     flex-basis: 50%;
   }
 
-  .flex-basis-3 {
-    flex-basis: 75%;
-  }
-
   .flex-basis-3-mov {
     flex-basis: 75%;
-  }
-
-  .flex-basis-4 {
-    flex-basis: 100%;
   }
 
   .flex-basis-4-mov {
@@ -1394,64 +1477,32 @@ table tfoot tr {
     column-count: 12;
   }
 
-  .flex-basis-1 {
-    flex-basis: 12.5%;
-  }
-
   .flex-basis-1-tab {
     flex-basis: 12.5%;
-  }
-
-  .flex-basis-2 {
-    flex-basis: 25%;
   }
 
   .flex-basis-2-tab {
     flex-basis: 25%;
   }
 
-  .flex-basis-3 {
-    flex-basis: 37.5%;
-  }
-
   .flex-basis-3-tab {
     flex-basis: 37.5%;
-  }
-
-  .flex-basis-4 {
-    flex-basis: 50%;
   }
 
   .flex-basis-4-tab {
     flex-basis: 50%;
   }
 
-  .flex-basis-5 {
-    flex-basis: 62.5%;
-  }
-
   .flex-basis-5-tab {
     flex-basis: 62.5%;
-  }
-
-  .flex-basis-6 {
-    flex-basis: 75%;
   }
 
   .flex-basis-6-tab {
     flex-basis: 75%;
   }
 
-  .flex-basis-7 {
-    flex-basis: 87.5%;
-  }
-
   .flex-basis-7-tab {
     flex-basis: 87.5%;
-  }
-
-  .flex-basis-8 {
-    flex-basis: 100%;
   }
 
   .flex-basis-8-tab {
@@ -1555,96 +1606,48 @@ table tfoot tr {
     column-count: 12;
   }
 
-  .flex-basis-1 {
-    flex-basis: 8.3333333333%;
-  }
-
   .flex-basis-1-esc {
     flex-basis: 8.3333333333%;
-  }
-
-  .flex-basis-2 {
-    flex-basis: 16.6666666667%;
   }
 
   .flex-basis-2-esc {
     flex-basis: 16.6666666667%;
   }
 
-  .flex-basis-3 {
-    flex-basis: 25%;
-  }
-
   .flex-basis-3-esc {
     flex-basis: 25%;
-  }
-
-  .flex-basis-4 {
-    flex-basis: 33.3333333333%;
   }
 
   .flex-basis-4-esc {
     flex-basis: 33.3333333333%;
   }
 
-  .flex-basis-5 {
-    flex-basis: 41.6666666667%;
-  }
-
   .flex-basis-5-esc {
     flex-basis: 41.6666666667%;
-  }
-
-  .flex-basis-6 {
-    flex-basis: 50%;
   }
 
   .flex-basis-6-esc {
     flex-basis: 50%;
   }
 
-  .flex-basis-7 {
-    flex-basis: 58.3333333333%;
-  }
-
   .flex-basis-7-esc {
     flex-basis: 58.3333333333%;
-  }
-
-  .flex-basis-8 {
-    flex-basis: 66.6666666667%;
   }
 
   .flex-basis-8-esc {
     flex-basis: 66.6666666667%;
   }
 
-  .flex-basis-9 {
-    flex-basis: 75%;
-  }
-
   .flex-basis-9-esc {
     flex-basis: 75%;
-  }
-
-  .flex-basis-10 {
-    flex-basis: 83.3333333333%;
   }
 
   .flex-basis-10-esc {
     flex-basis: 83.3333333333%;
   }
 
-  .flex-basis-11 {
-    flex-basis: 91.6666666667%;
-  }
-
   .flex-basis-11-esc {
     flex-basis: 91.6666666667%;
-  }
-
-  .flex-basis-12 {
-    flex-basis: 100%;
   }
 
   .flex-basis-12-esc {

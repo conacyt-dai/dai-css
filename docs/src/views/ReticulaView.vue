@@ -49,8 +49,8 @@
       <h2>Columnas</h2>
       <h3>flex flex-wrap</h3>
       <div class="flex flex-wrap">
-        <div class="flex-basis-1">
-          <p style="background: rgba(255,0,0,.25);">flex-basis-1</p>
+        <div class="flex-basis-3 flex-basis-5-esc flex-basis-2-tab">
+          <p style="background: rgba(255,0,0,.25);">flex-basis-3 flex-basis-5-esc flex-basis-2-tab</p>
         </div>
         <div class="flex-basis-1">
           <p style="background: rgba(255,0,0,.25);">flex-basis-1</p>
