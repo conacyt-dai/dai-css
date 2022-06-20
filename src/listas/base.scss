@@ -1,21 +1,20 @@
 ol,
 ul,
 dl {
-  font-size: 1rem;
   margin: 0;
 }
 
 ol,
 ul {
-  padding: 0 0 0 32px;
+  padding: 0 0 0 map-get($espaciado, '4');
   li {
-    margin-top: 16px;
+    margin-top: map-get($espaciado, '2');
   }
   ol,
   ul {
-    padding: 0 0 0 16px;
+    padding: 0 0 0 map-get($espaciado, '2');
     li {
-      margin-top: 8px;
+      margin-top: map-get($espaciado, '1');
     }
   }
 }
@@ -23,9 +22,9 @@ ul {
 dl {
   dt {
     font-weight: 500;
-    margin: 16px 0 0 0;
+    margin: map-get($espaciado, '2') 0 0 0;
   }
   dd {
-    margin: 8px 0 0 0;
+    margin: map-get($espaciado, '1') 0 0 0;
   }
 }
