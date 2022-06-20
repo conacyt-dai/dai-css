@@ -29,6 +29,14 @@ table {
   }
 }
 
+.titulo-tabla {
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin:  map-get($espaciado, '3')  map-get($espaciado, '2')  map-get($espaciado, '2');
+}
+
+
 .tabla-condensada {
   th,
   td {
