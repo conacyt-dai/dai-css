@@ -247,13 +247,6 @@ h6, .h6 {
   }
 }
 
-.titulo-tabla {
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin: 24px 16px 16px;
-}
-
 p,
 .parrafo-general {
   line-height: 1.3em;
@@ -792,7 +785,9 @@ a,
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset],
-.a11y-simplificada [class^=boton] {
+.a11y-simplificada [class^=boton],
+.hipervinculo-conacyt,
+.hipervinculo-gobmx {
   background-color: transparent;
   border: none;
   border-radius: 4px;
@@ -814,7 +809,9 @@ a:disabled,
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled,
-.a11y-simplificada [class^=boton]:disabled {
+.a11y-simplificada [class^=boton]:disabled,
+.hipervinculo-conacyt:disabled,
+.hipervinculo-gobmx:disabled {
   background-color: transparent;
   color: var(--hipervinculo-deshabilitado-color);
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
@@ -825,7 +822,9 @@ a:hover,
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover,
-.a11y-simplificada [class^=boton]:hover {
+.a11y-simplificada [class^=boton]:hover,
+.hipervinculo-conacyt:hover,
+.hipervinculo-gobmx:hover {
   background-color: transparent;
   color: var(--hipervinculo-hover-color);
   box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
@@ -836,7 +835,9 @@ a:focus,
 .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada input[type=submit]:focus,
 .a11y-simplificada input[type=reset]:focus,
-.a11y-simplificada [class^=boton]:focus {
+.a11y-simplificada [class^=boton]:focus,
+.hipervinculo-conacyt:focus,
+.hipervinculo-gobmx:focus {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
   box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
@@ -851,17 +852,22 @@ a[class^=p-],
 .a11y-simplificada input[class^=m-][type=submit],
 .a11y-simplificada input[class^=m-][type=reset],
 .a11y-simplificada [class^=m-][class^=boton],
+[class^=m-].hipervinculo-conacyt,
+[class^=m-].hipervinculo-gobmx,
 .hipervinculo[class^=p-],
 .a11y-simplificada button[class^=p-],
 .a11y-simplificada input[class^=p-][type=button],
 .a11y-simplificada input[class^=p-][type=submit],
 .a11y-simplificada input[class^=p-][type=reset],
-.a11y-simplificada [class^=p-][class^=boton] {
+.a11y-simplificada [class^=p-][class^=boton],
+[class^=p-].hipervinculo-conacyt,
+[class^=p-].hipervinculo-gobmx {
   display: inline-block;
 }
 
 .hipervinculo-gobmx {
   color: #DFC9A1;
+  font-weight: 400;
   text-decoration: none;
 }
 .hipervinculo-gobmx:hover {
@@ -873,6 +879,7 @@ a[class^=p-],
 
 .hipervinculo-conacyt {
   color: #d5d5d5;
+  font-weight: 400;
   text-decoration: none;
 }
 .hipervinculo-conacyt:hover {
@@ -1016,6 +1023,13 @@ table tbody tr:nth-child(odd) {
 }
 table tfoot tr {
   background-color: var(--tabla-fondo-notas);
+}
+
+.titulo-tabla {
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: 24px 16px 16px;
 }
 
 .tabla-condensada th,

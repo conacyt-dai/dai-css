@@ -1,5 +1,7 @@
 .hipervinculo-gobmx {
+  @extend .hipervinculo;
   color: map-get($color-gobmx, 'identidad', 'gobmx-beige');
+  font-weight: 400;
   text-decoration: none;
   &:hover {
     color: map-get($color-gobmx, 'identidad', 'gobmx-dorado');
@@ -10,7 +12,9 @@
 }
 
 .hipervinculo-conacyt {
+  @extend .hipervinculo;
   color: map-get($color-conacyt, 'utiles', 'conacyt-gris');
+  font-weight: 400;
   text-decoration: none;
   &:hover {
     color: map-get($color-conacyt, 'utiles', 'conacyt-blanco');
