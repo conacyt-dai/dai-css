@@ -1,0 +1,21 @@
+.hipervinculo-gobmx {
+  color: map-get($color-gobmx, 'identidad', 'gobmx-beige');
+  text-decoration: none;
+  &:hover {
+    color: map-get($color-gobmx, 'identidad', 'gobmx-dorado');
+  }
+  &:focus {
+    color: map-get($color-gobmx, 'identidad', 'gobmx-dorado');
+  }
+}
+
+.hipervinculo-conacyt {
+  color: map-get($color-conacyt, 'utiles', 'conacyt-gris');
+  text-decoration: none;
+  &:hover {
+    color: map-get($color-conacyt, 'utiles', 'conacyt-blanco');
+  }
+  &:focus {
+    color: map-get($color-conacyt, 'utiles', 'conacyt-blanco');
+  }
+}
