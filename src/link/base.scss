@@ -7,7 +7,6 @@ a,
   box-sizing: border-box;
   color: var(--hipervinculo-color);
   font-family: var(--tipografia-familia, 'sans-serif');
-  font-size: 1rem;
   font-weight: 500;
   line-height: inherit;
   padding: 0;
@@ -31,4 +30,11 @@ a,
     box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
     outline: none;
   }
+}
+
+a[class^="m-"],
+a[class^="p-"],
+.hipervinculo[class^="m-"],
+.hipervinculo[class^="p-"]  {
+  display: inline-block;
 }
