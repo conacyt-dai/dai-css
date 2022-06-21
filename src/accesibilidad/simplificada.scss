@@ -13,11 +13,11 @@
     }
   }
 
-  button,
+  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
   input[type=button],
   input[type=submit],
   input[type=reset],
-  [class^='boton'] { // los botones se ven como links
+  [class^='boton'] {
     @extend .hipervinculo;
   }
 

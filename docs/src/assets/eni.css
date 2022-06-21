@@ -781,7 +781,7 @@ input[type=reset]:not(:last-child),
 
 a,
 .hipervinculo,
-.a11y-simplificada button,
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset],
@@ -805,7 +805,7 @@ a,
 }
 a:disabled,
 .hipervinculo:disabled,
-.a11y-simplificada button:disabled,
+.a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled,
@@ -818,7 +818,7 @@ a:disabled,
 }
 a:hover,
 .hipervinculo:hover,
-.a11y-simplificada button:hover,
+.a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover,
@@ -831,7 +831,7 @@ a:hover,
 }
 a:focus,
 .hipervinculo:focus,
-.a11y-simplificada button:focus,
+.a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada input[type=submit]:focus,
 .a11y-simplificada input[type=reset]:focus,
@@ -844,14 +844,15 @@ a:focus,
   outline: none;
 }
 
-button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
+button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
+.a11y-simplificada button[class^=boton]:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
   margin-right: inherit;
 }
 
 a[class^=m-],
 a[class^=p-],
 .hipervinculo[class^=m-],
-.a11y-simplificada button[class^=m-],
+.a11y-simplificada button[class^=m-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[class^=m-][type=button],
 .a11y-simplificada input[class^=m-][type=submit],
 .a11y-simplificada input[class^=m-][type=reset],
@@ -859,7 +860,7 @@ a[class^=p-],
 [class^=m-].hipervinculo-conacyt,
 [class^=m-].hipervinculo-gobmx,
 .hipervinculo[class^=p-],
-.a11y-simplificada button[class^=p-],
+.a11y-simplificada button[class^=p-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
 .a11y-simplificada input[class^=p-][type=button],
 .a11y-simplificada input[class^=p-][type=submit],
 .a11y-simplificada input[class^=p-][type=reset],
