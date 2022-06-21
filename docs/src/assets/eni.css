@@ -1,17 +1,13 @@
 :root {
   --pagina-fondo: #fff;
-  --pagina-fondo-inverso: #000;
+  --tipografia-color: #141414;
+  --tipografia-color-2: #6f7271;
+  --tipografia-color-3: #404041;
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
+  --tabla-borde: #6f7271;
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
-  --tipografia-color: #141414;
-  --tipografia-color-secundario: #6f7271;
-  --tipografia-color-terciario: #404041;
-  --tipografia-color-inverso: #fff;
-  --borde-color-primario: #141414;
-  --borde-color-secundario: #6f7271;
-  --borde-color-terciario: #a9a8a9;
   --boton-primario-fondo: #141414;
   --boton-primario-borde: #141414;
   --boton-primario-color: #fff;
@@ -146,7 +142,6 @@ html {
 }
 
 body {
-  color: var(--tipografia-color);
   font-family: var(--tipografia-familia, "sans-serif");
   font-size: 1rem;
   font-weight: 400;
@@ -264,12 +259,12 @@ p,
 }
 
 .parrafo-texto-secundario {
-  color: var(--tipografia-color-secundario);
+  color: var(--tipografia-color-2);
   line-height: 1.3em;
 }
 
 .parrafo-texto-entresacado {
-  color: var(--tipografia-color-terciario);
+  color: var(--tipografia-color-3);
   font-size: 1.125rem;
 }
 @media screen and (min-width: 768px) {
@@ -334,7 +329,7 @@ p,
 }
 
 .vis-fecha-actualizacion {
-  color: var(--tipografia-color-secundario);
+  color: var(--tipografia-color-2);
   font-size: 0.75rem;
   font-weight: 500;
 }
@@ -964,7 +959,7 @@ dl dd {
   font-weight: 500;
 }
 .lista-compuesta li .texto .texto-terciario, .lista-logo li .texto .texto-terciario, .lista-avatar li .texto .texto-terciario, .lista-icono li .texto .texto-terciario {
-  color: var(--tipografia-color-secundario);
+  color: var(--tipografia-color-2);
 }
 
 .lista-icono li::before {
@@ -1021,7 +1016,7 @@ table th {
   padding-top: 0;
 }
 table thead tr {
-  border-bottom: 1px solid var(--borde-color-secundario);
+  border-bottom: 1px solid var(--tabla-borde);
 }
 table tbody tr:nth-child(odd) {
   background-color: var(--tabla-fondo-impar);
@@ -5514,6 +5509,11 @@ table tfoot tr {
     padding-bottom: 120px;
   }
 }
+body {
+  background: var(--pagina-fondo);
+  color: var(--tipografia-color);
+}
+
 .gobmx-fondo-oscuro-1 {
   background-color: #18302D;
 }
@@ -5636,42 +5636,6 @@ table tfoot tr {
 
 .conacyt-fondo-degradado {
   background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
-}
-
-.fondo-color-primario {
-  background-color: var(--pagina-fondo);
-}
-
-.fondo-color-inverso {
-  background-color: var(--pagina-fondo-inverso);
-}
-
-.texto-color-primario {
-  color: var(--tipografia-color);
-}
-
-.texto-color-secundario {
-  color: var(--tipografia-color-secundario);
-}
-
-.texto-color-terciario {
-  color: var(--tipografia-color-terciario);
-}
-
-.texto-color-inverso {
-  color: var(--tipografia-color-inverso);
-}
-
-.borde-color-primario {
-  border-color: var(--borde-color-primario);
-}
-
-.borde-color-secundario {
-  border-color: var(--borde-color-secundario);
-}
-
-.borde-color-terciario {
-  border-color: var(--borde-color-terciario);
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {

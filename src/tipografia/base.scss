@@ -2,9 +2,8 @@ html {
   font-size: var(--tipografia-tamanio);
 }
 body {
-  color: var(--tipografia-color);
   font-family: var(--tipografia-familia, 'sans-serif');
-  font-size: 1rem; // 16px
+  font-size: 1rem;
   font-weight: 400;
   line-height: calc(1em * 1.3);
 }
