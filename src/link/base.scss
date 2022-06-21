@@ -32,6 +32,12 @@ a,
   }
 }
 
+button.hipervinculo {
+  &:not(:last-child) {
+    margin-right: inherit;
+  }
+}
+
 a[class^="m-"],
 a[class^="p-"],
 .hipervinculo[class^="m-"],
