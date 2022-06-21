@@ -1,11 +1,16 @@
 :root {
   --pagina-fondo: #fff;
   --tipografia-color: #141414;
+  --tipografia-color-1: #fff;
   --tipografia-color-2: #6f7271;
   --tipografia-color-3: #404041;
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
   --tabla-borde: #6f7271;
+  --acciones-informativo: #1256C4;
+  --acciones-error: #C51228;
+  --acciones-advertencia: #FEB301;
+  --acciones-correcto: #069165;
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
   --boton-primario-fondo: #141414;
@@ -5636,6 +5641,54 @@ body {
 
 .conacyt-fondo-degradado {
   background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
+}
+
+.fondo-informativo {
+  background-color: var(--acciones-informativo);
+}
+
+.borde-informativo {
+  border-color: var(--acciones-informativo);
+}
+
+.texto-informativo {
+  color: var(--acciones-informativo);
+}
+
+.fondo-error {
+  background-color: var(--acciones-error);
+}
+
+.borde-error {
+  border-color: var(--acciones-error);
+}
+
+.texto-error {
+  color: var(--acciones-error);
+}
+
+.fondo-advertencia {
+  background-color: var(--acciones-advertencia);
+}
+
+.borde-advertencia {
+  border-color: var(--acciones-advertencia);
+}
+
+.texto-advertencia {
+  color: var(--acciones-advertencia);
+}
+
+.fondo-correcto {
+  background-color: var(--acciones-correcto);
+}
+
+.borde-correcto {
+  border-color: var(--acciones-correcto);
+}
+
+.texto-correcto {
+  color: var(--acciones-correcto);
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {

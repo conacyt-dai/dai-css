@@ -172,5 +172,73 @@
         <p>.conacyt-texto-acento</p>
       </div>
     </div>
+
+    <h2>Paleta de color de estados de acción</h2>
+    <div class="grid">
+      <div class="grid-column-1 m-y-1 fondo-informativo" style="border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.fondo-informativo</p>
+        <p>#1256C4</p>
+      </div>
+      <div class="grid-column-1 m-y-1 fondo-error" style="border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.fondo-error</p>
+        <p>#C51228</p>
+      </div>
+      <div class="grid-column-1 m-y-1 fondo-advertencia" style="border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.fondo-advertencia</p>
+        <p>#FEB301</p>
+      </div>
+      <div class="grid-column-1 m-y-1 fondo-correcto" style="border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.fondo-correcto</p>
+        <p>#069165</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-column-1 m-y-1 borde-informativo" style="border-width: 4px; border-style: solid; border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.borde-informativo</p>
+      </div>
+      <div class="grid-column-1 m-y-1 borde-error" style="border-width: 4px; border-style: solid; border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.borde-error</p>
+      </div>
+      <div class="grid-column-1 m-y-1 borde-advertencia" style="border-width: 4px; border-style: solid; border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.borde-advertencia</p>
+      </div>
+      <div class="grid-column-1 m-y-1 borde-correcto" style="border-width: 4px; border-style: solid; border-radius: 8px;"></div>
+      <div class="grid-column-2">
+        <p>.borde-correcto</p>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="grid-column-1 m-y-1 texto-informativo">
+        <p>Color de texto</p>
+      </div>
+      <div class="grid-column-2">
+        <p>.texto-informativo</p>
+      </div>
+      <div class="grid-column-1 m-y-1 texto-error">
+        <p>Color de texto</p>
+      </div>
+      <div class="grid-column-2">
+        <p>.texto-error</p>
+      </div>
+      <div class="grid-column-1 m-y-1 texto-advertencia">
+        <p>Color de texto</p>
+      </div>
+      <div class="grid-column-2">
+        <p>.texto-advertencia</p>
+      </div>
+      <div class="grid-column-1 m-y-1 texto-correcto">
+        <p>Color de texto</p>
+      </div>
+      <div class="grid-column-2">
+        <p>.texto-correcto</p>
+      </div>
+    </div>
   </div>
 </template>
