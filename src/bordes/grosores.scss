@@ -1,0 +1,35 @@
+$borde-grosores: (
+  '0': 0px,
+  '1': 1px,
+  '2': 2px,
+  '3': 3px,
+  '4': 4px,
+  '5': 8px,
+  '6': 16px
+);
+
+@each $id, $valor in $borde-grosores {
+  .borde-grosor-#{$id} {
+    border-width: $valor;
+  }
+  .borde-t-grosor-#{$id} {
+    border-top-width: $valor;
+  }
+  .borde-r-grosor-#{$id} {
+    border-right-width: $valor;
+  }
+  .borde-b-grosor-#{$id} {
+    border-bottom-width: $valor;
+  }
+  .borde-l-grosor-#{$id} {
+    border-left-width: $valor;
+  }
+  .borde-x-grosor-#{$id} {
+    border-right-width: $valor;
+    border-left-width: $valor;
+  }
+  .borde-y-grosor-#{$id} {
+    border-top-width: $valor;
+    border-bottom-width: $valor;
+  }
+}

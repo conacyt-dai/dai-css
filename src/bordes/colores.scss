@@ -1,0 +1,32 @@
+$borde-colores: (
+  '1':  var(--borde-color-1),
+  '2':  var(--borde-color-2),
+  '3':  var(--borde-color-3),
+  '4':  var(--borde-color-4),
+);
+
+@each $id, $valor in $borde-colores {
+  .borde-color-#{$id} {
+    border-color: $valor;
+  }
+  .borde-t-color-#{$id} {
+    border-top-color: $valor;
+  }
+  .borde-r-color-#{$id} {
+    border-right-color: $valor;
+  }
+  .borde-b-color-#{$id} {
+    border-bottom-color: $valor;
+  }
+  .borde-l-color-#{$id} {
+    border-left-color: $valor;
+  }
+  .borde-x-color-#{$id} {
+    border-right-color: $valor;
+    border-left-color: $valor;
+  }
+  .borde-y-color-#{$id} {
+    border-top-color: $valor;
+    border-bottom-color: $valor;
+  }
+}

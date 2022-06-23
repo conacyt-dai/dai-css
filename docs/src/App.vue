@@ -30,6 +30,7 @@ function toggleA11yView() {
       <RouterLink class="m-x-1" to="/hipervinculos">Hipervínculos</RouterLink>
       <RouterLink class="m-x-1" to="/listas">Listas</RouterLink>
       <RouterLink class="m-x-1" to="/tablas">Tablas</RouterLink>
+      <RouterLink class="m-x-1" to="/bordes">Bordes y Separadores</RouterLink>
     </nav>
     <aside role="complementary" class="contenedor p-y-1">
       a11y

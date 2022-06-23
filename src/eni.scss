@@ -24,6 +24,12 @@
 
 @import 'tablas/base';
 
+@import 'bordes/base';
+@import 'bordes/redondeado';
+@import 'bordes/colores';
+@import 'bordes/grosores';
+@import 'bordes/separadores';
+
 @import 'reticula/contenedores';
 @import 'reticula/columnas';
 @import 'reticula/margenes';
