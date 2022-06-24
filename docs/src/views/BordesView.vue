@@ -140,19 +140,17 @@
         <p>.borde-b</p><p> .borde-grosor-2<br> 2px</p>
       </div>
       <div class="borde-b borde-grosor-3">
-        <p>.borde-b</p><p> .borde-grosor-3<br> 3px</p>
+        <p>.borde-b</p><p> .borde-grosor-3<br> 4px</p>
       </div>
       <div class="borde-b borde-grosor-4">
-        <p>.borde-b</p><p> .borde-grosor-4<br> 4px</p>
+        <p>.borde-b</p><p> .borde-grosor-4<br> 8px</p>
       </div>
       <div class="borde-b borde-grosor-5">
-        <p>.borde-b</p><p> .borde-grosor-5<br> 8px</p>
+        <p>.borde-b</p><p> .borde-grosor-5<br> 16px</p>
       </div>
-      <div class="borde-b borde-grosor-6">
-        <p>.borde-b</p><p> .borde-grosor-6<br> 16px</p>
-      </div>
-      <div class="borde borde-l-grosor-6">
-        <p>.borde</p><p> .borde-l-grosor-6</p>
+
+      <div class="borde borde-l-grosor-5">
+        <p>.borde</p><p> .borde-l-grosor-5</p>
       </div>
     </div>
 
@@ -162,19 +160,19 @@
         <p class="p-x-1">.borde-redondeado-0 <br> 0px</p>
       </div>
       <div class="grid-column-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-1">
-        <p class="p-x-1">.borde-redondeado-1 <br> 2px</p>
+        <p class="p-x-1">.borde-redondeado-1 <br> 1px</p>
       </div>
       <div class="grid-column-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-2">
-        <p class="p-x-1">.borde-redondeado-2 <br> 4px</p>
+        <p class="p-x-1">.borde-redondeado-2 <br> 2px</p>
       </div>
       <div class="grid-column-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-3">
-        <p class="p-x-1">.borde-redondeado-3 <br> 8px</p>
+        <p class="p-x-1">.borde-redondeado-3 <br> 4px</p>
       </div>
       <div class="grid-column-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-4">
-        <p class="p-x-1">.borde-redondeado-4 <br> 16px</p>
+        <p class="p-x-1">.borde-redondeado-4 <br> 8px</p>
       </div>
       <div class="grid-column-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-5">
-        <p class="p-x-1">.borde-redondeado-5 <br> 32px</p>
+        <p class="p-x-1">.borde-redondeado-5 <br> 16px</p>
       </div>
     </div>
     <div class="grid m-t-3">

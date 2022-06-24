@@ -2,10 +2,9 @@ $borde-grosores: (
   '0': 0px,
   '1': 1px,
   '2': 2px,
-  '3': 3px,
-  '4': 4px,
-  '5': 8px,
-  '6': 16px
+  '3': 4px,
+  '4': 8px,
+  '5': 16px
 );
 
 @each $id, $valor in $borde-grosores {
