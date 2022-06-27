@@ -69,6 +69,7 @@
   }
 }
 
+// TODO: bugfix cuando se utiliza un gap grande en el grid en responsivo se rompen las filas, como si no se recalcularan las columnas 
 // gap
 @each $id, $valor in $espaciado {
   .gap-#{$id} {

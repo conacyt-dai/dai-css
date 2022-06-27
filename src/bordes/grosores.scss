@@ -5,7 +5,7 @@ $borde-grosores: (
   '3': 4px,
   '4': 8px,
   '5': 16px
-);
+); // TODO: sacar las variabes
 
 @each $id, $valor in $borde-grosores {
   .borde-grosor-#{$id} {

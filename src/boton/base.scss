@@ -3,9 +3,9 @@ input[type=button],
 input[type=submit],
 input[type=reset],
 .boton {
-  border-style: solid;
-  border-width: 1px;
-  border-radius: calc(map-get($espaciado, '1') * .5);
+  border-style: solid; // TODO: utilizar variable de bordes
+  border-width: 1px;  // TODO: utilizar variable de bordes
+  border-radius: calc(map-get($espaciado, '1') * .5); // TODO: utilizar variable de bordes
   box-shadow: 3px 3px 4px transparent;
   box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');

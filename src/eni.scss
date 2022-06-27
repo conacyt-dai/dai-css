@@ -24,11 +24,16 @@
 
 @import 'tablas/base';
 
+@import 'detalle/base';
+
 @import 'bordes/base';
 @import 'bordes/redondeado';
 @import 'bordes/colores';
 @import 'bordes/grosores';
 @import 'bordes/separadores';
+ // TODO: estilo de bordes
+
+ // TODO: separar separadores
 
 @import 'reticula/contenedores';
 @import 'reticula/columnas';

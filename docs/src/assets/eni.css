@@ -6,6 +6,8 @@
   --tipografia-color-3: #404041;
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
+  --detalle-fondo: #f6f6f6;
+  --detalle-focus-sombra: #005DFF;
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
   --acciones-advertencia: #FEB301;
@@ -1054,6 +1056,47 @@ table tfoot tr {
 }
 .tabla-expandida th {
   padding-top: 0;
+}
+
+details {
+  border-radius: 4px;
+  margin-top: 8px;
+  padding: 16px;
+}
+details[open] {
+  background-color: var(--detalle-fondo);
+}
+details[open] summary::before {
+  content: "i";
+}
+
+summary {
+  border-radius: 4px;
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: -16px;
+  padding: 16px;
+  list-style: none;
+  cursor: pointer;
+}
+summary:hover, summary:active {
+  background-color: var(--detalle-fondo);
+  box-shadow: 0 0 0 transparent;
+}
+summary:focus {
+  background-color: var(--detalle-fondo);
+  outline: none;
+}
+summary::before {
+  display: inline-block;
+  width: 24px;
+  font-family: "daiconos";
+  content: "h";
+}
+
+details summary > * {
+  display: inline-block;
 }
 
 .borde {

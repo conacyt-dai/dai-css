@@ -8,6 +8,9 @@
 
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
+  
+  --detalle-fondo: #f6f6f6;
+  --detalle-focus-sombra: #005DFF;
 
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
@@ -117,6 +120,7 @@ $espaciado: ( // base 8
   '11': 96px, // extra1
   '12': 120px, // extra2
 );
+//TODO: hacer lista de espaciado especial con 'minimo': 4px, // un pelito 'extra': 96px, // margensote 'maximo': 120px, // chingon
 
 $breakpoints: (
   'mov': 320px, //móvil

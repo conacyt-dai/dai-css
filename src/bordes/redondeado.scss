@@ -5,8 +5,9 @@ $borde-redondeado: (
   '3': 4px,
   '4': 8px,
   '5': 16px,
-);
+); // TODO: sacar las variabes
 
+// TODO: validacion para cuando se ponga borde aun details tambien ponerlo al summary?
 @each $id, $valor in $borde-redondeado {
   .borde-redondeado-#{$id} {
     border-radius: $valor;

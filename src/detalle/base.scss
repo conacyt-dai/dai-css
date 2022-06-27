@@ -1,0 +1,41 @@
+details {
+  border-radius: 4px; // TODO: utilizar variable de bordes
+  margin-top: map-get($espaciado, '1');
+  padding: map-get($espaciado, '2');
+  &[open] {
+    background-color: var(--detalle-fondo);
+    summary::before {
+      content: "\69";
+    }
+  }
+}
+summary {
+  border-radius: 4px; // TODO: utilizar variable de bordes
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: calc( map-get($espaciado, '2') * -1);
+  padding: map-get($espaciado, '2');
+  list-style: none;
+  cursor: pointer;
+  &:hover,
+  &:active {
+    background-color: var(--detalle-fondo);
+    box-shadow: 0 0 0 transparent;
+  }
+  &:focus {
+    background-color: var(--detalle-fondo); //TODO: preguntar a diseño si fondo gris o transparente con sombra
+    // background-color: transparent;
+    // box-shadow: 0 0 8px var(--detalle-focus-sombra);
+    outline: none;
+  }
+  &::before {
+    display: inline-block;  
+    width: 24px;
+    font-family: "daiconos";
+    content: "\68";
+  }
+}
+details summary > * {
+  display: inline-block;
+}
