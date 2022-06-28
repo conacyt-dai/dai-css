@@ -55,6 +55,11 @@ const router = createRouter({
       component: () => import('../views/DetallesView.vue')
     },
     {
+      path: '/formularios',
+      name: 'formularios',
+      component: () => import('../views/FormulariosView.vue')
+    },
+    {
       path: '/bordes',
       name: 'bordes',
       component: () => import('../views/BordesView.vue')

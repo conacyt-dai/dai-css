@@ -46,7 +46,7 @@
   display: flex;
   color: #003384;
   filter: grayscale(100%);
-  padding: calc(map-get($espaciado, '1') * .5) map-get($espaciado, '1');
+  padding: calc(map-get($espaciado-especial, 'minimo')) map-get($espaciado, '1');
   text-align: left;
   width: 100%;
   cursor: pointer;

@@ -2,7 +2,7 @@ a,
 .hipervinculo {
   background-color: transparent;
   border: none;
-  border-radius: calc(map-get($espaciado, '1') * .5);
+  border-radius: calc(map-get($espaciado-especial, 'minimo'));
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   box-sizing: border-box;
   color: var(--hipervinculo-color);

@@ -12,6 +12,15 @@
   --detalle-fondo: #f6f6f6;
   --detalle-focus-sombra: #005DFF;
 
+  --label-color: #6f7271;
+  --input-fondo: transparent;
+  --input-color: #141414;
+  --input-borde: #a9a8a9;
+    --input-deshabilitado-fondo: #f6f6f6;
+    --input-deshabilitado-color: #a9a8a9;
+      --input-hover-borde: #6F7271;
+        --input-focus-sombra: #005DFF;
+  
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
   --acciones-advertencia: #FEB301;
@@ -117,8 +126,11 @@ $espaciado: ( // base 8
   '8': 64px,
   '9': 72px,
   '10': 80px,
-  '11': 96px, // extra1
-  '12': 120px, // extra2
+);
+$espaciado-especial: (
+  'minimo': 4px,
+  'extra': 96px,
+  'maximo': 120px,
 );
 //TODO: hacer lista de espaciado especial con 'minimo': 4px, // un pelito 'extra': 96px, // margensote 'maximo': 120px, // chingon
 

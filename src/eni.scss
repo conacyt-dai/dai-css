@@ -26,6 +26,8 @@
 
 @import 'detalle/base';
 
+@import 'formularios/base';
+
 @import 'bordes/base';
 @import 'bordes/redondeado';
 @import 'bordes/colores';
@@ -43,6 +45,7 @@
 @import 'color/identidad';
 @import 'color/acciones';
 
+@import 'auxiliares/alineacion-texto';
 // a11y 
 // accesibilidad debe cargar al final
 // para que pueda sobre escribir los estilos

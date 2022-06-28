@@ -19,6 +19,9 @@
   input[type=reset],
   [class^='boton'] {
     @extend .hipervinculo;
+    &:not(:last-child) {
+      margin-right:  map-get($espaciado, '1');
+    }
   }
 
   ul,

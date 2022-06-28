@@ -41,7 +41,7 @@
 .lista-icono {
   @extend .lista-compuesta;
   li::before {
-    margin: map-get($espaciado, '1')*.5 map-get($espaciado, '2') map-get($espaciado, '2')*.5 0;
+    margin: map-get($espaciado-especial, 'minimo') map-get($espaciado, '2') map-get($espaciado, '2')*.5 0;
   }
 }
 
@@ -52,7 +52,7 @@
     height: map-get($espaciado, '8');
     border-radius: map-get($espaciado, '4');
     overflow: hidden;
-    margin: map-get($espaciado, '1')*.5 map-get($espaciado, '3') map-get($espaciado, '1')*.5 0;
+    margin: map-get($espaciado-especial, 'minimo') map-get($espaciado, '3') map-get($espaciado-especial, 'minimo') 0;
     img,
     svg {
       width: 100%;
@@ -64,7 +64,7 @@
 .lista-logo {
   @extend .lista-compuesta;
   .logo {
-    width: calc(map-get($espaciado,'12'));
+    width: calc(map-get($espaciado-especial,'maximo'));
     height: map-get($espaciado, '8');
     margin: 0 map-get($espaciado, '2') 0 0;
     overflow: hidden;
