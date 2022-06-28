@@ -12,6 +12,7 @@
   --input-fondo: transparent;
   --input-color: #141414;
   --input-borde: #a9a8a9;
+  --input-controles-color: #14a634;
   --input-deshabilitado-fondo: #f6f6f6;
   --input-deshabilitado-color: #a9a8a9;
   --input-hover-borde: #6F7271;
@@ -1075,11 +1076,28 @@ details summary > * {
   display: inline-block;
 }
 
+fieldset {
+  background-color: var(--input-fondo);
+  border: 1px solid var(--input-borde);
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+legend {
+  color: var(--tipografia-color);
+  padding: 0 16px;
+  font-family: var(--tipografia-familia, "sans-serif");
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 label {
   color: var(--label-color);
 }
 
-input:not([type=checkbox]):not([type=radio]):not([type=range]),
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
 textarea,
 select {
   background-color: var(--input-fondo);
@@ -1097,42 +1115,38 @@ select {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range])::placeholder,
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset])::placeholder,
 textarea::placeholder,
 select::placeholder {
   color: var(--tipografia-color-2);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):disabled,
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):disabled,
 textarea:disabled,
 select:disabled {
   background-color: var(--input-deshabilitado-fondo);
   color: var(--input-deshabilitado-color);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):read-only:not(select):not([type=file]),
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):read-only:not(select):not([type=file]),
 textarea:read-only:not(select):not([type=file]),
 select:read-only:not(select):not([type=file]) {
   background-color: var(--input-deshabilitado-fondo);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):not(:disabled),
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:disabled),
 textarea:not(:disabled),
 select:not(:disabled) {
   transition: all 0.27s ease-in-out;
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):not(:disabled):hover,
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:disabled):hover,
 textarea:not(:disabled):hover,
 select:not(:disabled):hover {
   border-color: var(--input-hover-borde);
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]):not(:disabled):focus,
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:disabled):focus,
 textarea:not(:disabled):focus,
 select:not(:disabled):focus {
   border-color: var(--input-focus-sombra);
   box-shadow: 0 0 8px var(--input-focus-sombra);
   outline: none;
-}
-
-input:not([type=checkbox]):not([type=radio]):not([type=range]) {
-  height: 40px;
 }
 
 [type=checkbox],
@@ -1205,8 +1219,8 @@ input:not([type=checkbox]):not([type=radio]):not([type=range]) {
 
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px var(--input-color);
-  background: var(--input-color);
+  box-shadow: inset 0 0 0 1px var(--input-controles-color);
+  background: var(--input-controles-color);
 }
 
 [type=checkbox]:checked + label::after {
@@ -1214,7 +1228,7 @@ input:not([type=checkbox]):not([type=radio]):not([type=range]) {
   content: "p";
   color: var(--pagina-fondo);
   position: absolute;
-  left: 6px;
+  left: calc(0.125rem + 4px);
 }
 
 [type=radio] + label::before {
@@ -1223,11 +1237,10 @@ input:not([type=checkbox]):not([type=radio]):not([type=range]) {
 
 [type=radio]:checked + label::before {
   background-color: var(--pagina-fondo);
-  box-shadow: inset 0 0 0 0.375rem var(--input-color);
+  box-shadow: inset 0 0 0 0.375rem var(--input-controles-color);
 }
 
 select {
-  height: 40px;
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -1240,7 +1253,6 @@ select {
 
 [type=file] {
   padding-top: 6px !important;
-  height: 40px;
 }
 
 [type=range] {
@@ -1249,7 +1261,6 @@ select {
   width: 100%;
   margin-top: 8px;
   margin-bottom: 24px;
-  height: 40px;
   background-color: transparent;
   -webkit-appearance: none;
 }
@@ -1341,6 +1352,67 @@ select {
 
 [type=range]:focus::-ms-fill-upper {
   background: var(--input-color);
+}
+
+.formulario-horizontal label {
+  margin-right: 4px;
+}
+.formulario-horizontal input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
+.formulario-horizontal textarea,
+.formulario-horizontal select {
+  width: inherit;
+}
+.formulario-horizontal input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:last-child),
+.formulario-horizontal textarea:not(:last-child),
+.formulario-horizontal select:not(:last-child) {
+  margin-right: 24px;
+}
+.formulario-horizontal .input-error,
+.formulario-horizontal .input-correcto {
+  display: inline-flex;
+}
+.formulario-horizontal .input-error:not(:last-child),
+.formulario-horizontal .input-correcto:not(:last-child) {
+  margin-right: 24px;
+}
+
+.input-error,
+.input-correcto {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+.input-error input,
+.input-correcto input {
+  flex: 1;
+  margin: 0 !important;
+  border: none !important;
+  width: inherit !important;
+}
+.input-error .icon,
+.input-correcto .icon {
+  font-size: 1.25rem;
+  display: inline-flex;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.input-error {
+  border-color: var(--acciones-error);
+}
+.input-error .icon {
+  color: var(--acciones-error);
+}
+
+.input-correcto {
+  border-color: var(--acciones-correcto);
+}
+.input-correcto .icon {
+  color: var(--acciones-correcto);
 }
 
 .borde {

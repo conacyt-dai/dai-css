@@ -73,6 +73,75 @@
         <button type="button" class="boton-secundario">Cancelar</button>
       </div>
 
+      <h2 class="m-t-10">Fielset</h2>
+      <form action="#">
+        <fieldset>
+          <legend>legend</legend>
+          <div class="grid">
+            <div class="grid-column-8">
+              <label for="inputfieldset1">Etiqueta</label>
+              <input id="inputfieldset1" type="text" placeholder="placeholder" value="value">
+            </div>
+            <div class="grid-column-8">
+              <label for="inputfieldset2">Etiqueta</label>
+              <input id="inputfieldset2" type="text" placeholder="placeholder" value="value">
+            </div>
+            <div class="grid-column-8">
+              <input class="boton-primario" type="submit" value="input[submit]">
+              <input class="boton-secundario" type="reset" value="input[reset]">
+              <input class="boton-terciario" type="button" value="input[button]">
+            </div>
+          </div>
+        </fieldset>
+      </form>
+
+      <h2 class="m-t-10">Formulario horizontal</h2>
+      <form action="#" class="formulario-horizontal">
+        <label for="inputhorizontal1">Etiqueta</label>
+        <input id="inputhorizontal1" type="text" placeholder="placeholder" value="value">
+
+        <label for="inputhorizontal2">Etiqueta</label>
+        <input id="inputhorizontal2" type="text" placeholder="placeholder" value="value">
+
+        <input class="boton-primario" type="submit" value="input[submit]">
+        <input class="boton-secundario" type="reset" value="input[reset]">
+        <input class="boton-terciario" type="button" value="input[button]">
+      </form>
+
+      <h2 class="m-t-10">Formulario validaciones</h2>
+      <div class="grid">
+        <div class="grid-column-4">
+          <label for="input-error">Error</label>
+          <div class="input-error">
+            <input id="input-error" type="text" placeholder="placeholder" value="value">
+            <span class="icon dai-cerrar"></span>
+          </div>
+        </div>
+        <div class="grid-column-4">
+          <label for="input-correcto">Correcto</label>
+          <div class="input-correcto">
+            <input id="input-correcto" type="text" placeholder="placeholder" value="value">
+            <span class="icon dai-aprobado"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="formulario-horizontal">
+
+          <label for="input-error">Error</label>
+          <div class="input-error">
+            <input id="input-error" type="text" placeholder="placeholder" value="value">
+            <span class="icon dai-cerrar"></span>
+          </div>
+
+
+          <label for="input-correcto">Correcto</label>
+          <div class="input-correcto">
+            <input id="input-correcto" type="text" placeholder="placeholder" value="value">
+            <span class="icon dai-aprobado"></span>
+          </div>
+        </div>
+
     </div>
   </div>
 </template>

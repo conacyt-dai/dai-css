@@ -2,7 +2,7 @@
 [class^='columns'] {
   column-gap: $columnas-espaciado;
 }
-@for $i from 1 through 12 {
+@for $i from 1 through map-get($columnas, 'esc') { //de uno a la cantidad maxima de columnas en escritorio
   .columns-#{$i} {
     column-count: $i;
   }

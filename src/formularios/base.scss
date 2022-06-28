@@ -1,8 +1,29 @@
+// fieldset
+fieldset {
+  background-color: var(--input-fondo);
+  border: 1px solid var(--input-borde);
+  border-radius: 4px; // TODO: pasar a variable
+  padding: map-get($espaciado, '2');
+  margin-top: map-get($espaciado, '1');
+  margin-bottom:  map-get($espaciado, '3');
+}
+
+// legend
+legend {
+  color: var(--tipografia-color);
+  padding: 0 map-get($espaciado, '2');
+  font-family: var(--tipografia-familia, 'sans-serif');
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+// label
 label {
   color: var(--label-color);
 }
 
-input:not([type=checkbox]):not([type=radio]):not([type=range]),
+// inputs generales
+input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
 textarea,
 select {
   background-color: var(--input-fondo);
@@ -19,7 +40,6 @@ select {
   width: 100%;
   -ms-touch-action: manipulation;
   touch-action: manipulation;
-  
   &::placeholder {
     color: var(--tipografia-color-2);
   }
@@ -42,10 +62,8 @@ select {
     outline: none;
   }
 }
-input:not([type=checkbox]):not([type=radio]):not([type=range]) {
-  height: map-get($espaciado, '5');
-}
 
+// checkbox + radio
 [type=checkbox],
 [type=radio] {
   position: absolute;
@@ -103,34 +121,34 @@ input:not([type=checkbox]):not([type=radio]):not([type=range]) {
   background-color: var(--input-fondo);
   position: absolute;
 }
-
+// checkbox
 [type=checkbox] + label::before {
   border: 2px solid var(--pagina-fondo);
   border-radius: 4px;
 }
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px var(--input-color);
-  background: var(--input-color);
+  box-shadow: inset 0 0 0 1px var(--input-controles-color);
+  background: var(--input-controles-color);
 }
 [type=checkbox]:checked + label::after {
   font-family: "daiconos";
   content: "\70";
   color: var(--pagina-fondo);
   position: absolute;
-  left: 6px;
+  left: calc(.125rem + 4px);
 }
-
+// radio
 [type=radio] + label::before {
   border-radius: 50%;
 }
 [type=radio]:checked + label::before {
   background-color: var(--pagina-fondo);
-  box-shadow: inset 0 0 0 .375rem var(--input-color);
+  box-shadow: inset 0 0 0 .375rem var(--input-controles-color);
 }
 
+// selector
 select {
-  height: map-get($espaciado, '5');
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -141,18 +159,18 @@ select {
   padding-right: 32px;
 }
 
+// archivo
 [type=file] {
   padding-top: calc(map-get($espaciado-especial, 'minimo') + 2px) !important;
-  height: map-get($espaciado, '5');
 }
 
+// rango
 [type=range] {
   box-sizing: border-box !important;
   border: 1px solid transparent;
   width: 100%;
   margin-top: map-get($espaciado, '1');
   margin-bottom: map-get($espaciado, '3');
-  height: map-get($espaciado, '5');
   background-color: transparent;
   -webkit-appearance: none;
 }
@@ -162,7 +180,6 @@ select {
   border-radius: map-get($espaciado-especial, 'minimo');
   outline: none;
 }
-
 [type=range]::-webkit-slider-runnable-track {
   background: var(--input-color);
   border: 0;
@@ -171,7 +188,6 @@ select {
   height: .25rem;
   cursor: pointer;
 }
-
 [type=range]::-webkit-slider-thumb {
   margin-top: calc(.5rem * -1.25);
   width: 1.5rem;
@@ -182,11 +198,9 @@ select {
   cursor: pointer;
   -webkit-appearance: none;
 }
-
 [type=range]:focus::-webkit-slider-runnable-track {
   background: var(--input-color);
 }
-
 [type=range]::-moz-range-track {
   background: var(--input-color);
   border: 0;
@@ -195,7 +209,6 @@ select {
   height: .25rem;
   cursor: pointer;
 }
-
 [type=range]::-moz-range-thumb {
   width: 1.5rem;
   height: 1.5rem;
@@ -204,7 +217,6 @@ select {
   border-radius: .75rem;
   cursor: pointer;
 }
-
 [type=range]::-ms-track {
   background: transparent;
   border-color: transparent;
@@ -214,19 +226,16 @@ select {
   height: map-get($espaciado, '1');
   cursor: pointer;
 }
-
 [type=range]::-ms-fill-lower {
   background: var(--input-color);
   border: 0;
   border-radius: 1.5rem;
 }
-
 [type=range]::-ms-fill-upper {
   background: var(--input-color);
   border: 0;
   border-radius: 1.5rem;
 }
-
 [type=range]::-ms-thumb {
   width: 1.5rem;
   height: 1.5rem;
@@ -236,11 +245,32 @@ select {
   cursor: pointer;
   margin-top: 0px;
 }
-
 [type=range]:focus::-ms-fill-lower {
   background: var(--input-color);
 }
-
 [type=range]:focus::-ms-fill-upper {
   background: var(--input-color);
+}
+
+// estilos formulario
+.formulario-horizontal {
+  label {
+    margin-right: map-get($espaciado-especial, 'minimo');
+  }
+  input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
+  textarea,
+  select {
+    width: inherit;
+    &:not(:last-child) {
+      margin-right: map-get($espaciado, '3');
+    }
+  }
+
+  .input-error,
+  .input-correcto {
+    display: inline-flex;
+    &:not(:last-child) {
+      margin-right: map-get($espaciado, '3');
+    }
+  }
 }

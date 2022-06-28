@@ -1,0 +1,34 @@
+.input-error,
+.input-correcto {
+  border: 1px solid transparent;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: map-get($espaciado, '1');
+  margin-bottom:  map-get($espaciado, '3');
+  input {
+    flex: 1;
+    margin: 0 !important;
+    border: none !important;
+    width: inherit !important;
+  }
+  .icon {
+    font-size: 1.25rem;
+    display: inline-flex;
+    margin-right: map-get($espaciado-especial, 'minimo');
+    margin-left: map-get($espaciado-especial, 'minimo');
+  }
+}
+.input-error {
+  border-color: var(--acciones-error);
+  .icon {
+    color: var(--acciones-error);
+  }
+}
+.input-correcto {
+  border-color: var(--acciones-correcto);
+  .icon {
+    color: var(--acciones-correcto);
+  }
+}
