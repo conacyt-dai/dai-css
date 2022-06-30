@@ -1,0 +1,11 @@
+@each $estado, $sombra in $sombras-estados {
+  .sombra-#{$estado} {
+    box-shadow: $sombra;
+  }
+}
+
+@each $id, $sombra in $sombras-produndidad {
+  .sombra-profundidad-#{$id} {
+    box-shadow: $sombra;
+  }
+}

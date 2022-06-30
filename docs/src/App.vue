@@ -32,7 +32,9 @@ function toggleA11yView() {
       <RouterLink class="m-x-1" to="/tablas">Tablas</RouterLink>
       <RouterLink class="m-x-1" to="/detalles">Detalles</RouterLink>
       <RouterLink class="m-x-1" to="/formularios">Formularios</RouterLink>
-      <RouterLink class="m-x-1" to="/bordes">Bordes y Separadores</RouterLink>
+      <RouterLink class="m-x-1" to="/bordes">Bordes</RouterLink>
+      <RouterLink class="m-x-1" to="/sombras">Sombras</RouterLink>
+      <RouterLink class="m-x-1" to="/separadores">Separadores</RouterLink>
     </nav>
     <aside role="complementary" class="contenedor p-y-1">
       a11y

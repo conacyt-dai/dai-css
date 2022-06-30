@@ -11,6 +11,10 @@
   
   --detalle-fondo: #f6f6f6;
   --detalle-focus-sombra: #005DFF;
+  
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #00000033;
 
   --label-color: #6f7271;
   --input-fondo: transparent;
@@ -113,6 +117,19 @@ $color-conacyt: (
   'acento': #13aff0,
 );
 $color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+$sombras-estados: (
+  'focus': 0px 0px 8px 0 var(--sombra-focus),
+  'hover': 3px 3px 9px 0 var(--sombra-hover)
+);
+$sombras-produndidad: (
+  '0': 0 0 0 0 transparent,
+  '1': 1px 1px 2px 0 var(--sombra),
+  '2': 4px 4px 8px 2px var(--sombra),
+  '3': 6px 6px 12px 3px var(--sombra),
+  '4': 8px 8px 16px 4px var(--sombra),
+  '5': 12px 12px 24px 6px var(--sombra),
+);
 
 // RETICULA
 $espaciado: ( // base 8

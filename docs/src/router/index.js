@@ -63,6 +63,16 @@ const router = createRouter({
       path: '/bordes',
       name: 'bordes',
       component: () => import('../views/BordesView.vue')
+    },
+    {
+      path: '/sombras',
+      name: 'sombras',
+      component: () => import('../views/SombrasView.vue')
+    },
+    {
+      path: '/separadores',
+      name: 'separadores',
+      component: () => import('../views/SeparadoresView.vue')
     }
   ]
 })
