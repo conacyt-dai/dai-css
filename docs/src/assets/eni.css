@@ -305,7 +305,7 @@ p,
   }
 }
 
-.notas {
+.notas, figure figcaption {
   color: var(--tipografia-color);
   font-size: 0.875rem;
   font-weight: 400;
@@ -1077,6 +1077,20 @@ summary::before {
 
 details summary > * {
   display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+figure figcaption {
+  color: var(--tipografia-color-2);
+  border-left: 2px solid var(--borde-color-3);
+  padding-left: 16px;
+  margin-top: 1em;
 }
 
 fieldset {
@@ -7323,6 +7337,9 @@ body {
 .a11y-simplificada .lista-logo img,
 .a11y-simplificada .lista-logo svg,
 .a11y-simplificada .lista-logo picture {
+  display: none;
+}
+.a11y-simplificada img {
   display: none;
 }
 

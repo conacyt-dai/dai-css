@@ -1,20 +1,19 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import { ref } from 'vue'
+  import { RouterLink, RouterView } from 'vue-router'
+  import { ref } from 'vue'
 
-const isA11yTypography = ref(0)
-const isA11yView = ref(0)
+  const isA11yTypography = ref(null)
+  const isA11yView = ref(null)
 
-isA11yTypography.value = false
-isA11yView.value = false
+  isA11yTypography.value, isA11yView.value = false
 
-function toggleA11yTypography() {
-  isA11yTypography.value = !isA11yTypography.value
-}
+  function toggleA11yTypography() {
+    isA11yTypography.value = !isA11yTypography.value
+  }
 
-function toggleA11yView() {
-  isA11yView.value = !isA11yView.value
-}
+  function toggleA11yView() {
+    isA11yView.value = !isA11yView.value
+  }
 </script>
 
 <template>
@@ -31,6 +30,7 @@ function toggleA11yView() {
       <RouterLink class="m-x-1" to="/listas">Listas</RouterLink>
       <RouterLink class="m-x-1" to="/tablas">Tablas</RouterLink>
       <RouterLink class="m-x-1" to="/detalles">Detalles</RouterLink>
+      <RouterLink class="m-x-1" to="/imagenes">Imagenes</RouterLink>
       <RouterLink class="m-x-1" to="/formularios">Formularios</RouterLink>
       <RouterLink class="m-x-1" to="/bordes">Bordes</RouterLink>
       <RouterLink class="m-x-1" to="/sombras">Sombras</RouterLink>
@@ -45,7 +45,6 @@ function toggleA11yView() {
       <RouterView />
     </main>
   </div>
-
 </template>
 
 <style>

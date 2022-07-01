@@ -55,6 +55,11 @@ const router = createRouter({
       component: () => import('../views/DetallesView.vue')
     },
     {
+      path: '/imagenes',
+      name: 'imagenes',
+      component: () => import('../views/ImagenesView.vue')
+    },
+    {
       path: '/formularios',
       name: 'formularios',
       component: () => import('../views/FormulariosView.vue')
