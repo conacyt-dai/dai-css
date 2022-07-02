@@ -1,53 +1,19 @@
 <template>
   <div>
-    <div class="contenedor m-t-12">
+    <div class="contenedor m-y-10">
       <h1>Reticula</h1>
-      <h2>Contenedores</h2>
-      <p style="background: rgba(0,0,0,.1);">
-        class="<b>contenedor</b>"
-      </p>
-    </div>
-    <div class="contenedor ancho-fijo">
-      <p style="background: rgba(0,0,0,.1);">
-        class="<b>contenedor</b> <b>ancho-fijo</b>"
-      </p>
-    </div>
-    <div class="contenedor ancho-lectura">
-      <p style="background: rgba(0,0,0,.1);">
-        class="<b>contenedor</b> <b>ancho-lectura</b>"
-      </p>
-    </div>
-
-    <div class="contenedor ancho-fijo">
-      <div class="flex flex-wrap a11y-simplificada-contenedor">
-        <div class="flex-basis-4" style="background: rgba(0,90,0,.1);">
-          <p>
-            Si existe como padre la clase <b>a11y-simplificada</b>
-            que debe estar conectada con el store para poder prender o apagar
-          </p>
-        </div>
-        <div class="flex-basis-3" style="background: rgba(0,0,90,.1);">
-          <p>
-            Para el contenedor con clase <b>a11y-simplificada-contenedor</b>
-            reformatea el contenido que sea que tiene a dos columnas
-          </p>
-        </div>
-        <div class="flex-basis-2"  style="background: rgba(90,0,0,.1);">
-          <p>
-            parrafo ejemplo
-          </p>
-        </div>
-        <div class="flex-basis-1" style="background: rgba(90,90,0,.1);">
-          <p>
-            parrafo ejemplo
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="contenedor m-y-6">
-      <h2>Columnas</h2>
-      <h3>flex flex-wrap</h3>
+      <h2>Columnas <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" ref="noopener noreferrer">Flex</a></h2>
+<pre>
+  &lt;div class="flex flex-wrap">
+    &lt;div class="flex-basis-3 flex-basis-5-esc flex-basis-2-tab">
+      &lt;p>flex-basis-3 flex-basis-5-esc flex-basis-2-tab &lt;p/p>
+    &lt;/div>
+    &lt;div class="flex-basis-1">
+       &lt;p>flex-basis-1 &lt;/p>
+    &lt;/div>
+    ...
+  &lt;/div>
+</pre>
       <div class="flex flex-wrap">
         <div class="flex-basis-3 flex-basis-5-esc flex-basis-2-tab">
           <p style="background: rgba(255,0,0,.25);">flex-basis-3 flex-basis-5-esc flex-basis-2-tab</p>
@@ -220,8 +186,19 @@
       </div>
     </div>
 
-    <div class="contenedor m-y-6">
-      <h3>grid</h3>
+    <div class="contenedor m-y-10">
+      <h2>Columnas <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" ref="noopener noreferrer">Grid</a></h2>
+<pre>
+  &lt;div class="grid">
+    &lt;div class="grid-column-1">
+      &lt;p>.grid-column-1&lt;/p>
+    &lt;/div>
+    &lt;div class="grid-column-1">
+      &lt;p>.grid-column-1&lt;/p>
+    &lt;/div>
+    ...
+  &lt;/div>
+</pre>
       <div class="grid">
         <div class="grid-column-1">
           <p style="background: rgba(0,0,255,.25);">.grid-column-1</p>
@@ -373,8 +350,15 @@
       </div>
     </div>
 
-    <div class="contenedor m-y-6">
-      <h3>columns-3</h3>
+    <div class="contenedor m-y-10">
+      <h2>Columnas <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" target="_blank" ref="noopener noreferrer">Columns</a></h2>
+<pre>
+  &lt;div class="columns-3">
+    &lt;p>Lorem ipsum dolor sit...&lt;/p>
+    &lt;p>Lorem ipsum ...&lt;/p>
+    ...
+  &lt;/div>
+</pre>
       <div class="columns-3">
         <p style="background: rgba(0,255,0,.25);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat alias ullam repudiandae magni, aut quam est quia? Beatae, porro incidunt veritatis cumque recusandae, quis qui quisquam, tempora voluptates veniam ducimus?</p>
         <p style="background: rgba(0,255,0,.25);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsum impedit animi, voluptas culpa ex quisquam sequi molestiae quam aspernatur numquam doloribus laboriosam pariatur quod unde, doloremque dignissimos quae. Magni.</p>

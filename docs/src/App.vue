@@ -21,6 +21,7 @@
     <nav role="navigation" class="contenedor p-y-1">
       Navegacion principal
       <RouterLink class="m-x-1" to="/">Inicio</RouterLink>
+      <RouterLink class="m-x-1" to="/contenedores">Contenedores</RouterLink>
       <RouterLink class="m-x-1" to="/reticula">Reticula</RouterLink>
       <RouterLink class="m-x-1" to="/color">Color</RouterLink>
       <RouterLink class="m-x-1" to="/tipografia">Tipografia</RouterLink>

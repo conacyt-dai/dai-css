@@ -10,9 +10,11 @@
       &.ancho-fijo {
         max-width: map-get($map, 'ancho-maximo');
       }
+      &.ancho-lectura {
+        max-width:map-get($map, 'ancho-lectura');
+        margin-left: inherit;
+        margin-right: inherit;
+      }
     }
-  }
-  &.ancho-lectura {
-    max-width: $contenedor-lectura;
   }
 }

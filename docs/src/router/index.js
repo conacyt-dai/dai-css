@@ -10,6 +10,11 @@ const router = createRouter({
       component: InicioView
     },
     {
+      path: '/contenedores',
+      name: 'contenedores',
+      component: () => import('../views/ContenedoresView.vue')
+    },
+    {
       path: '/reticula',
       name: 'reticula',
       component: () => import('../views/ReticulaView.vue')

@@ -1,0 +1,46 @@
+.header-contenedor-alto-fijo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-top: map-get($espaciado, '1');
+    margin-bottom: map-get($espaciado, '1');
+    margin-right: map-get($espaciado, '1');
+  }
+  > button,
+  > a {
+    font-size: 0.875rem;
+    line-height: 1em;
+    padding: map-get($espaciado, '1');
+    margin-top: map-get($espaciado, '1');
+    margin-bottom: map-get($espaciado, '1');
+    margin-left: map-get($espaciado, '1');
+    text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+  }
+}
+.contenedor-alto-fijo {
+  border-top: 1px solid var(--borde-color-2);
+  box-sizing: border-box;
+  height: 320px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: map-get($espaciado,'2');
+  &:hover {
+    background-color: var(--tabla-fondo-impar);
+  }
+  :first-child {
+    margin-top: 0;
+  }
+}

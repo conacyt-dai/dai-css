@@ -2515,20 +2515,30 @@ ol + hr {
 }
 @media screen and (max-width: 767px) {
   .contenedor {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .contenedor.ancho-fijo {
     max-width: 100%;
   }
+  .contenedor.ancho-lectura {
+    max-width: 100%;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1495px) {
   .contenedor {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .contenedor.ancho-fijo {
     max-width: 1064px;
+  }
+  .contenedor.ancho-lectura {
+    max-width: 700px;
+    margin-left: inherit;
+    margin-right: inherit;
   }
 }
 @media screen and (min-width: 1496px) {
@@ -2539,9 +2549,59 @@ ol + hr {
   .contenedor.ancho-fijo {
     max-width: 1416px;
   }
+  .contenedor.ancho-lectura {
+    max-width: 809px;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
 }
-.contenedor.ancho-lectura {
-  max-width: 720px;
+
+.header-contenedor-alto-fijo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-contenedor-alto-fijo > h1,
+.header-contenedor-alto-fijo > h2,
+.header-contenedor-alto-fijo > h3,
+.header-contenedor-alto-fijo > h4,
+.header-contenedor-alto-fijo > h5,
+.header-contenedor-alto-fijo > h6,
+.header-contenedor-alto-fijo > p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.header-contenedor-alto-fijo > button,
+.header-contenedor-alto-fijo > a {
+  font-size: 0.875rem;
+  line-height: 1em;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 4px;
+}
+
+.contenedor-alto-fijo {
+  border-top: 1px solid var(--borde-color-2);
+  box-sizing: border-box;
+  height: 320px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px;
+}
+.contenedor-alto-fijo:hover {
+  background-color: var(--tabla-fondo-impar);
+}
+.contenedor-alto-fijo :first-child {
+  margin-top: 0;
 }
 
 [class^=columns] {

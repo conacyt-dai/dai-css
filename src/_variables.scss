@@ -163,14 +163,17 @@ $breakpoints: (
 $contenedores: (
   'mov': (
     'ancho-maximo': 100%,
-    'margen-interior': map-get($espaciado, '3'),
+    'ancho-lectura': 100%,
+    'margen-interior': map-get($espaciado, '2'),
   ),
   'tab': (
     'ancho-maximo': 1064px,
-    'margen-interior': map-get($espaciado, '5'),
+    'ancho-lectura': 700px,
+    'margen-interior': map-get($espaciado, '3'),
   ),
   'esc': (
     'ancho-maximo': 1416px,
+    'ancho-lectura': 809px,
     'margen-interior': map-get($espaciado, '5'),
   ),
 );
