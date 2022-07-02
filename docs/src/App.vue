@@ -4,6 +4,7 @@
 
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
+  const fontSize = ref(16);
 
   isA11yTypography.value, isA11yView.value = false
 
@@ -13,6 +14,17 @@
 
   function toggleA11yView() {
     isA11yView.value = !isA11yView.value
+  }
+
+  function upFontSize() {
+    fontSize.value ++;
+    let up_size = `${fontSize.value}px`;
+    document.documentElement.style.setProperty('--tipografia-tamanio',up_size);
+  }
+  function downFontSize() {
+    fontSize.value --;
+    let down_size = `${fontSize.value}px`;
+    document.documentElement.style.setProperty('--tipografia-tamanio',down_size);
   }
 </script>
 
@@ -41,6 +53,9 @@
       a11y
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
+      <button class="boton-secundario" @click="downFontSize">Reducir px</button>
+      <span class="p-1 m-r-1">{{ fontSize }}px</span>
+      <button class="boton-secundario" @click="upFontSize">Crecer px</button>
     </aside>
     <main role="main">
       <RouterView />
