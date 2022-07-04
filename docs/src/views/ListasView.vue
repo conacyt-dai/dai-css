@@ -98,14 +98,16 @@
         <p class="titulo-lista">lista con avatar</p>
         <ul class="lista-avatar">
           <li>
-            <div class="avatar">
-              <img src="https://www.fillmurray.com/300/300" alt="murray"/>
-            </div>
-            <div class="texto">
-              <p class="texto-primario">texto-primario</p>
-              <p class="texto-secundario">texto-secundario</p>
-              <p class="texto-terciario">texto-terciario</p>
-            </div>
+            <a href="#">
+              <div class="avatar">
+                <img src="https://www.fillmurray.com/300/300" alt="murray"/>
+              </div>
+              <div class="texto">
+                <p class="texto-primario">texto-primario</p>
+                <p class="texto-secundario">texto-secundario</p>
+                <p class="texto-terciario">texto-terciario</p>
+              </div>
+            </a>
           </li>
           <li>
             <div class="avatar">

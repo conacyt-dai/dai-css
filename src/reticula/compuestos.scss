@@ -38,7 +38,7 @@
   overflow-x: hidden;
   padding: map-get($espaciado,'2');
   &:hover {
-    background-color: var(--tabla-fondo-impar);
+    background-color: var(--tabla-fondo-impar); //TODO: definir el color
   }
   :first-child {
     margin-top: 0;

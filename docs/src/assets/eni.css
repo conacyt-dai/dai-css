@@ -933,23 +933,40 @@ dl dd {
 
 .lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
   display: flex;
+  width: 100%;
   padding: 16px 16px 16px 0;
 }
-.lista-compuesta li .avatar, .lista-logo li .avatar, .lista-avatar li .avatar, .lista-icono li .avatar {
+.lista-compuesta a, .lista-logo a, .lista-avatar a, .lista-icono a {
+  display: flex;
+  width: 100%;
+  padding: 16px;
+  margin: -16px;
+  text-decoration: none;
+}
+.lista-compuesta a:hover, .lista-logo a:hover, .lista-avatar a:hover, .lista-icono a:hover {
+  background-color: var(--tabla-fondo-impar);
+}
+.lista-compuesta .avatar, .lista-logo .avatar, .lista-avatar .avatar, .lista-icono .avatar {
   flex: 0 0 64px;
 }
-.lista-compuesta li .texto, .lista-logo li .texto, .lista-avatar li .texto, .lista-icono li .texto {
+.lista-compuesta .texto, .lista-logo .texto, .lista-avatar .texto, .lista-icono .texto {
   flex: 1 1;
   display: block;
 }
-.lista-compuesta li .texto > *, .lista-logo li .texto > *, .lista-avatar li .texto > *, .lista-icono li .texto > * {
+.lista-compuesta .texto > *, .lista-logo .texto > *, .lista-avatar .texto > *, .lista-icono .texto > * {
   margin: 0;
 }
-.lista-compuesta li .texto .texto-primario, .lista-logo li .texto .texto-primario, .lista-avatar li .texto .texto-primario, .lista-icono li .texto .texto-primario {
+.lista-compuesta .texto .texto-primario, .lista-logo .texto .texto-primario, .lista-avatar .texto .texto-primario, .lista-icono .texto .texto-primario {
+  color: var(--tipografia-color);
   font-weight: 500;
 }
-.lista-compuesta li .texto .texto-terciario, .lista-logo li .texto .texto-terciario, .lista-avatar li .texto .texto-terciario, .lista-icono li .texto .texto-terciario {
+.lista-compuesta .texto .texto-secundario, .lista-logo .texto .texto-secundario, .lista-avatar .texto .texto-secundario, .lista-icono .texto .texto-secundario {
+  color: var(--tipografia-color);
+  font-weight: 400;
+}
+.lista-compuesta .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario, .lista-icono .texto .texto-terciario {
   color: var(--tipografia-color-2);
+  font-weight: 400;
 }
 
 .lista-icono li::before {

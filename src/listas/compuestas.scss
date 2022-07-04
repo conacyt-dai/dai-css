@@ -18,22 +18,39 @@
   @extend .lista-plana;
   li {
     display: flex;
+    width: 100%;
     padding: map-get($espaciado, '2') map-get($espaciado, '2') map-get($espaciado, '2') 0;
-    .avatar {
-      flex: 0 0 map-get($espaciado, '8');
+  }
+  a {
+    display: flex;
+    width: 100%;
+    padding: map-get($espaciado, '2');
+    margin: calc(map-get($espaciado, '2') * -1);
+    text-decoration: none;
+    &:hover {
+      background-color: var(--tabla-fondo-impar); //TODO: definir el color
     }
-    .texto {
-      flex: 1 1;
-      display: block;
-      > * {
-        margin: 0;
-      }
-      .texto-primario {
-        font-weight: 500;
-      }
-      .texto-terciario {
-        color: var(--tipografia-color-2);
-      }
+  }
+  .avatar {
+    flex: 0 0 map-get($espaciado, '8');
+  }
+  .texto {
+    flex: 1 1;
+    display: block;
+    > * {
+      margin: 0;
+    }
+    .texto-primario {
+      color: var(--tipografia-color);
+      font-weight: 500;
+    }
+    .texto-secundario {
+      color: var(--tipografia-color);
+      font-weight: 400;
+    }
+    .texto-terciario {
+      color: var(--tipografia-color-2);
+      font-weight: 400;
     }
   }
 }
