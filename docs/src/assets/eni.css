@@ -946,6 +946,10 @@ dl dd {
 .lista-compuesta a:hover, .lista-logo a:hover, .lista-avatar a:hover, .lista-icono a:hover {
   background-color: var(--tabla-fondo-impar);
 }
+.lista-compuesta .elemento, .lista-logo .elemento, .lista-avatar .elemento, .lista-icono .elemento {
+  display: flex;
+  width: 100%;
+}
 .lista-compuesta .avatar, .lista-logo .avatar, .lista-avatar .avatar, .lista-icono .avatar {
   flex: 0 0 64px;
 }
@@ -1004,6 +1008,7 @@ dl dd {
   flex: 1 1;
   display: flex;
   align-items: center;
+  color: var(--tipografia-color);
   font-weight: 500;
 }
 

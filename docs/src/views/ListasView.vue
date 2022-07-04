@@ -110,13 +110,15 @@
             </a>
           </li>
           <li>
-            <div class="avatar">
-              <img src="https://www.fillmurray.com/600/600" alt="murray"/>
-            </div>
-            <div class="texto">
-              <p class="texto-primario">texto-primario</p>
-              <p class="texto-secundario">texto-secundario</p>
-              <p class="texto-terciario">texto-terciario</p>
+            <div class="elemento">
+              <div class="avatar">
+                <img src="https://www.fillmurray.com/600/600" alt="murray"/>
+              </div>
+              <div class="texto">
+                <p class="texto-primario">texto-primario</p>
+                <p class="texto-secundario">texto-secundario</p>
+                <p class="texto-terciario">texto-terciario</p>
+              </div>
             </div>
           </li>
           <li>
