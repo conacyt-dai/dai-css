@@ -12,8 +12,6 @@
       }
       &.ancho-lectura {
         max-width:map-get($map, 'ancho-lectura');
-        margin-left: inherit;
-        margin-right: inherit;
       }
     }
   }

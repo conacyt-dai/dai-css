@@ -2523,8 +2523,6 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 100%;
-    margin-left: inherit;
-    margin-right: inherit;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1495px) {
@@ -2537,8 +2535,6 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 700px;
-    margin-left: inherit;
-    margin-right: inherit;
   }
 }
 @media screen and (min-width: 1496px) {
@@ -2551,8 +2547,6 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 809px;
-    margin-left: inherit;
-    margin-right: inherit;
   }
 }
 
@@ -7355,6 +7349,21 @@ body {
 
 .texto-justificado {
   text-align: justify;
+}
+
+.contenedor-centro {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor-der {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.contenedor-izq {
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {

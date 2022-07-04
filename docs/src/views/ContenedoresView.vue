@@ -34,7 +34,7 @@
 
     <div class="contenedor m-t-10">
       <h2>Contenedor de ancho de lectura</h2>
-      <p>Se mantiene a la izquierda y se limita el ancho máximo que puede tener el contenedor en cada dispositivo no más de 809px para escritorio, 700px para lap y 100% para celular</p>
+      <p>Se centra y se limita el ancho máximo que puede tener el contenedor en cada dispositivo no más de 809px para escritorio, 700px para lap y 100% para celular</p>
 <pre>
   &lt;div class="contenedor ancho-lectura">
     ...
@@ -44,6 +44,26 @@
     <div class="contenedor ancho-lectura">
       <p class="p-3 conacyt-fondo-claro-1">
         contenedor ancho-lectura
+      </p>
+    </div>
+
+    <div class="contenedor m-t-10">
+      <h2>Auxiliares de alineacion para contenedores</h2>
+
+    </div>
+    <div class="contenedor ancho-lectura contenedor-izq">
+      <p class="p-3 conacyt-fondo-claro-1">
+        contenedor ancho-lectura contenedor-izq
+      </p>
+    </div>
+    <div class="contenedor ancho-lectura contenedor-der">
+      <p class="p-3 conacyt-fondo-claro-1">
+        contenedor ancho-lectura contenedor-der
+      </p>
+    </div>
+    <div class="contenedor ancho-lectura contenedor-centro">
+      <p class="p-3 conacyt-fondo-claro-1">
+        contenedor ancho-lectura contenedor-centro
       </p>
     </div>
 
