@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor m-t-12">
+  <div class="contenedor m-t-10">
     <h1>Tipografia</h1>
     <h2>Titulos</h2>
 

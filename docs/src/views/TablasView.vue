@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor m-y-12">
+  <div class="contenedor m-y-10">
     <h1>Tablas</h1>
     
     <p class="titulo-tabla">Título de la tabla</p>

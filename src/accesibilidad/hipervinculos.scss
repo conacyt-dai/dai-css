@@ -1,0 +1,12 @@
+.a11y-hipervinculos { //poner en el body pa cambiar toda la tipografia de la página
+  a,
+  .hipervinculo {
+    text-decoration: underline !important;
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      text-decoration: underline !important;
+    }
+  }
+}

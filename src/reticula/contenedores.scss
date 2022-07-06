@@ -11,7 +11,7 @@
         max-width: map-get($map, 'ancho-maximo');
       }
       &.ancho-lectura {
-        max-width:map-get($map, 'ancho-lectura');
+        max-width: map-get($map, 'ancho-lectura');
       }
     }
   }

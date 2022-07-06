@@ -1,15 +1,14 @@
-.a11y-simplificada { //poner en el body pa cambiar
+.a11y-simplificada { // agregar-quitar en el <body> pa cambiar
   .a11y-simplificada-contenedor { // los contenedores que se llamen a11y-simplificada-contenedor se reformatearan cuando la a11y-simplificada este en el body
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: $contenedor-lectura;
-  }
-  @include mediaquery('esc') {
-    .a11y-simplificada-contenedor {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: $columnas-espaciado;
-      max-width: calc(($contenedor-lectura * 2) - ($columnas-espaciado));
+    margin-left: auto;
+    margin-right: auto;
+    @each $dispositivo, $map in $a11y-simplificada-contenedores {
+      @include mediaquery($dispositivo) {
+        grid-template-columns: repeat(map-get($map, 'columnas'), 1fr);
+        column-gap: map-get($map, 'espaciado');
+        max-width:  map-get($contenedores, $dispositivo, 'ancho-maximo');
+      }
     }
   }
 
@@ -29,14 +28,13 @@
   .lista-avatar,
   .lista-logo {
     .avatar,
-    .logo,
-    img,
-    svg,
-    picture {
+    .logo {
       display: none;
     }
   }
-  img {
+  img,
+  svg,
+  picture {
     display: none;
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor m-y-12">
+  <div class="contenedor m-y-10">
     <h1>Separadores</h1>
 
     <h2>Separadores</h2>

@@ -13,7 +13,7 @@
 .vis-titulo-visualizacion {
   font-size: 1.125rem; // 18px
   font-weight: 600;
-  @include mq-tablet-escritorio {
+  @include mediaquery(esc) {
     font-size: 1.5rem; // 24px
   }
 }
@@ -42,7 +42,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: calc(1em * 1.3);
-  @include mq-tablet-escritorio {
+  @include mediaquery(esc) {
     line-height: calc(1em * 1.5);
   }
 }

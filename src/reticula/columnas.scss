@@ -1,104 +1,104 @@
-// columns
-[class^='columns'] {
-  column-gap: $columnas-espaciado;
-}
-@for $i from 1 through map-get($columnas, 'esc') { //de uno a la cantidad maxima de columnas en escritorio
-  .columns-#{$i} {
-    column-count: $i;
-  }
-}
+// // columns
+// [class^='columns'] {
+//   column-gap: $columnas-espaciado;
+// }
+// @for $i from 1 through map-get($columnas, 'esc') { //de uno a la cantidad maxima de columnas en escritorio
+//   .columns-#{$i} {
+//     column-count: $i;
+//   }
+// }
 
-// grid 
-.grid {
-  display: grid;
-  column-gap: $columnas-espaciado;
-}
-@for $i from 1 through 12 {
-  .grid-column-#{$i} {
-    grid-column: span $i;
-  }
-}
-@each $dispositivo, $col in $columnas {
-  @include mediaquery($dispositivo) {
-    .grid {
-      grid-template-columns: repeat($col, 1fr);
-    }
-  }
-}
+// // grid 
+// .grid {
+//   display: grid;
+//   column-gap: $columnas-espaciado;
+// }
+// @for $i from 1 through 12 {
+//   .grid-column-#{$i} {
+//     grid-column: span $i;
+//   }
+// }
+// @each $dispositivo, $col in $columnas {
+//   @include mediaquery($dispositivo) {
+//     .grid {
+//       grid-template-columns: repeat($col, 1fr);
+//     }
+//   }
+// }
 
-// flex
-.flex {
-  display: flex;
-  margin-left: $columnas-espaciado*-.5;
-  margin-right: $columnas-espaciado*-.5;
-}
-.flex-wrap {
-  flex-wrap: wrap;
-}
-[class^='flex-basis-'] {
-  flex-basis: 100%;
-  padding-left: $columnas-espaciado*.5;
-  padding-right: $columnas-espaciado*.5;
-}
-@each $dispositivo, $col in $columnas {
-  @include mediaquery($dispositivo) {
-    @for $i from 1 through $col {
-      .flex-basis-#{$i} {
-        flex-basis: calc((100% * $i / $col));
-      }
-    }
-  }
-}
+// // flex
+// .flex {
+//   display: flex;
+//   margin-left: $columnas-espaciado*-.5;
+//   margin-right: $columnas-espaciado*-.5;
+// }
+// .flex-wrap {
+//   flex-wrap: wrap;
+// }
+// [class^='flex-basis-'] {
+//   flex-basis: 100%;
+//   padding-left: $columnas-espaciado*.5;
+//   padding-right: $columnas-espaciado*.5;
+// }
+// @each $dispositivo, $col in $columnas {
+//   @include mediaquery($dispositivo) {
+//     @for $i from 1 through $col {
+//       .flex-basis-#{$i} {
+//         flex-basis: calc((100% * $i / $col));
+//       }
+//     }
+//   }
+// }
 
-// column grid flex responsivo
-@each $dispositivo, $col in $columnas {
-  @include mediaquery($dispositivo) {
-    @for $i from 1 through 12 {
-      .grid-column-#{$i}-#{$dispositivo} {
-        grid-column: span $i;
-      }
-      .columns-#{$i}-#{$dispositivo} {
-        column-count: $i;
-      }
-    }
-    @for $i from 1 through $col {
-      .flex-basis-#{$i}-#{$dispositivo} {
-        flex-basis: calc((100% * $i / $col));
-      }
-    }
-  }
-}
+// // column grid flex responsivo
+// @each $dispositivo, $col in $columnas {
+//   @include mediaquery($dispositivo) {
+//     @for $i from 1 through 12 {
+//       .grid-column-#{$i}-#{$dispositivo} {
+//         grid-column: span $i;
+//       }
+//       .columns-#{$i}-#{$dispositivo} {
+//         column-count: $i;
+//       }
+//     }
+//     @for $i from 1 through $col {
+//       .flex-basis-#{$i}-#{$dispositivo} {
+//         flex-basis: calc((100% * $i / $col));
+//       }
+//     }
+//   }
+// }
 
-// TODO: bugfix cuando se utiliza un gap grande en el grid en responsivo se rompen las filas, como si no se recalcularan las columnas 
-// gap
-@each $id, $valor in $espaciado {
-  .gap-#{$id} {
-    column-gap: $valor;
-  }
-  .flex-gap-#{$id} {
-    margin-left: $valor*-.5;
-    margin-right: $valor*-.5;
-    [class^='flex-basis-'] {
-      padding-left: $valor*.5;
-      padding-right: $valor*.5;
-    }
-  }
-}
-// gap responsivo
-@each $dispositivo, $x in $breakpoints {
-  @include mediaquery($dispositivo) {
-    @each $id, $valor in $espaciado {
-      .gap-#{$id}-#{$dispositivo} {
-        column-gap: $valor; 
-      }
-      .flex-gap-#{$id}-#{$dispositivo} {
-        margin-left: $valor*-.5;
-        margin-right: $valor*-.5;
-        [class^='flex-basis-'] {
-          padding-left: $valor*.5;
-          padding-right: $valor*.5;
-        }
-      }
-    }
-  }
-}
+// // TODO: bugfix cuando se utiliza un gap grande en el grid en responsivo se rompen las filas, como si no se recalcularan las columnas 
+// // gap
+// @each $id, $valor in $espaciado {
+//   .gap-#{$id} {
+//     column-gap: $valor;
+//   }
+//   .flex-gap-#{$id} {
+//     margin-left: $valor*-.5;
+//     margin-right: $valor*-.5;
+//     [class^='flex-basis-'] {
+//       padding-left: $valor*.5;
+//       padding-right: $valor*.5;
+//     }
+//   }
+// }
+// // gap responsivo
+// @each $dispositivo, $x in $breakpoints {
+//   @include mediaquery($dispositivo) {
+//     @each $id, $valor in $espaciado {
+//       .gap-#{$id}-#{$dispositivo} {
+//         column-gap: $valor; 
+//       }
+//       .flex-gap-#{$id}-#{$dispositivo} {
+//         margin-left: $valor*-.5;
+//         margin-right: $valor*-.5;
+//         [class^='flex-basis-'] {
+//           padding-left: $valor*.5;
+//           padding-right: $valor*.5;
+//         }
+//       }
+//     }
+//   }
+// }

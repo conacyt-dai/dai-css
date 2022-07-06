@@ -150,38 +150,43 @@ $espaciado-especial: (
   'extra': 96px,
   'maximo': 120px,
 );
-//TODO: hacer lista de espaciado especial con 'minimo': 4px, // un pelito 'extra': 96px, // margensote 'maximo': 120px, // chingon
 
 $breakpoints: (
-  'mov': 320px, //móvil
-  'tab': 768px, //tableta
-  'esc': 1496px, //escritorio
+  'mov': 320px,
+  'esc': 768px,
 );
 
-// MODULOS
-// retucula
 $contenedores: (
   'mov': (
     'ancho-maximo': 100%,
     'ancho-lectura': 100%,
     'margen-interior': map-get($espaciado, '2'),
   ),
-  'tab': (
-    'ancho-maximo': 1064px,
+  'esc': (
+    'ancho-maximo': 1152px,
     'ancho-lectura': 700px,
-    'margen-interior': map-get($espaciado, '3'),
+    'margen-interior': map-get($espaciado, '5'),
+  )
+);
+
+$a11y-simplificada-contenedores: (
+  'mov': (
+    'columnas': 1,
+    'espaciado': map-get($espaciado, '2'),
   ),
   'esc': (
-    'ancho-maximo': 1416px,
-    'ancho-lectura': 809px,
-    'margen-interior': map-get($espaciado, '5'),
-  ),
+    'columnas': 2,
+    'espaciado': map-get($espaciado, '3'),
+  )
 );
-$contenedor-lectura: 720px;
 
 $columnas: (
-  'mov': 4,
-  'tab': 8,
-  'esc': 12
+  'mov': (
+    'columnas': 8,
+    'espaciado': map-get($espaciado, '2'),
+  ),
+  'esc': (
+    'columnas': 16,
+    'espaciado': map-get($espaciado, '3'),
+  )
 );
-$columnas-espaciado: map-get($espaciado, '3');

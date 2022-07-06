@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/ReticulaView.vue')
     },
     {
+      path: '/margenes',
+      name: 'margenes',
+      component: () => import('../views/MargenesView.vue')
+    },
+    {
       path: '/tipografia',
       name: 'tipografia',
       component: () => import('../views/TipografiaView.vue')

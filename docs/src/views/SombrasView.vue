@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor m-y-12">
+  <div class="contenedor m-y-10">
     <h1>Sombras</h1>
 
     <h2>Sombras para estados de elementos</h2>
