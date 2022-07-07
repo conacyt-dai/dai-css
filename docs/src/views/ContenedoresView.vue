@@ -71,23 +71,23 @@
     ...
 &lt;/div>
 </pre>
-  <div class="contenedor">
-    <div class="a11y-simplificada-contenedor">
-      <div class="conacyt-fondo-claro-1">
+  <div class="contenedor p-0">
+    <div class="grid a11y-simplificada-contenedor ">
+      <div class="columna-4 conacyt-fondo-claro-1">
         1
         <p>Si existe como padre la clase <b>a11y-simplificada</b> que debe estar conectada con el store para poder prender o apagar</p>
       </div>
-      <div class="gobmx-fondo-claro-2">
+      <div class="columna-1 gobmx-fondo-claro-2 ">
         2
       </div>
-      <div class="conacyt-fondo-claro-2">
+      <div class="columna-6 conacyt-fondo-claro-2">
         3
         <p>Para el contenedor con clase <b>a11y-simplificada-contenedor</b> reformatea el contenido que sea que tiene a dos columnas</p>
       </div>
-      <div class="gobmx-fondo-claro-1">
+      <div class="columna-2 gobmx-fondo-claro-1">
         4
       </div>
-      <div class="gobmx-fondo-claro-2">
+      <div class="columna-3 gobmx-fondo-claro-2 ">
         5
       </div>
     </div>
@@ -96,8 +96,9 @@
 
   <h2 class="m-t-10">Contenedores compuestos</h2>
   <h3>Contenedor de alto fijo para contenido scrolleable</h3>
-  <div class="flex flex-wrap">
-    <div class="flex-basis-4">
+  
+  <div class="flex">
+    <div class="columna-5">
       <div class="header-contenedor-alto-fijo">
         <p>Titulo del contenido</p>
         <a descarga class="boton-secundario">botón</a>
@@ -113,10 +114,10 @@
         </ul>
       </div>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-5">
 <pre>
-&lt;div class="flex flex-wrap">
-  &lt;div class="flex-basis-4">
+&lt;div class="flex">
+  &lt;div class="columna-5">
     &lt;div class="header-contenedor-alto-fijo">
       &lt;p>Titulo del contenido&lt;/p>
       &lt;a descarga class="boton-secundario">botón&lt;/a>
@@ -129,7 +130,7 @@
 &lt;/div>
 </pre>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-6">
       <p>
         Este componente esta compuesto por dos elementos, primero el <code>header-contenedor-alto-fijo</code> formatea el contenido,
         ya sea etiqueta de titulo o parrafo, para que se muestre commo en el ejemplo a 18px semibold. También formatea los elementos
