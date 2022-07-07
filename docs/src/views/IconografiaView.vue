@@ -1,7 +1,7 @@
 <template>
   <h1>Iconografia</h1>
 
-  <div class="columns-5 columns-3-tab columns-1-mov">
+  <div class="columns-5 columns-1-mov">
     <div>
       <span class="icon dai-feisbuk"></span>
       <span>feisbuk</span>

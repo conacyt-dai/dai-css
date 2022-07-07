@@ -7,7 +7,8 @@
     <a href="#">a <span class="icon dai-descargar"></span></a> o 
     <button class="hipervinculo">button.hipervinculo <span class="icon dai-descargar"></span></button> 
   </p>
-  <h2>Identidad</h2>
+  
+  <h2 class="m-t-10">Identidad</h2>
   <p class="gobmx-fondo-oscuro-1 p-3">
     <a href="#" class="hipervinculo-gobmx m-r-3">a.hipervinculo-gobmx</a>
     <button class="hipervinculo-gobmx">button.hipervinculo-gobmx</button>

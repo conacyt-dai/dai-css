@@ -2,7 +2,7 @@
 
   <h1>Botones</h1>
 
-  <h2>base</h2>
+  <h2 class="m-t-10">base</h2>
   <p>
     <button>button</button>
     <a href="" class="boton">a.boton</a>
@@ -11,7 +11,7 @@
     <input type="reset" value="input[reset]">
   </p>
 
-  <h2>color</h2>
+  <h2 class="m-t-10">color</h2>
   <h3>primario</h3>
   <p>
     <button class="boton-primario">button.boton-primario</button>
@@ -40,7 +40,7 @@
     <input class="boton-terciario" type="reset" value="input[reset]">
   </p>
 
-  <h2>tamaño</h2>
+  <h2 class="m-t-10">tamaño</h2>
   <p>
     <button class="boton-primario"> boton </button>
     <button class="boton-primario boton-chico"> boton-chico </button>
@@ -72,7 +72,7 @@
     <button class="boton-terciario boton-grande"> boton-grande <span class="icon dai-flecha-derecha"></span></button>
   </p>
 
-  <h2>Iconos</h2>
+  <h2 class="m-t-10">Iconos</h2>
   <p>boton icono + primario + secundario + terciario</p>
   <p>
     <button class="boton-icono boton-primario">
@@ -104,9 +104,9 @@
     </button>
   </p>
 
-  <h2>Compuestos</h2>
+  <h2 class="m-t-10">Compuestos</h2>
   <div class="grid">
-    <div class="grid-column-4 grid-column-6-esc">
+    <div class="columna-4 columna-8-esc">
       <h3>boton-descarga</h3>
       <button class="boton-descarga">
         <p class="titulo">Descarga de archivos</p>
@@ -116,7 +116,7 @@
         </div>
       </button>
     </div> 
-    <div class="grid-column-4 grid-column-6-esc">
+    <div class="columna-4 columna-8-esc">
       <h3>boton-info + boton-conacyt</h3>
       <button class="boton-info">Mas Info</button>
       <a class="boton boton-conacyt" href="https://conacyt.mx/" target="_blank">

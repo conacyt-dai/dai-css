@@ -72,7 +72,7 @@
 &lt;/div>
 </pre>
   <div class="contenedor p-0">
-    <div class="grid a11y-simplificada-contenedor ">
+    <div class="flex a11y-simplificada-contenedor ">
       <div class="columna-4 conacyt-fondo-claro-1">
         1
         <p>Si existe como padre la clase <b>a11y-simplificada</b> que debe estar conectada con el store para poder prender o apagar</p>

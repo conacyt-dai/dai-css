@@ -1,9 +1,9 @@
 <template>
   <h1>listas</h1>
 
-  <h2 class="m-b-0">listas simples</h2>
-  <div class="flex flex-wrap">
-    <div class="flex-basis-4">
+  <h2 class="m-t-10">listas simples</h2>
+  <div class="flex">
+    <div class="columna-5">
       <p class="titulo-lista">Titulo de lista ordenada</p>
       <ol>
         <li>Lista Nivel 1</li>
@@ -24,7 +24,7 @@
         </li>
       </ol>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-5">
       <p class="titulo-lista">Titulo de lista desordenada</p>
       <ul>
         <li>Lista Nivel 1</li>
@@ -45,7 +45,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-5">
       <p class="titulo-lista">Titulo de lista descriptiva</p>
       <dl>
         <dt>Término</dt>
@@ -58,9 +58,9 @@
     </div>
   </div>
 
-  <h2 class="m-t-10 m-b-0">listas compuestas</h2>
-  <div class="flex flex-wrap">
-    <div class="flex-basis-4">
+  <h2 class="m-t-10">listas compuestas</h2>
+  <div class="flex">
+    <div class="columna-5">
       <p class="titulo-lista">lista con iconos</p>
       <ul class="lista-icono">
         <li class="icon dai-flecha-derecha">
@@ -93,7 +93,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-5">
       <p class="titulo-lista">lista con avatar</p>
       <ul class="lista-avatar">
         <li>
@@ -132,7 +132,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex-basis-4">
+    <div class="columna-5">
       <p class="titulo-lista">lista con logotipos</p>
       <ul class="lista-logo">
         <li>
