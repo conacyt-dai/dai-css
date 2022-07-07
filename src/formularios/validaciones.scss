@@ -16,8 +16,8 @@
   .icon {
     font-size: 1.25rem;
     display: inline-flex;
-    margin-right: map-get($espaciado-especial, 'minimo');
-    margin-left: map-get($espaciado-especial, 'minimo');
+    margin-right: map-get($espaciado, 'minimo');
+    margin-left: map-get($espaciado, 'minimo');
   }
 }
 .input-error {

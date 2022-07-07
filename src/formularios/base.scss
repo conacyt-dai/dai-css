@@ -2,7 +2,7 @@
 fieldset {
   background-color: var(--input-fondo);
   border: 1px solid var(--input-borde);
-  border-radius: 4px; // TODO: pasar a variable
+  border-radius: map-get($bordes, '4'); 
   padding: map-get($espaciado, '2');
   margin-top: map-get($espaciado, '1');
   margin-bottom:  map-get($espaciado, '3');
@@ -28,7 +28,7 @@ textarea,
 select {
   background-color: var(--input-fondo);
   border: 1px solid var(--input-borde);
-  border-radius: 4px; // TODO: pasar a variable
+  border-radius: map-get($bordes, '4');
   box-sizing: border-box;
   color: var(--input-color);
   font-family: var(--tipografia-familia, 'sans-serif');
@@ -80,7 +80,7 @@ select {
 [type=radio] + label {
   background-color: var(--input-fondo);
   border: 1px solid transparent;
-  border-radius: 4px; // TODO: pasar a variable
+  border-radius: map-get($bordes, '4');
   color: var(--label-color);
   cursor: pointer;
   display: inline-flex;
@@ -90,8 +90,8 @@ select {
   margin-right: map-get($espaciado, '1');
   padding-left: calc(1.25rem +  map-get($espaciado, '1'));
   padding-right: map-get($espaciado, '2');
-  padding-top: calc(map-get($espaciado-especial, 'minimo'));
-  padding-bottom: calc(map-get($espaciado-especial, 'minimo'));
+  padding-top: calc(map-get($espaciado, 'minimo'));
+  padding-bottom: calc(map-get($espaciado, 'minimo'));
 }
 [type=checkbox]:focus + label,
 [type=radio]:focus + label {
@@ -161,7 +161,7 @@ select {
 
 // archivo
 [type=file] {
-  padding-top: calc(map-get($espaciado-especial, 'minimo') + 2px) !important;
+  padding-top: calc(map-get($espaciado, 'minimo') + 2px) !important;
 }
 
 // rango
@@ -177,7 +177,7 @@ select {
 [type=range]:focus {
   border-color: var(--input-focus-sombra);
   box-shadow: 0 0 8px var(--input-focus-sombra);
-  border-radius: map-get($espaciado-especial, 'minimo');
+  border-radius: map-get($espaciado, 'minimo');
   outline: none;
 }
 [type=range]::-webkit-slider-runnable-track {
@@ -255,7 +255,7 @@ select {
 // estilos formulario
 .formulario-horizontal {
   label {
-    margin-right: map-get($espaciado-especial, 'minimo');
+    margin-right: map-get($espaciado, 'minimo');
   }
   input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
   textarea,

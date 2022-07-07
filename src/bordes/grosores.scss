@@ -1,13 +1,4 @@
-$borde-grosores: (
-  '0': 0px,
-  '1': 1px,
-  '2': 2px,
-  '3': 4px,
-  '4': 8px,
-  '5': 16px
-); // TODO: sacar las variabes
-
-@each $id, $valor in $borde-grosores {
+@each $id, $valor in $bordes {
   .borde-grosor-#{$id} {
     border-width: $valor;
   }
