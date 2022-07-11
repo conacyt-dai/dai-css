@@ -21,6 +21,8 @@
   justify-content: space-evenly;
 }
 
+// TODO: crear clases para align-items
+
 .grid {
   display: grid;
 }
@@ -32,6 +34,7 @@
       margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
       > [class^='columna-'] {
         flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
+        max-width: calc(100% - map-get($configuracion, 'espaciado'));
         margin-left: map-get($configuracion, 'espaciado')*.5;
         margin-right: map-get($configuracion, 'espaciado')*.5;
       }
@@ -49,6 +52,7 @@
     @for $i from 1 through map-get($configuracion, 'columnas') {
       .flex > .columna-#{$i} {
         flex-basis: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
+        max-width: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
       }
       .grid > .columna-#{$i} {
         grid-column: span $i;
@@ -65,6 +69,7 @@
     @for $i from 1 through map-get($configuracion, 'columnas') {
       .flex > .columna-#{$i}-#{$dispositivo} {
         flex-basis: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
+        max-width: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
         margin-left: map-get($configuracion, 'espaciado')*.5;
         margin-right: map-get($configuracion, 'espaciado')*.5;
       }
