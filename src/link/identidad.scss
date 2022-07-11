@@ -3,9 +3,7 @@
   color: map-get($color-gobmx, 'claro-1');
   font-weight: 400;
   text-decoration: none;
-  &:hover {
-    color: map-get($color-gobmx, 'claro-2');
-  }
+  &:hover,
   &:focus {
     color: map-get($color-gobmx, 'claro-2');
   }

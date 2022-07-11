@@ -1,0 +1,64 @@
+.hipervinculo-navegacion,
+.hipervinculo-navegacion-gob,
+.hipervinculo-navegacion-conacyt {
+  background-color: var(--hipervinculo-navegacion-fondo);
+  box-shadow: var(--hipervinculo-navegacion-fondo);
+  color: var(--hipervinculo-navegacion-color);
+  border: none;
+  border-radius: 0;
+  font-size: 0.875rem; // TODO: verificar si esto debe o no estar en rem para que se pueda incrementar el tamaño con el boton pa crecer la tipografia
+  font-weight: 400;
+  line-height: calc(1em * 1);
+  padding: map-get($espaciado,'2');
+  text-decoration: none;
+  transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+  &:hover,
+  &:focus {
+    border: none;
+    border-radius: 0;
+    background-color: var(--hipervinculo-navegacion-hover-fondo);
+    box-shadow: var(--hipervinculo-navegacion-hover-sombra);
+    color: var(--hipervinculo-navegacion-hover-color);
+  }
+  &:active,
+  &.activo {
+    background-color: var(--hipervinculo-navegacion-activo-fondo);
+    box-shadow: var(--hipervinculo-navegacion-activo-sombra);
+    color: var(--hipervinculo-navegacion-activo-color);
+  }
+  display: block;
+  @include mediaquery(esc) {
+    display: inline-flex;
+  }
+}
+
+.hipervinculo-navegacion-gob {
+  background: transparent;
+  box-shadow: none;
+  color: map-get($color-gobmx, 'claro-1');
+  &:active,
+  &:hover,
+  &:focus {
+    background: transparent;
+    box-shadow: none;
+    color: map-get($color-gobmx, 'claro-2');
+  }
+}
+
+.hipervinculo-navegacion-conacyt {
+  background: transparent;
+  box-shadow: none;
+  color: map-get($color-conacyt, 'oscuro-1');
+  &:hover,
+  &:focus {
+    background-color: var(--tabla-fondo-impar); //TODO: poner color de navegacion?
+    box-shadow: none;
+    color: map-get($color-conacyt, 'oscuro-1');
+  }
+  &:active,
+  &.active {
+    background-color: transparent;
+    box-shadow: inset 0 -5px 0 map-get($color-conacyt, 'oscuro-1');
+    color: map-get($color-conacyt, 'oscuro-1');
+  }
+}
