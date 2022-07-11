@@ -22,6 +22,29 @@
     margin-top: $valor;
     margin-bottom: $valor;
   }
+  .m--#{$id} {
+    margin: calc($valor * -1);
+  }
+  .m-t--#{$id} {
+    margin-top: calc($valor * -1);
+  }
+  .m-r--#{$id} {
+    margin-right: calc($valor * -1);
+  }
+  .m-b--#{$id} {
+    margin-bottom: calc($valor * -1);
+  }
+  .m-l--#{$id} {
+    margin-left: calc($valor * -1);
+  }
+  .m-x--#{$id} {
+    margin-left: calc($valor * -1);
+    margin-right: calc($valor * -1);
+  }
+  .m-y--#{$id} {
+    margin-top: calc($valor * -1);
+    margin-bottom: calc($valor * -1);
+  }
   .p-#{$id} {
     padding: $valor;
   }
@@ -72,6 +95,29 @@
       .m-y-#{$id}-#{$dispositivo} {
         margin-top: $valor;
         margin-bottom: $valor;
+      }
+      .m--#{$id}-#{$dispositivo} {
+        margin: calc($valor * -1);
+      }
+      .m-t--#{$id}-#{$dispositivo} {
+        margin-top: calc($valor * -1);
+      }
+      .m-r--#{$id}-#{$dispositivo} {
+        margin-right: calc($valor * -1);
+      }
+      .m-b--#{$id}-#{$dispositivo} {
+        margin-bottom: calc($valor * -1);
+      }
+      .m-l--#{$id}-#{$dispositivo} {
+        margin-left: calc($valor * -1);
+      }
+      .m-x--#{$id}-#{$dispositivo} {
+        margin-left: calc($valor * -1);
+        margin-right: calc($valor * -1);
+      }
+      .m-y--#{$id}-#{$dispositivo} {
+        margin-top: calc($valor * -1);
+        margin-bottom: calc($valor * -1);
       }
       .p-#{$id}-#{$dispositivo} {
         padding: $valor;
