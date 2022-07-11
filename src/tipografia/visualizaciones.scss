@@ -3,19 +3,10 @@
   color: var(--tipografia-color);
   font-family: var(--tipografia-familia, 'sans-serif');
   line-height: calc(1em * 1.2);
-  margin-top: map-get($espaciado, '1');
-  margin-bottom: map-get($espaciado, '1');
 }
 .vis-titulo-proyecto {
   font-size: 1rem;
   font-weight: 400;
-}
-.vis-titulo-visualizacion {
-  font-size: 1.125rem; // 18px
-  font-weight: 600;
-  @include mediaquery(esc) {
-    font-size: 1.5rem; // 24px
-  }
 }
 .vis-titulo-leyenda {
   font-size: 1rem; // 16px
@@ -37,6 +28,15 @@
 .vis-instruccional {
   font-size: 1rem;
   font-weight: 500;
+}
+
+
+.vis-titulo-visualizacion {
+  font-size: 1.125rem; // 18px
+  font-weight: 600;
+  @include mediaquery(esc) {
+    font-size: 1.5rem; // 24px
+  }
 }
 .vis-leyenda {
   font-size: 1rem;
