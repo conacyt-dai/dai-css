@@ -138,10 +138,10 @@
   
     <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado"> <p class="titulo-subseccion">titulo subseccion</p> </div>
     <div class="columna-2">
-      <p><b>Celular</b><br> 1.125rem <br> 18px <br> color: #6f7271 </p>
+      <p><b>Celular</b><br> 1.125rem <br> 18px <br> Regular (400) <br> color: #6f7271 </p>
     </div>
     <div class="columna-2">
-      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> color: #6f7271 </p>
+      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> Regular (400) <br> color: #6f7271 </p>
     </div>
     <div class="columna-4">
 <pre class="m-x--1">
