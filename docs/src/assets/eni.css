@@ -7668,7 +7668,7 @@ ol + hr {
 
 .navegacion-conacyt {
   background: #fff;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.0666666667), 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 .navegacion-conacyt .nav-menu-contedor {
   background-color: #fff;
@@ -7703,7 +7703,7 @@ ol + hr {
 }
 .navegacion-conacyt .nav-submenu {
   background-color: #fff;
-  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.0666666667), 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
+  box-shadow: 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 
 body {
