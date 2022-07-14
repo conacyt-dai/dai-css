@@ -1,0 +1,89 @@
+.navegacion-gobmx {
+  background-color: map-get($color-gobmx, 'oscuro-1');
+  box-shadow: none;
+  .nav-menu-contedor {
+    background-color: map-get($color-gobmx, 'oscuro-1');
+    box-shadow: 0 8px 8px -4px #0002;
+    border-top: 1px solid map-get($color-gobmx, 'claro-1');
+  }
+  .nav-hipervinculo {
+    background: transparent;
+    box-shadow: none;
+    color: map-get($color-gobmx, 'claro-1');
+    &:active,
+    &:hover,
+    &:focus {
+      background: transparent;
+      box-shadow: none;
+      color: map-get($color-gobmx, 'claro-2');
+    }
+  }
+  .nav-boton-menu {
+    .nav-icono-menu {
+      background: #fff;
+      &::after,
+      &::before {
+        background: #fff;
+      }
+    }
+  }
+  .nav-hiperviculo-logo {
+    .nav-logo {
+      width: 128px;
+      height: 38px;
+    }
+  }
+  @include mediaquery('nav') {
+    .nav-menu-contedor {
+      border-top: none;
+    }
+  }
+}
+
+.navegacion-conacyt {
+  background: #fff;
+  box-shadow: 0 1px 0 0 #dde, 0 8px 8px -4px #0012;
+  .nav-menu-contedor {
+    background-color: #fff;
+  }
+  .nav-hipervinculo {
+    background: transparent;
+    box-shadow: none;
+    color: map-get($color-conacyt, 'oscuro-1');
+    &:hover,
+    &:focus {
+      background-color:map-get($color-conacyt, 'claro-0'); 
+      box-shadow: none;
+      color: map-get($color-conacyt, 'oscuro-1');
+    }
+    &:active,
+    &.active,
+    &.router-link-exact-active {
+      background-color: transparent;
+      box-shadow: inset 0 -5px 0 map-get($color-conacyt, 'oscuro-1');
+      color: map-get($color-conacyt, 'oscuro-1');
+    }
+  }
+  .nav-hiperviculo-logo {
+    .nav-logo {
+      width: 130px;
+      height: 38px;
+    }
+  }
+  .nav-boton-menu {
+    .nav-icono-menu {
+      background: map-get($color-conacyt, 'oscuro-1');;
+      &::after,
+      &::before {
+        background: map-get($color-conacyt, 'oscuro-1');;
+      }
+    }
+  }
+  .nav-boton-submenu {
+    color: map-get($color-conacyt, 'oscuro-1');
+  }
+  .nav-submenu {
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 #dde, 0 8px 8px -4px #0012;
+  }
+}

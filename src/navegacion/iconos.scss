@@ -1,0 +1,14 @@
+.navegacion .icon,
+.navegacion .icono {
+  display: inline-flex;
+  align-self: center;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  &[class^="dai-"]:before,
+  &[class*=" dai-"]:before {
+    display: inline-flex;
+    align-self: center;
+    font-size: 0.875rem !important;
+    line-height: 0.875rem !important;
+  }
+}
