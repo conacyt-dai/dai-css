@@ -32,7 +32,8 @@
     .flex {
       margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
       margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
-      > [class^='columna-'] {
+      > [class^='columna-'],
+      > [class*=" columna-"] {
         flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
         max-width: calc(100% - map-get($configuracion, 'espaciado'));
         margin-left: map-get($configuracion, 'espaciado')*.5;
@@ -42,7 +43,8 @@
     .grid {
       column-gap: map-get($configuracion, 'espaciado');
       grid-template-columns: repeat(map-get($configuracion, 'columnas'), 1fr);
-      > [class^='columna-'] {
+      > [class^='columna-'],
+      > [class*=" columna-"] {
         grid-column: span 16;
       }
     }
