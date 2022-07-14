@@ -18,17 +18,4 @@
     <button class="hipervinculo-conacyt">button.hipervinculo-conacyt</button>
   </p>
 
-  <h2 class="m-t-10">Navegación</h2>
-  <div class="flex m-0">
-    <a href="#" class="hipervinculo-navegacion">a.hipervinculo-navegacion</a>
-    <a href="#" class="hipervinculo-navegacion activo">a.hipervinculo-navegacion.activo</a>
-  </div>
-  <div class="gobmx-fondo-oscuro-1 flex m-0">
-    <a href="#" class="hipervinculo-navegacion-gob">a.hipervinculo-navegacion-gob</a>
-  </div>
-  <div class="sombra-profundidad-2 flex m-0">
-    <a href="#" class="hipervinculo-navegacion-conacyt">a.hipervinculo-navegacion-conacyt</a>
-    <a href="#" class="hipervinculo-navegacion-conacyt active">a.hipervinculo-navegacion-conacyt.active</a>
-  </div>
-
 </template>
