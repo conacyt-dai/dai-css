@@ -88,6 +88,11 @@ const router = createRouter({
       path: '/separadores',
       name: 'separadores',
       component: () => import('../views/SeparadoresView.vue')
+    },
+    {
+      path: '/navegacion',
+      name: 'navegacion',
+      component: () => import('../views/NavegacionView.vue')
     }
   ]
 })
