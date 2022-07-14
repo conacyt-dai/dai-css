@@ -41,6 +41,10 @@ button.hipervinculo {
 a[class^="m-"],
 a[class^="p-"],
 .hipervinculo[class^="m-"],
-.hipervinculo[class^="p-"]  {
+.hipervinculo[class^="p-"],
+a[class*=" m-"],
+a[class*=" p-"],
+.hipervinculo[class*=" m-"],
+.hipervinculo[class*=" p-"] {
   display: inline-block;
 }
