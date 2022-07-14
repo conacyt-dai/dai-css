@@ -16,7 +16,8 @@
   input[type=button],
   input[type=submit],
   input[type=reset],
-  [class^='boton'] {
+  [class^='boton'],
+  [class*=" boton"] {
     @extend .hipervinculo;
     &:not(:last-child) {
       margin-right:  map-get($espaciado, '1');
