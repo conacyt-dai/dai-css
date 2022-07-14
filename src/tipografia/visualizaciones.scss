@@ -1,5 +1,6 @@
 // titulos visualizaciones
-[class^='vis-'] {
+[class^='vis-'],
+[class*=' vis-'] {
   color: var(--tipografia-color);
   font-family: var(--tipografia-familia, 'sans-serif');
   line-height: calc(1em * 1.2);

@@ -11,7 +11,9 @@ h5,
 h6,
 .h6,
 [class^='titulo-'],
-[class^='subtitulo-'] {
+[class^='subtitulo-'],
+[class*=' titulo-'],
+[class*=' subtitulo-'] {
   color: var(--tipografia-color);
   font-weight: 500;
   line-height: calc(1em * 1.25);
