@@ -18,7 +18,6 @@
 
 @import 'link/base';
 @import 'link/identidad';
-@import 'link/navegacion';
 
 @import 'listas/base';
 @import 'listas/compuestas';
@@ -47,6 +46,14 @@
 @import 'reticula/compuestos';
 @import 'reticula/columnas';
 @import 'reticula/margenes';
+
+
+@import 'navegacion/navegacion';
+@import 'navegacion/hipervinculos';
+@import 'navegacion/botones';
+@import 'navegacion/iconos';
+@import 'navegacion/identidad';
+
 
 @import 'color/base';
 @import 'color/identidad';

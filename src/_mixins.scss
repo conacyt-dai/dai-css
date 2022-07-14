@@ -9,4 +9,9 @@
       @content;
     }
   }
+  @else if $breakpoint == 'nav' {
+    @media screen and (min-width: map-get($nav, 'breakpoint')) {
+      @content;
+    }
+  }
 }
