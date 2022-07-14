@@ -199,10 +199,14 @@ h5,
 .h5,
 h6,
 .h6,
-[class^=titulo-],
-[class^=subtitulo-],
-[class*=" titulo-"],
-[class*=" subtitulo-"] {
+.titulo-base,
+.subtitulo-pagina,
+.titulo-seccion,
+.titulo-subseccion,
+.titulo-pagina,
+.subtitulo-capitulo,
+.titulo-capitulo,
+.titulo-eni {
   color: var(--tipografia-color);
   font-weight: 500;
   line-height: 1.25em;
@@ -7664,7 +7668,7 @@ ol + hr {
 
 .navegacion-conacyt {
   background: #fff;
-  box-shadow: 0 1px 0 0 #dde, 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.0666666667), 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 .navegacion-conacyt .nav-menu-contedor {
   background-color: #fff;
@@ -7699,7 +7703,7 @@ ol + hr {
 }
 .navegacion-conacyt .nav-submenu {
   background-color: #fff;
-  box-shadow: 0 1px 0 0 #dde, 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.0666666667), 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 
 body {
