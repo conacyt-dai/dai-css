@@ -187,26 +187,9 @@ small {
   font-size: 0.75em;
 }
 
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6,
-.titulo-base,
-.subtitulo-pagina,
+.titulo-base, .subtitulo-pagina,
 .titulo-seccion,
-.titulo-subseccion,
-.titulo-pagina,
-.subtitulo-capitulo,
-.titulo-capitulo,
-.titulo-eni {
+.titulo-subseccion, .titulo-pagina, .subtitulo-capitulo, .titulo-capitulo, .titulo-eni, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   line-height: 1.25em;
@@ -7351,18 +7334,21 @@ ol + hr {
   border-radius: var(--navegacion-redondeado);
   display: flex;
   flex-direction: column-reverse;
-  width: 70%;
+  overflow: hidden;
+  width: 0%;
   max-width: 320px;
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out, width 0.3s ease-in-out;
 }
 .nav-menu-contedor.abierto {
   right: 0;
+  width: 70%;
 }
 .nav-menu-contedor.abierto.submenu-abierto {
   right: -320px;
+  width: 0%;
 }
 
 .nav-menu {

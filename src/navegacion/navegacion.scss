@@ -36,16 +36,19 @@
   border-radius: var(--navegacion-redondeado);
   display: flex;
   flex-direction: column-reverse;
-  width: 70%;
+  overflow: hidden;
+  width: 0%;
   max-width: 320px;
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right .3s ease-in-out;
+  transition: right .3s ease-in-out, width .3s ease-in-out;
   &.abierto {
     right: 0;
+    width: 70%;
     &.submenu-abierto {
       right: -320px;
+      width: 0%;
     }
   }
 }
