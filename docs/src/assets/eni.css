@@ -104,6 +104,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body * {
@@ -7334,21 +7335,18 @@ ol + hr {
   border-radius: var(--navegacion-redondeado);
   display: flex;
   flex-direction: column-reverse;
-  overflow: hidden;
-  width: 0%;
+  width: 70%;
   max-width: 320px;
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right 0.3s ease-in-out, width 0.3s ease-in-out;
+  transition: right 0.3s ease-in-out;
 }
 .nav-menu-contedor.abierto {
   right: 0;
-  width: 70%;
 }
 .nav-menu-contedor.abierto.submenu-abierto {
   right: -320px;
-  width: 0%;
 }
 
 .nav-menu {
