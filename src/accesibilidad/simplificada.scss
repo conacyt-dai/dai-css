@@ -1,18 +1,24 @@
-.a11y-simplificada { // agregar-quitar en el <body> pa cambiar
-  .a11y-simplificada-contenedor { // los contenedores que se llamen a11y-simplificada-contenedor se reformatearan cuando la a11y-simplificada este en el body
-    display: grid;
-    margin-left: auto;
-    margin-right: auto;
+.a11y-simplificada {
+  .a11y-simplificada-contenedor {
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+    padding: 0;
+    
     @each $dispositivo, $map in $a11y-simplificada-contenedores {
       @include mediaquery($dispositivo) {
-        grid-template-columns: repeat(map-get($map, 'columnas'), 1fr);
-        column-gap: map-get($map, 'espaciado');
-        max-width:  map-get($contenedores, $dispositivo, 'ancho-maximo');
+        > [class^='columna-'],
+        > [class*=" columna-"] {
+          display: block;
+          max-width: map-get($contenedores, $dispositivo, 'ancho-lectura');
+          padding: map-get($map, 'margen-interior');
+          margin: map-get($map, 'margen-interior') auto;
+        }
       }
     }
   }
 
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt),
+  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu),
   input[type=button],
   input[type=submit],
   input[type=reset],
@@ -33,8 +39,8 @@
       display: none;
     }
   }
-  img,
-  svg,
+  img:not(.nav-logo),
+  svg:not(.nav-logo),
   picture {
     display: none;
   }

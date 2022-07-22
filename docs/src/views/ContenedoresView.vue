@@ -61,7 +61,7 @@
 
   <h2 class="m-t-10">Contenedores especiales</h2>
   <h3>Contenedor simplificado para vista simplificada</h3>
-  <p>Este contenedor no importa que formato tenga, que tan ancho sea, cuando se selecciona la opción de accesibilidad de vista simplificada, se muestra el contenido que sea a dos columnas</p>
+  <p>Este contenedor no importa que formato tenga, que tan ancho sea, cuando se selecciona la opción de accesibilidad de vista simplificada, se muestra el contenido en bloque.</p>
 <pre>
 &lt;div class="contenedor">
   &lt;div class="a11y-simplificada-contenedor">
@@ -74,21 +74,21 @@
   <div class="contenedor p-0">
     <div class="flex a11y-simplificada-contenedor ">
       <div class="columna-4 conacyt-fondo-claro-1">
-        1
+        <p>1</p>
         <p>Si existe como padre la clase <b>a11y-simplificada</b> que debe estar conectada con el store para poder prender o apagar</p>
       </div>
       <div class="columna-1 gobmx-fondo-claro-2 ">
-        2
+        <p>2</p>
       </div>
       <div class="columna-6 conacyt-fondo-claro-2">
-        3
-        <p>Para el contenedor con clase <b>a11y-simplificada-contenedor</b> reformatea el contenido que sea que tiene a dos columnas</p>
+        <p>3</p>
+        <p>Para el contenedor con clase <b>a11y-simplificada-contenedor</b> reformatea el contenido que sea como bloques de texto con el ancho maximo del ancho de lectura.</p>
       </div>
       <div class="columna-2 gobmx-fondo-claro-1">
-        4
+        <p>4</p>
       </div>
       <div class="columna-3 gobmx-fondo-claro-2 ">
-        5
+        <p>5</p>
       </div>
     </div>
   </div>
