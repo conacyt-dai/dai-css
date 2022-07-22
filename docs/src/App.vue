@@ -59,8 +59,8 @@
   }
 </script>
 
-<template :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline }">
-
+<template>
+  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline }">
 
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
@@ -159,7 +159,7 @@
       <RouterView />
     </main>
 
-
+  </div>
 </template>
 
 <style>
