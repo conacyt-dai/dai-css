@@ -1,6 +1,6 @@
 {
   "name": "dadsig-css",
-  "version": "0.29.4",
+  "version": "0.29.5",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño para Herramientas ENI del Conacyt",
   "main": "src/eni.scss",
   "scripts": {
