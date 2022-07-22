@@ -132,8 +132,8 @@ select {
   background: var(--input-controles-color);
 }
 [type=checkbox]:checked + label::after {
-  font-family: "daiconos";
-  content: "\70";
+  font-family: "dai-iconos";
+  content: "\6b";
   color: var(--pagina-fondo);
   position: absolute;
   left: calc(.125rem + 4px);

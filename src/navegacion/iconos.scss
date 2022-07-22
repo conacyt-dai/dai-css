@@ -1,11 +1,10 @@
-.navegacion .icon,
-.navegacion .icono {
+.navegacion [class^='icono-'],
+.navegacion [class*=" icono-"] {
   display: inline-flex;
   align-self: center;
   margin-top: -1px;
   margin-bottom: -1px;
-  &[class^="dai-"]:before,
-  &[class*=" dai-"]:before {
+  &::before {
     display: inline-flex;
     align-self: center;
     font-size: 0.875rem !important;

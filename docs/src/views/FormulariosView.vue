@@ -111,14 +111,14 @@
       <label for="input-error">Error</label>
       <div class="input-error">
         <input id="input-error" type="text" placeholder="placeholder" value="value">
-        <span class="icon dai-cerrar"></span>
+        <span class="icono-cerrar"></span>
       </div>
     </div>
     <div class="columna-4">
       <label for="input-correcto">Correcto</label>
       <div class="input-correcto">
         <input id="input-correcto" type="text" placeholder="placeholder" value="value">
-        <span class="icon dai-aprobado"></span>
+        <span class="icono-aprobado"></span>
       </div>
     </div>
   </div>
@@ -127,12 +127,12 @@
     <label for="input-error">Error</label>
     <div class="input-error">
       <input id="input-error" type="text" placeholder="placeholder" value="value">
-      <span class="icon dai-cerrar"></span>
+      <span class="icono-cerrar"></span>
     </div>
     <label for="input-correcto">Correcto</label>
     <div class="input-correcto">
       <input id="input-correcto" type="text" placeholder="placeholder" value="value">
-      <span class="icon dai-aprobado"></span>
+      <span class="icono-aprobado"></span>
     </div>
   </div>
 

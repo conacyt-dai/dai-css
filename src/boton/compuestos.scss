@@ -22,7 +22,8 @@
       margin: 0;
       font-size: 0.875rem; // 14px
     }
-    .icon {
+    [class^='icono-'],
+    [class*=" icono-"] {
       font-size: 2rem; // 32px
       padding-left: map-get($espaciado, '4');
     }

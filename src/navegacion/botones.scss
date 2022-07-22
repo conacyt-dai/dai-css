@@ -88,10 +88,10 @@
   white-space: nowrap;
   transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
   &::after {
-    font-family: "daiconos" !important;
+    font-family: "dai-iconos" !important;
     font-size: 1rem;
     height: 0.875rem;
-    content: "\6a";
+    content: "\65";
     margin-left: map-get($espaciado,'minimo');
   }
   width: 100%;
@@ -108,9 +108,9 @@
     display: none;
   }
   &::before {
-    font-family: "daiconos" !important;
+    font-family: "dai-iconos" !important;
     font-size: 1rem;
-    content: "\6a";
+    content: "\65";
     margin-left: calc(map-get($espaciado,'minimo') * -1);
     margin-right: map-get($espaciado,'minimo');
     transform: rotate(180deg);

@@ -15,7 +15,7 @@ Agrega las siguientes lineas en el `<head> </head>` de tu archivo de html, que e
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <link href="https://file.myfontastic.com/9MnddkmwxGrfDcGqsLYbKP/icons.css" rel="stylesheet">
+  <link href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css" rel="stylesheet">  
   
   <link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css" rel="stylesheet">
 

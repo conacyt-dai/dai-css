@@ -366,13 +366,12 @@ h6, .h6 {
   }
 }
 
-.icon,
-.icono {
+[class^=icono-],
+[class*=" icono-"] {
   display: inline-flex;
 }
-.icon[class^=dai-]:before, .icon[class*=" dai-"]:before,
-.icono[class^=dai-]:before,
-.icono[class*=" dai-"]:before {
+[class^=icono-]::before,
+[class*=" icono-"]::before {
   display: inline-flex;
   align-self: center;
 }
@@ -675,8 +674,12 @@ input[type=reset]:not(:last-child),
   padding: 24px;
 }
 
-[class^=boton-] .icon,
-[class*=" boton-"] .icon {
+.boton [class^=icono-],
+.boton [class*=" icono-"],
+[class^=boton-] [class^=icono-],
+[class^=boton-] [class*=" icono-"],
+[class*=" boton-"] [class^=icono-],
+[class*=" boton-"] [class*=" icono-"] {
   display: inline-flex;
   align-items: center;
   padding-left: 8px;
@@ -687,7 +690,8 @@ input[type=reset]:not(:last-child),
   line-height: 0;
   padding: 4px;
 }
-.boton-icono .icon {
+.boton-icono [class^=icono-],
+.boton-icono [class*=" icono-"] {
   padding-left: 0;
 }
 .boton-icono.boton-chico {
@@ -722,7 +726,8 @@ input[type=reset]:not(:last-child),
   margin: 0;
   font-size: 0.875rem;
 }
-.boton-descarga .descripcion .icon {
+.boton-descarga .descripcion [class^=icono-],
+.boton-descarga .descripcion [class*=" icono-"] {
   font-size: 2rem;
   padding-left: 32px;
 }
@@ -1113,7 +1118,7 @@ summary:focus {
 summary::before {
   display: inline-block;
   width: 24px;
-  font-family: "daiconos";
+  font-family: "dai-iconos";
   content: "h";
 }
 
@@ -1283,8 +1288,8 @@ select:not(:disabled):focus {
 }
 
 [type=checkbox]:checked + label::after {
-  font-family: "daiconos";
-  content: "p";
+  font-family: "dai-iconos";
+  content: "k";
   color: var(--pagina-fondo);
   position: absolute;
   left: calc(0.125rem + 4px);
@@ -1452,8 +1457,10 @@ select {
   border: none !important;
   width: inherit !important;
 }
-.input-error .icon,
-.input-correcto .icon {
+.input-error [class^=icono-],
+.input-error [class*=" icono-"],
+.input-correcto [class^=icono-],
+.input-correcto [class*=" icono-"] {
   font-size: 1.25rem;
   display: inline-flex;
   margin-right: 4px;
@@ -1463,14 +1470,16 @@ select {
 .input-error {
   border-color: var(--acciones-error);
 }
-.input-error .icon {
+.input-error [class^=icono-],
+.input-error [class*=" icono-"] {
   color: var(--acciones-error);
 }
 
 .input-correcto {
   border-color: var(--acciones-correcto);
 }
-.input-correcto .icon {
+.input-correcto [class^=icono-],
+.input-correcto [class*=" icono-"] {
   color: var(--acciones-correcto);
 }
 
@@ -7570,10 +7579,10 @@ ol + hr {
   text-align: left;
 }
 .nav-boton-submenu::after, .nav-boton-regresar::after {
-  font-family: "daiconos" !important;
+  font-family: "dai-iconos" !important;
   font-size: 1rem;
   height: 0.875rem;
-  content: "j";
+  content: "e";
   margin-left: 4px;
 }
 @media screen and (min-width: 768px) {
@@ -7586,9 +7595,9 @@ ol + hr {
   display: none;
 }
 .nav-boton-regresar::before {
-  font-family: "daiconos" !important;
+  font-family: "dai-iconos" !important;
   font-size: 1rem;
-  content: "j";
+  content: "e";
   margin-left: -4px;
   margin-right: 4px;
   transform: rotate(180deg);
@@ -7599,16 +7608,15 @@ ol + hr {
   }
 }
 
-.navegacion .icon,
-.navegacion .icono {
+.navegacion [class^=icono-],
+.navegacion [class*=" icono-"] {
   display: inline-flex;
   align-self: center;
   margin-top: -1px;
   margin-bottom: -1px;
 }
-.navegacion .icon[class^=dai-]:before, .navegacion .icon[class*=" dai-"]:before,
-.navegacion .icono[class^=dai-]:before,
-.navegacion .icono[class*=" dai-"]:before {
+.navegacion [class^=icono-]::before,
+.navegacion [class*=" icono-"]::before {
   display: inline-flex;
   align-self: center;
   font-size: 0.875rem !important;

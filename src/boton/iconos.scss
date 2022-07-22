@@ -1,6 +1,8 @@
+.boton,
 [class^='boton-'],
 [class*=" boton-"] {
-  .icon {
+  [class^='icono-'],
+  [class*=" icono-"] {
     display: inline-flex;
     align-items: center;
     padding-left: map-get($espaciado, '1');
@@ -12,7 +14,8 @@
   font-size: 1.5rem;
   line-height: 0;
   padding: calc(map-get($espaciado, 'minimo'));
-  .icon {
+  [class^='icono-'],
+  [class*=" icono-"] {
     padding-left: 0;
   }
 

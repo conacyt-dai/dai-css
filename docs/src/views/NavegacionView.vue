@@ -23,7 +23,7 @@
         <ul class="nav-menu">
           <li><a href="#" class="nav-hipervinculo">Menú</a></li>
           <li class="nav-contenedor-submenu">
-            <button class="nav-boton-submenu"> <span class="icon dai-persona m-r-1"></span> Menú con submenu</button>
+            <button class="nav-boton-submenu"> <span class="icono-grupo m-r-1"></span> Menú con submenu</button>
             <ul class="nav-submenu">
               <li><button class="nav-boton-regresar">Menú con submenu</button></li>
               <li><a href="#" class="nav-hipervinculo">Menú del submenu pues en teoria se estira</a></li>
@@ -32,7 +32,7 @@
           </li>
           <li>
             <a href="#" class="nav-hipervinculo">
-              <span class="icon dai-persona m-r-1"></span> 
+              <span class="icono-persona m-r-1"></span> 
               Menú
             </a>
           </li>
@@ -43,7 +43,7 @@
           </li>
           <li>
             <button class="nav-boton-icon">
-              <span class="icon dai-persona"></span> 
+              <span class="icono-buscar"></span> 
             </button>
           </li>
         </ul>
@@ -69,7 +69,7 @@
           <li><a href="https://coronavirus.gob.mx/" class="nav-hipervinculo" target="_blank" rel="noopener">Información sobre COVID-19</a></li>
           <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener">Trámites</a></li>
           <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener">Gobierno</a></li>
-          <li><a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener"><span class="icon dai-buscar"></span> </a></li>
+          <li><a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener"><span class="icono-buscar"></span> </a></li>
         </ul>
       </div>
     </div>

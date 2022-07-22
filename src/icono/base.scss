@@ -1,8 +1,7 @@
-.icon,
-.icono {
+[class^='icono-'],
+[class*=" icono-"] {
   display: inline-flex;
-  &[class^="dai-"]:before,
-  &[class*=" dai-"]:before {
+  &::before {
     display: inline-flex;
     align-self: center;
   }

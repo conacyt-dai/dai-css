@@ -1,399 +1,372 @@
 <template>
   <h1>Iconografia</h1>
-
+<pre>
+  &lt;span class="icono-actualizar">&lt;/span>
+</pre>
   <div class="columns-5 columns-1-mov">
-    <div>
-      <span class="icon dai-feisbuk"></span>
-      <span>feisbuk</span>
-    </div>
-    <div>
-      <span class="icon dai-instagram"></span>
-      <span>instagram</span>
-    </div>
-    <div>
-      <span class="icon dai-tuiter"></span>
-      <span>tuiter</span>
-    </div>
-    <div>
-      <span class="icon dai-yutub"></span>
-      <span>yutub</span>
-    </div>
-    <div>
-      <span class="icon dai-acercar"></span>
-      <span>acercar</span>
-    </div>
-    <div>
-      <span class="icon dai-actualizar"></span>
-      <span>actualizar</span>
-    </div>
-    <div>
-      <span class="icon dai-agregar"></span>
-      <span>agregar</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-abajo"></span>
-      <span>angulo-abajo</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-arriba"></span>
-      <span>angulo-arriba</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-derecho"></span>
-      <span>angulo-derecho</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-desglosar"></span>
-      <span>angulo-desglosar</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-doble-arriba"></span>
-      <span>angulo-doble-arriba</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-doble-derecha"></span>
-      <span>angulo-doble-derecha</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-doble-izquierda"></span>
-      <span>angulo-doble-izquierda</span>
-    </div>
-    <div>
-      <span class="icon dai-angulo-izquierdo"></span>
-      <span>angulo-izquierdo</span>
-    </div>
-    <div>
-      <span class="icon dai-aprobado"></span>
-      <span>aprobado</span>
-    </div>
-    <div>
-      <span class="icon dai-arbol"></span>
-      <span>arbol</span>
-    </div>
-    <div>
-      <span class="icon dai-archivo-descargar"></span>
-      <span>archivo-descargar</span>
-    </div>
-    <div>
-      <span class="icon dai-archivo-subir"></span>
-      <span>archivo-subir</span>
-    </div>
-    <div>
-      <span class="icon dai-arrow-up-left"></span>
-      <span>arrow-up-left</span>
-    </div>
-    <div>
-      <span class="icon dai-ayuda"></span>
-      <span>ayuda</span>
-    </div>
-    <div>
-      <span class="icon dai-buscar"></span>
-      <span>buscar</span>
-    </div>
-    <div>
-      <span class="icon dai-calendario"></span>
-      <span>calendario</span>
-    </div>
-    <div>
-      <span class="icon dai-casilla"></span>
-      <span>casilla</span>
-    </div>
-    <div>
-      <span class="icon dai-casilla-verificada"></span>
-      <span>casilla-verificada</span>
-    </div>
-    <div>
-      <span class="icon dai-cerrar"></span>
-      <span>cerrar</span>
-    </div>
-    <div>
-      <span class="icon dai-comparar"></span>
-      <span>comparar</span>
-    </div>
-    <div>
-      <span class="icon dai-control-comenzar"></span>
-      <span>control-comenzar</span>
-    </div>
-    <div>
-      <span class="icon dai-control-detener"></span>
-      <span>control-detener</span>
-    </div>
-    <div>
-      <span class="icon dai-control-final"></span>
-      <span>control-final</span>
-    </div>
-    <div>
-      <span class="icon dai-control-inicio"></span>
-      <span>control-inicio</span>
-    </div>
-    <div>
-      <span class="icon dai-control-pausa"></span>
-      <span>control-pausa</span>
-    </div>
-    <div>
-      <span class="icon dai-copiar"></span>
-      <span>copiar</span>
-    </div>
-    <div>
-      <span class="icon dai-spanisa"></span>
-      <span>spanisa</span>
-    </div>
-    <div>
-      <span class="icon dai-documento"></span>
-      <span>documento</span>
-    </div>
-    <div>
-      <span class="icon dai-documento-pdf"></span>
-      <span>documento-pdf</span>
-    </div>
-    <div>
-      <span class="icon dai-documento-ppt"></span>
-      <span>documento-ppt</span>
-    </div>
-    <div>
-      <span class="icon dai-documento-word"></span>
-      <span>documento-word</span>
-    </div>
-    <div>
-      <span class="icon dai-editar"></span>
-      <span>editar</span>
-    </div>
-    <div>
-      <span class="icon dai-eliminar"></span>
-      <span>eliminar</span>
-    </div>
-    <div>
-      <span class="icon dai-estrella"></span>
-      <span>estrella</span>
-    </div>
-    <div>
-      <span class="icon dai-familia"></span>
-      <span>familia</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-abajo"></span>
-      <span>flecha-abajo</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-abajo-derecha"></span>
-      <span>flecha-abajo-derecha</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-abajo-izquierda"></span>
-      <span>flecha-abajo-izquierda</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-arriba"></span>
-      <span>flecha-arriba</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-arriba-derecha"></span>
-      <span>flecha-arriba-derecha</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-arriba-izquierda"></span>
-      <span>flecha-arriba-izquierda</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-derecha"></span>
-      <span>flecha-derecha</span>
-    </div>
-    <div>
-      <span class="icon dai-flecha-izquierda"></span>
-      <span>flecha-izquierda</span>
-    </div>
-    <div>
-      <span class="icon dai-flechas-horizontales"></span>
-      <span>flechas-horizontales</span>
-    </div>
-    <div>
-      <span class="icon dai-guardar"></span>
-      <span>guardar</span>
-    </div>
-    <div>
-      <span class="icon dai-informacion"></span>
-      <span>informacion</span>
-    </div>
-    <div>
-      <span class="icon dai-inicio"></span>
-      <span>inicio</span>
-    </div>
-    <div>
-      <span class="icon dai-mapa-centro"></span>
-      <span>mapa-centro</span>
-    </div>
-    <div>
-      <span class="icon dai-maximizar"></span>
-      <span>maximizar</span>
-    </div>
-    <div>
-      <span class="icon dai-menu"></span>
-      <span>menu</span>
-    </div>
-    <div>
-      <span class="icon dai-mexico"></span>
-      <span>mexico</span>
-    </div>
-    <div>
-      <span class="icon dai-minimizar"></span>
-      <span>minimizar</span>
-    </div>
-    <div>
-      <span class="icon dai-ojo-ocultar"></span>
-      <span>ojo-ocultar</span>
-    </div>
-    <div>
-      <span class="icon dai-ojo-ver"></span>
-      <span>ojo-ver</span>
-    </div>
-    <div>
-      <span class="icon dai-ordenar-alfabetico-asc"></span>
-      <span>ordenar-alfabetico-asc</span>
-    </div>
-    <div>
-      <span class="icon dai-ordenar-alfabetico-desc"></span>
-      <span>ordenar-alfabetico-desc</span>
-    </div>
-    <div>
-      <span class="icon dai-ordenar-asc"></span>
-      <span>ordenar-asc</span>
-    </div>
-    <div>
-      <span class="icon dai-ordenar-desc"></span>
-      <span>ordenar-desc</span>
-    </div>
-    <div>
-      <span class="icon dai-paleta-color"></span>
-      <span>paleta-color</span>
-    </div>
-    <div>
-      <span class="icon dai-persona"></span>
-      <span>persona</span>
-    </div>
-    <div>
-      <span class="icon dai-presentacion"></span>
-      <span>presentacion</span>
-    </div>
-    <div>
-      <span class="icon dai-reloj"></span>
-      <span>reloj</span>
-    </div>
-    <div>
-      <span class="icon dai-restar"></span>
-      <span>restar</span>
-    </div>
-    <div>
-      <span class="icon dai-voto-no"></span>
-      <span>voto-no</span>
-    </div>
-    <div>
-      <span class="icon dai-voto-si"></span>
-      <span>voto-si</span>
-    </div>
-    <div>
-      <span class="icon dai-arrastrar"></span>
-      <span>arrastrar</span>
-    </div>
-    <div>
-      <span class="icon dai-capa-lineas"></span>
-      <span>capa-lineas</span>
-    </div>
-    <div>
-      <span class="icon dai-capa-poligono"></span>
-      <span>capa-poligono</span>
-    </div>
-    <div>
-      <span class="icon dai-capa-puntos"></span>
-      <span>capa-puntos</span>
-    </div>
-    <div>
-      <span class="icon dai-descargar"></span>
-      <span>descargar</span>
-    </div>
-    <div>
-      <span class="icon dai-doc-csv"></span>
-      <span>doc-csv</span>
-    </div>
-    <div>
-      <span class="icon dai-contraste"></span>
-      <span>contraste</span>
-    </div>
-    <div>
-      <span class="icon dai-compartir"></span>
-      <span>compartir</span>
-    </div>
-    <div>
-      <span class="icon dai-colaborar"></span>
-      <span>colaborar</span>
-    </div>
-    <div>
-      <span class="icon dai-doc-geojson"></span>
-      <span>doc-geojson</span>
-    </div>
-    <div>
-      <span class="icon dai-doc-geopaquete"></span>
-      <span>doc-geopaquete</span>
-    </div>
-    <div>
-      <span class="icon dai-doc-png"></span>
-      <span>doc-png</span>
-    </div>
-    <div>
-      <span class="icon dai-editar-1"></span>
-      <span>editar-1</span>
-    </div>
-    <div>
-      <span class="icon dai-groupo"></span>
-      <span>groupo</span>
-    </div>
-    <div>
-      <span class="icon dai-mapa-generador"></span>
-      <span>mapa-generador</span>
-    </div>
-    <div>
-      <span class="icon dai-nivel"></span>
-      <span>nivel</span>
-    </div>
-    <div>
-      <span class="icon dai-numerales"></span>
-      <span>numerales</span>
-    </div>
-    <div>
-      <span class="icon dai-simplificado"></span>
-      <span>simplificado</span>
-    </div>
-    <div>
-      <span class="icon dai-subrayado"></span>
-      <span>subrayado</span>
-    </div>
-    <div>
-      <span class="icon dai-ubicacion"></span>
-      <span>ubicacion</span>
-    </div>
-    <div>
-      <span class="icon dai-teclado"></span>
-      <span>teclado</span>
-    </div>
+
+      <div>
+        <span class="icono-actualizar"></span>
+        <span>icono-actualizar</span>
+      </div>
+      <div>
+        <span class="icono-agregar"></span>
+        <span>icono-agregar</span>
+      </div>
+      <div>
+        <span class="icono-angulo-abajo"></span>
+        <span>icono-angulo-abajo</span>
+      </div>
+      <div>
+        <span class="icono-angulo-arriba"></span>
+        <span>icono-angulo-arriba</span>
+      </div>
+      <div>
+        <span class="icono-angulo-derecho"></span>
+        <span>icono-angulo-derecho</span>
+      </div>
+      <div>
+        <span class="icono-angulo-doble-abajo"></span>
+        <span>icono-angulo-doble-abajo</span>
+      </div>
+      <div>
+        <span class="icono-angulo-doble-arriba"></span>
+        <span>icono-angulo-doble-arriba</span>
+      </div>
+      <div>
+        <span class="icono-angulo-doble-derecha"></span>
+        <span>icono-angulo-doble-derecha</span>
+      </div>
+      <div>
+        <span class="icono-angulo-doble-izquierda"></span>
+        <span>icono-angulo-doble-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-angulo-izquierdo"></span>
+        <span>icono-angulo-izquierdo</span>
+      </div>
+      <div>
+        <span class="icono-aprobado"></span>
+        <span>icono-aprobado</span>
+      </div>
+      <div>
+        <span class="icono-archivo-descargar"></span>
+        <span>icono-archivo-descargar</span>
+      </div>
+      <div>
+        <span class="icono-archivo-subir"></span>
+        <span>icono-archivo-subir</span>
+      </div>
+      <div>
+        <span class="icono-arrastrar"></span>
+        <span>icono-arrastrar</span>
+      </div>
+      <div>
+        <span class="icono-ayuda"></span>
+        <span>icono-ayuda</span>
+      </div>
+      <div>
+        <span class="icono-buscar"></span>
+        <span>icono-buscar</span>
+      </div>
+      <div>
+        <span class="icono-calendario"></span>
+        <span>icono-calendario</span>
+      </div>
+      <div>
+        <span class="icono-cambio-tipografia"></span>
+        <span>icono-cambio-tipografia</span>
+      </div>
+      <div>
+        <span class="icono-capa-lineas"></span>
+        <span>icono-capa-lineas</span>
+      </div>
+      <div>
+        <span class="icono-capa-puntos"></span>
+        <span>icono-capa-puntos</span>
+      </div>
+      <div>
+        <span class="icono-casilla"></span>
+        <span>icono-casilla</span>
+      </div>
+      <div>
+        <span class="icono-casilla-verificada"></span>
+        <span>icono-casilla-verificada</span>
+      </div>
+      <div>
+        <span class="icono-cerrar"></span>
+        <span>icono-cerrar</span>
+      </div>
+      <div>
+        <span class="icono-colaborar"></span>
+        <span>icono-colaborar</span>
+      </div>
+      <div>
+        <span class="icono-compartir"></span>
+        <span>icono-compartir</span>
+      </div>
+      <div>
+        <span class="icono-contraste"></span>
+        <span>icono-contraste</span>
+      </div>
+      <div>
+        <span class="icono-control-comenzar"></span>
+        <span>icono-control-comenzar</span>
+      </div>
+      <div>
+        <span class="icono-control-detener"></span>
+        <span>icono-control-detener</span>
+      </div>
+      <div>
+        <span class="icono-control-final"></span>
+        <span>icono-control-final</span>
+      </div>
+      <div>
+        <span class="icono-control-inicio"></span>
+        <span>icono-control-inicio</span>
+      </div>
+      <div>
+        <span class="icono-control-pausa"></span>
+        <span>icono-control-pausa</span>
+      </div>
+      <div>
+        <span class="icono-copiar"></span>
+        <span>icono-copiar</span>
+      </div>
+      <div>
+        <span class="icono-documento"></span>
+        <span>icono-documento</span>
+      </div>
+      <div>
+        <span class="icono-documento-csv"></span>
+        <span>icono-documento-csv</span>
+      </div>
+      <div>
+        <span class="icono-documento-geojson"></span>
+        <span>icono-documento-geojson</span>
+      </div>
+      <div>
+        <span class="icono-documento-geopaquete"></span>
+        <span>icono-documento-geopaquete</span>
+      </div>
+      <div>
+        <span class="icono-documento-pdf"></span>
+        <span>icono-documento-pdf</span>
+      </div>
+      <div>
+        <span class="icono-documento-png"></span>
+        <span>icono-documento-png</span>
+      </div>
+      <div>
+        <span class="icono-documento-ppt"></span>
+        <span>icono-documento-ppt</span>
+      </div>
+      <div>
+        <span class="icono-documento-word"></span>
+        <span>icono-documento-word</span>
+      </div>
+      <div>
+        <span class="icono-editar"></span>
+        <span>icono-editar</span>
+      </div>
+      <div>
+        <span class="icono-eliminar"></span>
+        <span>icono-eliminar</span>
+      </div>
+      <div>
+        <span class="icono-enlace-subrayado"></span>
+        <span>icono-enlace-subrayado</span>
+      </div>
+      <div>
+        <span class="icono-estrella"></span>
+        <span>icono-estrella</span>
+      </div>
+      <div>
+        <span class="icono-flecha-abajo"></span>
+        <span>icono-flecha-abajo</span>
+      </div>
+      <div>
+        <span class="icono-flecha-abajo-derecha"></span>
+        <span>icono-flecha-abajo-derecha</span>
+      </div>
+      <div>
+        <span class="icono-flecha-abajo-izquierda"></span>
+        <span>icono-flecha-abajo-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-flecha-arriba"></span>
+        <span>icono-flecha-arriba</span>
+      </div>
+      <div>
+        <span class="icono-flecha-arriba-derecha"></span>
+        <span>icono-flecha-arriba-derecha</span>
+      </div>
+      <div>
+        <span class="icono-flecha-arriba-izquierda"></span>
+        <span>icono-flecha-arriba-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-flecha-derecha"></span>
+        <span>icono-flecha-derecha</span>
+      </div>
+      <div>
+        <span class="icono-flecha-izquierda"></span>
+        <span>icono-flecha-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-flechas-horizontales"></span>
+        <span>icono-flechas-horizontales</span>
+      </div>
+      <div>
+        <span class="icono-flkt"></span>
+        <span>icono-flkt</span>
+      </div>
+      <div>
+        <span class="icono-grupo"></span>
+        <span>icono-grupo</span>
+      </div>
+      <div>
+        <span class="icono-social-facebook"></span>
+        <span>icono-social-facebook</span>
+      </div>
+      <div>
+        <span class="icono-social-github"></span>
+        <span>icono-social-github</span>
+      </div>
+      <div>
+        <span class="icono-social-instagram"></span>
+        <span>icono-social-instagram</span>
+      </div>
+      <div>
+        <span class="icono-social-twitter"></span>
+        <span>icono-social-twitter</span>
+      </div>
+      <div>
+        <span class="icono-social-youtube"></span>
+        <span>icono-social-youtube</span>
+      </div>
+      <div>
+        <span class="icono-informacion"></span>
+        <span>icono-informacion</span>
+      </div>
+      <div>
+        <span class="icono-inicio"></span>
+        <span>icono-inicio</span>
+      </div>
+      <div>
+        <span class="icono-mapa-centro"></span>
+        <span>icono-mapa-centro</span>
+      </div>
+      <div>
+        <span class="icono-mapa-generador"></span>
+        <span>icono-mapa-generador</span>
+      </div>
+      <div>
+        <span class="icono-maximizar"></span>
+        <span>icono-maximizar</span>
+      </div>
+      <div>
+        <span class="icono-menu"></span>
+        <span>icono-menu</span>
+      </div>
+      <div>
+        <span class="icono-mexico"></span>
+        <span>icono-mexico</span>
+      </div>
+      <div>
+        <span class="icono-minimizar"></span>
+        <span>icono-minimizar</span>
+      </div>
+      <div>
+        <span class="icono-nivel"></span>
+        <span>icono-nivel</span>
+      </div>
+      <div>
+        <span class="icono-numerales"></span>
+        <span>icono-numerales</span>
+      </div>
+      <div>
+        <span class="icono-ojo-ocultar"></span>
+        <span>icono-ojo-ocultar</span>
+      </div>
+      <div>
+        <span class="icono-ojo-ver"></span>
+        <span>icono-ojo-ver</span>
+      </div>
+      <div>
+        <span class="icono-ordenar-alfabetico-asc"></span>
+        <span>icono-ordenar-alfabetico-asc</span>
+      </div>
+      <div>
+        <span class="icono-ordenar-alfabetico-desc"></span>
+        <span>icono-ordenar-alfabetico-desc</span>
+      </div>
+      <div>
+        <span class="icono-ordenar-asc"></span>
+        <span>icono-ordenar-asc</span>
+      </div>
+      <div>
+        <span class="icono-ordenar-desc"></span>
+        <span>icono-ordenar-desc</span>
+      </div>
+      <div>
+        <span class="icono-persona"></span>
+        <span>icono-persona</span>
+      </div>
+      <div>
+        <span class="icono-poligono"></span>
+        <span>icono-poligono</span>
+      </div>
+      <div>
+        <span class="icono-reloj"></span>
+        <span>icono-reloj</span>
+      </div>
+      <div>
+        <span class="icono-restar"></span>
+        <span>icono-restar</span>
+      </div>
+      <div>
+        <span class="icono-teclado"></span>
+        <span>icono-teclado</span>
+      </div>
+      <div>
+        <span class="icono-ubicacion"></span>
+        <span>icono-ubicacion</span>
+      </div>
+      <div>
+        <span class="icono-vista-simplificada"></span>
+        <span>icono-vista-simplificada</span>
+      </div>
+      <div>
+        <span class="icono-voto-no"></span>
+        <span>icono-voto-no</span>
+      </div>
+      <div>
+        <span class="icono-voto-si"></span>
+        <span>icono-voto-si</span>
+      </div>
+
+
   </div>
 
   <h2 class="m-t-10">Tamaños</h2>
   <p>Base 8, clases responsivas en pixeles, no varian cambiando el tamaño base de la tipografia.</p>
   <p>icono-1, icono-2, icono-3 .... icono-10</p>
-  <span class="icon dai-editar-1 icono-1"></span>
-  <span class="icon dai-editar-1 icono-2"></span>
-  <span class="icon dai-editar-1 icono-3"></span>
-  <span class="icon dai-editar-1 icono-4"></span>
-  <span class="icon dai-editar-1 icono-5"></span>
-  <span class="icon dai-editar-1 icono-6"></span>
-  <span class="icon dai-editar-1 icono-7"></span>
-  <span class="icon dai-editar-1 icono-8"></span>
-  <span class="icon dai-editar-1 icono-9"></span>
-  <span class="icon dai-editar-1 icono-10"></span>
+  <span class="icono-flkt icono-1"></span>
+  <span class="icono-flkt icono-2"></span>
+  <span class="icono-flkt icono-3"></span>
+  <span class="icono-flkt icono-4"></span>
+  <span class="icono-flkt icono-5"></span>
+  <span class="icono-flkt icono-6"></span>
+  <span class="icono-flkt icono-7"></span>
+  <span class="icono-flkt icono-8"></span>
+  <span class="icono-flkt icono-9"></span>
+  <span class="icono-flkt icono-10"></span>
 
   <h2 class="m-t-10">Responsivos</h2>
   <p>Variando el tamaño para móvil y escritorio</p>
   <p>
-    <span class="icon dai-editar-1 icono-10-mov icono-5-esc"></span>
+    <span class="icono-flkt icono-10-mov icono-5-esc"></span>
     .icono-10-mov .icono-5-esc
   </p>
 

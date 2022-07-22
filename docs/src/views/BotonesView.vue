@@ -57,49 +57,49 @@
     <button class="boton-terciario boton-grande"> boton-grande </button>
   </p>
   <p>
-    <button class="boton-primario"> boton <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-primario boton-chico"> boton-chico <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-primario boton-grande"> boton-grande <span class="icon dai-flecha-derecha"></span></button>
+    <button class="boton-primario"> boton <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-primario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-primario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
   </p>
   <p>
-    <button class="boton-secundario"> boton <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-secundario boton-chico"> boton-chico <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-secundario boton-grande"> boton-grande <span class="icon dai-flecha-derecha"></span></button>
+    <button class="boton-secundario"> boton <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-secundario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-secundario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
   </p>
   <p>
-    <button class="boton-terciario"> boton <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-terciario boton-chico"> boton-chico <span class="icon dai-flecha-derecha"></span></button>
-    <button class="boton-terciario boton-grande"> boton-grande <span class="icon dai-flecha-derecha"></span></button>
+    <button class="boton-terciario"> boton <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-terciario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
+    <button class="boton-terciario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
   </p>
 
   <h2 class="m-t-10">Iconos</h2>
   <p>boton icono + primario + secundario + terciario</p>
   <p>
     <button class="boton-icono boton-primario">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
     <button class="boton-icono boton-secundario">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
     <button class="boton-icono boton-terciario">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
   </p>
   <p>boton icono +  -  + chico + grande</p>
   <p>
     <button class="boton-icono boton-primario">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
     <button class="boton-icono boton-primario boton-chico">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
     <button class="boton-icono boton-primario boton-grande">
-      <span class="icon dai-flecha-derecha"></span>
+      <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
   </p>
@@ -112,7 +112,7 @@
         <p class="titulo">Descarga de archivos</p>
         <div class="descripcion">
           <p class="texto">Tenetur molestias iusto ducimus cumque eligendi quod, porro quos iste facere ut, eum veritatis debitis voluptate nemo sunt obcaecati. </p>
-          <span class="icon dai-descargar"></span>
+          <span class="icono-archivo-descargar"></span>
         </div>
       </button>
     </div> 

@@ -13,7 +13,8 @@
     border: none !important;
     width: inherit !important;
   }
-  .icon {
+  [class^='icono-'],
+  [class*=" icono-"] {
     font-size: 1.25rem;
     display: inline-flex;
     margin-right: map-get($espaciado, 'minimo');
@@ -22,13 +23,15 @@
 }
 .input-error {
   border-color: var(--acciones-error);
-  .icon {
+  [class^='icono-'],
+  [class*=" icono-"] {
     color: var(--acciones-error);
   }
 }
 .input-correcto {
   border-color: var(--acciones-correcto);
-  .icon {
+  [class^='icono-'],
+  [class*=" icono-"] {
     color: var(--acciones-correcto);
   }
 }
