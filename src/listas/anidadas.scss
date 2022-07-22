@@ -1,0 +1,14 @@
+.listas-anidadas {
+  list-style-type: none;
+  counter-reset: item;
+  li {
+    counter-increment: item;
+    ol, ul {
+      list-style-type: none;
+      counter-reset: item;
+    }
+    &::before {
+      content: counters(item, ".") ". ";
+    }
+  }
+}

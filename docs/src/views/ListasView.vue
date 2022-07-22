@@ -3,7 +3,7 @@
 
   <h2 class="m-t-10">listas simples</h2>
   <div class="flex">
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">Titulo de lista ordenada</p>
       <ol>
         <li>Lista Nivel 1</li>
@@ -24,7 +24,7 @@
         </li>
       </ol>
     </div>
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">Titulo de lista desordenada</p>
       <ul>
         <li>Lista Nivel 1</li>
@@ -45,7 +45,7 @@
         </li>
       </ul>
     </div>
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">Titulo de lista descriptiva</p>
       <dl>
         <dt>Término</dt>
@@ -56,11 +56,39 @@
         <dd>Descripción del término</dd>
       </dl>
     </div>
+    <div class="columna-4">
+      <p class="titulo-lista">Clase listas-anidadas</p>
+      <ol class="listas-anidadas">
+        <li>Lista Nivel 1</li>
+        <li>
+          Lista Nivel 1
+          <ul>
+            <li>Lista Nivel 2
+              <ul>
+                <li>Lista Nivel 3</li>
+                <li>Lista Nivel 3</li>
+                <li>Lista Nivel 3</li>
+                <li>Lista Nivel 3</li>
+              </ul>
+            </li>
+            <li>Lista Nivel 2</li>
+            <li>Lista Nivel 2</li>
+          </ul>
+        </li>
+        <li>
+          Lista Nivel 1
+          <ul>
+            <li>Lista Nivel 2</li>
+            <li>Lista Nivel 2</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
   </div>
 
   <h2 class="m-t-10">listas compuestas</h2>
   <div class="flex">
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">lista con iconos</p>
       <ul class="lista-icono">
         <li class="icon dai-flecha-derecha">
@@ -93,7 +121,7 @@
         </li>
       </ul>
     </div>
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">lista con avatar</p>
       <ul class="lista-avatar">
         <li>
@@ -132,7 +160,7 @@
         </li>
       </ul>
     </div>
-    <div class="columna-5">
+    <div class="columna-4">
       <p class="titulo-lista">lista con logotipos</p>
       <ul class="lista-logo">
         <li>

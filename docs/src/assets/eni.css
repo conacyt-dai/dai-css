@@ -940,6 +940,21 @@ dl dd {
   margin: 8px 0 0 0;
 }
 
+.listas-anidadas {
+  list-style-type: none;
+  counter-reset: item;
+}
+.listas-anidadas li {
+  counter-increment: item;
+}
+.listas-anidadas li ol, .listas-anidadas li ul {
+  list-style-type: none;
+  counter-reset: item;
+}
+.listas-anidadas li::before {
+  content: counters(item, ".") ". ";
+}
+
 .titulo-lista {
   font-size: 1.125em;
   font-weight: 500;
