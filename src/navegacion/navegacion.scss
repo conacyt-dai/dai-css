@@ -1,3 +1,7 @@
+#app {
+  overflow: clip;
+}
+
 .navegacion {
   background-color: var(--navegacion-fondo);
   box-shadow: var(--navegacion-sombra);
@@ -132,7 +136,7 @@
     background-color: var(--navegacion-fondo);
     border-radius: var(--navegacion-redondeado);
     box-shadow: var(--navegacion-sombra);
-    overflow: hidden;
+    overflow: clip;
     opacity: 0;
     pointer-events: none;
     top: inherit;

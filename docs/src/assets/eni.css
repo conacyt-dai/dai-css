@@ -98,19 +98,15 @@ html {
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  box-sizing: border-box !important;
-  overflow-x: hidden !important;
 }
 
 body {
-  box-sizing: border-box !important;
   padding: 0;
   margin: 0;
-  overflow-x: hidden !important;
 }
 
 body * {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 main {
@@ -7319,6 +7315,10 @@ ol + hr {
     padding-bottom: 120px;
   }
 }
+#app {
+  overflow: clip;
+}
+
 .navegacion {
   background-color: var(--navegacion-fondo);
   box-shadow: var(--navegacion-sombra);
@@ -7456,7 +7456,7 @@ ol + hr {
     background-color: var(--navegacion-fondo);
     border-radius: var(--navegacion-redondeado);
     box-shadow: var(--navegacion-sombra);
-    overflow: hidden;
+    overflow: clip;
     opacity: 0;
     pointer-events: none;
     top: inherit;
