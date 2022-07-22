@@ -103,12 +103,6 @@
   --navegacion-color: #00f;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
-  // --navegacion-hover-color: #005DFF;
-  // --navegacion-hover-fondo: #005DFF33;
-  // --navegacion-hover-sombra: transparent;
-  // --navegacion-activo-color: #005DFF;
-  // --navegacion-activo-fondo: #fff;
-  // --navegacion-activo-sombra: inset 0 -8px 0 #005DFF;
 }
 
 // COLOR
@@ -175,9 +169,7 @@ $breakpoints: (
   'esc': 768px,
 );
 
-$nav: (
-  'breakpoint': 768px,
-);
+$navegacion-breakpoint: 768px;
 
 $contenedores: (
   'mov': (
