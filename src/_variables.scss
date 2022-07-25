@@ -100,9 +100,16 @@
   --hipervinculo-focus-sombra: #005DFF;
 
   --navegacion-fondo: #eef;
-  --navegacion-color: #00f;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+  --navegacion-fondo-hover: #ddf;
+  --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+  --navegacion-color-hover: #00f;
+  --navegacion-fondo-active: #00f;
+  --navegacion-sombra-active: 0 0 0 0;
+  --navegacion-color-active: #fff;
+
 }
 
 // COLOR

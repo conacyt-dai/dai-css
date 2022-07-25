@@ -1,7 +1,6 @@
 .nav-hipervinculo {
-  // background-color: var(--hipervinculo-navegacion-fondo);
-  // box-shadow: var(--hipervinculo-navegacion-fondo);
-  // color: var(--hipervinculo-navegacion-color);
+  background-color: var(--navegacion-fondo);
+  box-shadow: 0 0 0 0;
   color: var(--navegacion-color);
   border: none;
   border-radius: 0;
@@ -10,36 +9,34 @@
   line-height: calc(1em * 1);
   padding: map-get($espaciado,'2');
   text-decoration: none;
-  
   transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
   &:hover,
   &:focus {
     border: none;
     border-radius: 0;
-    // background-color: var(--hipervinculo-navegacion-hover-fondo);
-    // box-shadow: var(--hipervinculo-navegacion-hover-sombra);
-    // color: var(--hipervinculo-navegacion-hover-color);
+    background-color: var(--navegacion-fondo-hover);
+    box-shadow: var(--navegacion-sombra-hover);
+    color: var(--navegacion-color-hover);
   }
-  // &:active {
-  //   background-color: var(--hipervinculo-navegacion-activo-fondo);
-  //   box-shadow: var(--hipervinculo-navegacion-activo-sombra);
-  //   color: var(--hipervinculo-navegacion-activo-color);
-  // }
+  &:active,
+  &.active,
+  &.router-link-exact-active {
+    background-color: var(--navegacion-fondo-active);
+    box-shadow: var(--navegacion-sombra-active);
+    color: var(--navegacion-color-active);
+  }
   display: block;
   @include mediaquery('nav') {
     display: inline-flex;
     white-space: nowrap;
   }
-
 }
 
 .nav-hiperviculo-logo {
   display: inline-flex;
   padding: map-get($espaciado, 'minimo');
   margin: 0;
-  
   .nav-logo {
-    // width: 128px;
     height: 38px;
   }
 }

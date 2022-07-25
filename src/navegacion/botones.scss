@@ -1,16 +1,22 @@
 .nav-boton {
-  @extend .boton-primario;
   display: inline-flex;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
   padding: map-get($espaciado,'1');
   margin: map-get($espaciado,'1') map-get($espaciado,'2');
-  background-color: var(--navegacion-color);
-  color: var(--navegacion-fondo);
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-color-hover);
   border: none;
+  &:hover,
+  &:focus {
+    background-color: var(--navegacion-fondo-active);
+    box-shadow: var(--navegacion-sombra-active);
+    color: var(--navegacion-color-active);
+  }
   @include mediaquery('nav') {
-    margin: 0 !important;
+    margin: 0 0 0 map-get($espaciado,'minimo');
   }
 }
 .nav-boton-icon {
@@ -19,7 +25,7 @@
   border-radius: 50%;
   margin: map-get($espaciado,'1') map-get($espaciado,'2');
   @include mediaquery('nav') {
-    margin: map-get($espaciado,'minimo') !important;
+    margin: map-get($espaciado,'minimo');
   }
 }
 
@@ -36,7 +42,7 @@
   justify-content: center;
   transition: all .3s ease-in-out;
   .nav-icono-menu {
-    background: #000; // TODO: color icono navbar
+    background: var(--navegacion-color);
     width: 20px;
     height: 1px;
     display: block;
@@ -45,7 +51,7 @@
     top: 22px;
     &::after,
     &::before {
-      background: #000; // TODO: color icono navbar
+      background: var(--navegacion-color);
       content: "";
       width: 20px;
       height: 1px;
@@ -75,10 +81,11 @@
 }
 .nav-boton-submenu {
   display: inline-flex;
-  background-color: transparent;
+  background-color: var(--navegacion-fondo);
   border: none;
   border-radius: 0;
-  color: #00f; // TODO: color navbar
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
@@ -87,6 +94,19 @@
   text-decoration: none;
   white-space: nowrap;
   transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: var(--navegacion-fondo-hover);
+    box-shadow: var(--navegacion-sombra-hover);
+    color: var(--navegacion-color-hover);
+  }
+  &:active,
+  &.active,
+  &.router-link-exact-active {
+    background-color: var(--navegacion-fondo-active);
+    box-shadow: var(--navegacion-sombra-active);
+    color: var(--navegacion-color-active);
+  }
   &::after {
     font-family: "dai-iconos" !important;
     font-size: 1rem;

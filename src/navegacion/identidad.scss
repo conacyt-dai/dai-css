@@ -80,7 +80,22 @@
     }
   }
   .nav-boton-submenu {
+    background: transparent;
+    box-shadow: none;
     color: map-get($color-conacyt, 'oscuro-1');
+    &:hover,
+    &:focus {
+      background-color:map-get($color-conacyt, 'claro-0'); 
+      box-shadow: none;
+      color: map-get($color-conacyt, 'oscuro-1');
+    }
+    &:active,
+    &.active,
+    &.router-link-exact-active {
+      background-color: transparent;
+      box-shadow: inset 0 -5px 0 map-get($color-conacyt, 'oscuro-1');
+      color: map-get($color-conacyt, 'oscuro-1');
+    }
   }
   .nav-submenu {
     background-color: #fff;

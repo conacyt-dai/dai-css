@@ -31,9 +31,9 @@
             </ul>
           </li>
           <li>
-            <a href="#" class="nav-hipervinculo">
+            <a href="#" class="nav-hipervinculo active">
               <span class="icono-persona m-r-1"></span> 
-              Menú
+              Menú activo
             </a>
           </li>
           <li><a href="#" class="nav-hipervinculo">Menú</a></li>

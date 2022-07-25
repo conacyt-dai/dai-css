@@ -87,9 +87,15 @@
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
   --navegacion-fondo: #eef;
-  --navegacion-color: #00f;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+  --navegacion-fondo-hover: #ddf;
+  --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+  --navegacion-color-hover: #00f;
+  --navegacion-fondo-active: #00f;
+  --navegacion-sombra-active: 0 0 0 0;
+  --navegacion-color-active: #fff;
 }
 
 html {
@@ -587,24 +593,24 @@ input[type=reset]:not(:last-child),
   margin-right: 8px;
 }
 
-.boton-primario, .nav-boton, .nav-boton-icon, .boton-info, .boton-descarga, .boton-icono {
+.boton-primario, .boton-info, .boton-descarga, .boton-icono {
   background-color: var(--boton-primario-fondo);
   border-color: var(--boton-primario-borde);
   color: var(--boton-primario-color);
 }
-.boton-primario:disabled, .nav-boton:disabled, .nav-boton-icon:disabled, .boton-info:disabled, .boton-descarga:disabled, .boton-icono:disabled {
+.boton-primario:disabled, .boton-info:disabled, .boton-descarga:disabled, .boton-icono:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
   border-color: var(--boton-primario-deshabilitado-borde);
   box-shadow: 3px 3px 4px var(--boton-primario-deshabilitado-sombra);
   color: var(--boton-primario-deshabilitado-color);
 }
-.boton-primario:not(:disabled):hover, .nav-boton:not(:disabled):hover, .nav-boton-icon:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-descarga:not(:disabled):hover, .boton-icono:not(:disabled):hover {
+.boton-primario:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-descarga:not(:disabled):hover, .boton-icono:not(:disabled):hover {
   background-color: var(--boton-primario-hover-fondo);
   border-color: var(--boton-primario-hover-borde);
   box-shadow: 3px 3px 4px var(--boton-primario-hover-sombra);
   color: var(--boton-primario-hover-color);
 }
-.boton-primario:not(:disabled):focus, .nav-boton:not(:disabled):focus, .nav-boton-icon:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-descarga:not(:disabled):focus, .boton-icono:not(:disabled):focus {
+.boton-primario:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-descarga:not(:disabled):focus, .boton-icono:not(:disabled):focus {
   background-color: var(--boton-primario-focus-fondo);
   border-color: var(--boton-primario-focus-borde);
   box-shadow: 0 0 8px var(--boton-primario-focus-sombra);
@@ -7472,6 +7478,8 @@ ol + hr {
   }
 }
 .nav-hipervinculo {
+  background-color: var(--navegacion-fondo);
+  box-shadow: 0 0 0 0;
   color: var(--navegacion-color);
   border: none;
   border-radius: 0;
@@ -7486,6 +7494,14 @@ ol + hr {
 .nav-hipervinculo:hover, .nav-hipervinculo:focus {
   border: none;
   border-radius: 0;
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: var(--navegacion-sombra-hover);
+  color: var(--navegacion-color-hover);
+}
+.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.router-link-exact-active {
+  background-color: var(--navegacion-fondo-active);
+  box-shadow: var(--navegacion-sombra-active);
+  color: var(--navegacion-color-active);
 }
 @media screen and (min-width: 768px) {
   .nav-hipervinculo {
@@ -7510,13 +7526,19 @@ ol + hr {
   line-height: 1em;
   padding: 8px;
   margin: 8px 16px;
-  background-color: var(--navegacion-color);
-  color: var(--navegacion-fondo);
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-color-hover);
   border: none;
+}
+.nav-boton:hover, .nav-boton-icon:hover, .nav-boton:focus, .nav-boton-icon:focus {
+  background-color: var(--navegacion-fondo-active);
+  box-shadow: var(--navegacion-sombra-active);
+  color: var(--navegacion-color-active);
 }
 @media screen and (min-width: 768px) {
   .nav-boton, .nav-boton-icon {
-    margin: 0 !important;
+    margin: 0 0 0 4px;
   }
 }
 
@@ -7527,7 +7549,7 @@ ol + hr {
 }
 @media screen and (min-width: 768px) {
   .nav-boton-icon {
-    margin: 4px !important;
+    margin: 4px;
   }
 }
 
@@ -7545,7 +7567,7 @@ ol + hr {
   transition: all 0.3s ease-in-out;
 }
 .nav-boton-menu .nav-icono-menu {
-  background: #000;
+  background: var(--navegacion-color);
   width: 20px;
   height: 1px;
   display: block;
@@ -7554,7 +7576,7 @@ ol + hr {
   top: 22px;
 }
 .nav-boton-menu .nav-icono-menu::after, .nav-boton-menu .nav-icono-menu::before {
-  background: #000;
+  background: var(--navegacion-color);
   content: "";
   width: 20px;
   height: 1px;
@@ -7580,10 +7602,11 @@ ol + hr {
 
 .nav-boton-submenu, .nav-boton-regresar {
   display: inline-flex;
-  background-color: transparent;
+  background-color: var(--navegacion-fondo);
   border: none;
   border-radius: 0;
-  color: #00f;
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1em;
@@ -7594,6 +7617,16 @@ ol + hr {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   width: 100%;
   text-align: left;
+}
+.nav-boton-submenu:hover, .nav-boton-regresar:hover, .nav-boton-submenu:focus, .nav-boton-regresar:focus {
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: var(--navegacion-sombra-hover);
+  color: var(--navegacion-color-hover);
+}
+.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
+  background-color: var(--navegacion-fondo-active);
+  box-shadow: var(--navegacion-sombra-active);
+  color: var(--navegacion-color-active);
 }
 .nav-boton-submenu::after, .nav-boton-regresar::after {
   font-family: "dai-iconos" !important;
@@ -7708,6 +7741,18 @@ ol + hr {
   background: #002663;
 }
 .navegacion-conacyt .nav-boton-submenu, .navegacion-conacyt .nav-boton-regresar {
+  background: transparent;
+  box-shadow: none;
+  color: #002663;
+}
+.navegacion-conacyt .nav-boton-submenu:hover, .navegacion-conacyt .nav-boton-regresar:hover, .navegacion-conacyt .nav-boton-submenu:focus, .navegacion-conacyt .nav-boton-regresar:focus {
+  background-color: #f6f6f6;
+  box-shadow: none;
+  color: #002663;
+}
+.navegacion-conacyt .nav-boton-submenu:active, .navegacion-conacyt .nav-boton-regresar:active, .navegacion-conacyt .nav-boton-submenu.active, .navegacion-conacyt .active.nav-boton-regresar, .navegacion-conacyt .nav-boton-submenu.router-link-exact-active, .navegacion-conacyt .router-link-exact-active.nav-boton-regresar {
+  background-color: transparent;
+  box-shadow: inset 0 -5px 0 #002663;
   color: #002663;
 }
 .navegacion-conacyt .nav-submenu {
