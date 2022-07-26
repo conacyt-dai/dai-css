@@ -20,6 +20,10 @@
     </p>
     <p class="parrafo-texto-alto">
       Espero se diviertan mucho usandola y actualizandola.
+      <a href="https://github.com/conacyt-dai/dadsig-css" target="_blank" rel="noopener" class="nav-boton">
+        <span class="icono-social-github m-r-1"></span>
+        dadsig-css
+      </a>
     </p>
     <p class="notas m-t-maximo">
       <hr>
