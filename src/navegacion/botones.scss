@@ -9,6 +9,7 @@
   box-shadow: 0 0 0 0;
   color: var(--navegacion-color-hover);
   border: none;
+  text-decoration: none;
   &:hover,
   &:focus {
     background-color: var(--navegacion-fondo-active);
