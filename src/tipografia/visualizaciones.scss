@@ -7,36 +7,44 @@
 }
 .vis-titulo-proyecto {
   font-size: 1rem;
+  line-height: calc(1em * 1.2);
   font-weight: 400;
 }
 .vis-titulo-leyenda {
   font-size: 1rem; // 16px
+  line-height: calc(1em * 1.2);
   font-weight: 600;
 }
 .vis-titulo-ejes {
   font-size: 	0.75rem; // 12px
+  line-height: calc(1em * 1.2);
   font-weight: 600;
 }
 .vis-valores-ejes {
   font-size: 	0.75rem; // 12px
+  line-height: calc(1em * 1.2);
   font-weight: 500;
 }
 .vis-fecha-actualizacion {
   color: var(--tipografia-color-2);
   font-size: 	0.75rem; // 12px
+  line-height: calc(1em * 1.2);
   font-weight: 500;
 }
 .vis-instruccional {
   font-size: 1rem;
+  line-height: calc(1em * 1.2);
   font-weight: 500;
 }
 
 
 .vis-titulo-visualizacion {
   font-size: 1.125rem; // 18px
+  line-height: calc(1em * 1.2);
   font-weight: 600;
   @include mediaquery(esc) {
     font-size: 1.5rem; // 24px
+    line-height: calc(1em * 1.2);
   }
 }
 .vis-leyenda {

@@ -8,58 +8,72 @@
 h1,.h1 {
   @extend .titulo-base;
   font-size: 2.25rem; // 36px
+  line-height: calc(1em * 1.25);
 }
 h2,.h2 {
   @extend .titulo-base;
   font-size: 2rem; // 32px
+  line-height: calc(1em * 1.25);
 }
 
 h3,.h3 {
   @extend .titulo-base;
   font-size: 1.75rem; // 28px
+  line-height: calc(1em * 1.25);
 }
 h4,.h4 {
   @extend .titulo-base;
   font-size: 1.5rem; // 24px
+  line-height: calc(1em * 1.25);
 }
 h5,.h5 {
   @extend .titulo-base;
   font-size: 1.25rem; // 20px
+  line-height: calc(1em * 1.25);
 }
 h6,.h6 {
   @extend .titulo-base;
   font-size: 1rem; // 16px
+  line-height: calc(1em * 1.25);
 }
 
 // titulos eni variables responsivas
 .titulo-eni {
   @extend .titulo-base;
   font-size: 3rem; //48px
+  line-height: calc(1em * 1.25);
   @include mediaquery(esc) { 
     font-size: 5rem; // 80px
+    line-height: calc(1em * 1.25);
   }
 }
 
 .titulo-capitulo {
   @extend .titulo-base;
   font-size: 2.25rem; // 36px
+  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 3.5rem; // 56px
+    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-capitulo {
   @extend .titulo-base;
   font-size: 1.125rem; // 18px
+  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 1.5rem; //24px
+    line-height: calc(1em * 1.25);
   }
 }
 
 .titulo-pagina {
   @extend .titulo-base;
   font-size: 1.75rem; // 28px
+  line-height: calc(1em * 1.25);
   @include mediaquery(esc) { 
     font-size: 2.25rem; // 36px
+    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-pagina,
@@ -67,8 +81,10 @@ h6,.h6 {
 .titulo-subseccion { 
   @extend .titulo-base;
   font-size: 1.125rem; // 18px
+  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 1.5rem; // 24px
+    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-pagina {

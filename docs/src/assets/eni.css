@@ -204,61 +204,75 @@ small {
 
 h1, .h1 {
   font-size: 2.25rem;
+  line-height: 1.25em;
 }
 
 h2, .h2 {
   font-size: 2rem;
+  line-height: 1.25em;
 }
 
 h3, .h3 {
   font-size: 1.75rem;
+  line-height: 1.25em;
 }
 
 h4, .h4 {
   font-size: 1.5rem;
+  line-height: 1.25em;
 }
 
 h5, .h5 {
   font-size: 1.25rem;
+  line-height: 1.25em;
 }
 
 h6, .h6 {
   font-size: 1rem;
+  line-height: 1.25em;
 }
 
 .titulo-eni {
   font-size: 3rem;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .titulo-eni {
     font-size: 5rem;
+    line-height: 1.25em;
   }
 }
 
 .titulo-capitulo {
   font-size: 2.25rem;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .titulo-capitulo {
     font-size: 3.5rem;
+    line-height: 1.25em;
   }
 }
 
 .subtitulo-capitulo {
   font-size: 1.125rem;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .subtitulo-capitulo {
     font-size: 1.5rem;
+    line-height: 1.25em;
   }
 }
 
 .titulo-pagina {
   font-size: 1.75rem;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .titulo-pagina {
     font-size: 2.25rem;
+    line-height: 1.25em;
   }
 }
 
@@ -266,12 +280,14 @@ h6, .h6 {
 .titulo-seccion,
 .titulo-subseccion {
   font-size: 1.125rem;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .subtitulo-pagina,
 .titulo-seccion,
 .titulo-subseccion {
     font-size: 1.5rem;
+    line-height: 1.25em;
   }
 }
 
@@ -286,11 +302,13 @@ h6, .h6 {
 
 .parrafo-texto-alto {
   font-size: 1.25rem;
+  line-height: 1.5em;
 }
 
 .parrafo-texto-desplazado {
   font-size: 1.125rem;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 .parrafo-texto-entresacado {
@@ -301,6 +319,7 @@ h6, .h6 {
 @media screen and (min-width: 768px) {
   .parrafo-texto-entresacado {
     font-size: 1.75rem;
+    line-height: 1.25em;
   }
 }
 
@@ -320,42 +339,50 @@ h6, .h6 {
 
 .vis-titulo-proyecto {
   font-size: 1rem;
+  line-height: 1.2em;
   font-weight: 400;
 }
 
 .vis-titulo-leyenda {
   font-size: 1rem;
+  line-height: 1.2em;
   font-weight: 600;
 }
 
 .vis-titulo-ejes {
   font-size: 0.75rem;
+  line-height: 1.2em;
   font-weight: 600;
 }
 
 .vis-valores-ejes {
   font-size: 0.75rem;
+  line-height: 1.2em;
   font-weight: 500;
 }
 
 .vis-fecha-actualizacion {
   color: var(--tipografia-color-2);
   font-size: 0.75rem;
+  line-height: 1.2em;
   font-weight: 500;
 }
 
 .vis-instruccional {
   font-size: 1rem;
+  line-height: 1.2em;
   font-weight: 500;
 }
 
 .vis-titulo-visualizacion {
   font-size: 1.125rem;
+  line-height: 1.2em;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .vis-titulo-visualizacion {
     font-size: 1.5rem;
+    line-height: 1.2em;
   }
 }
 

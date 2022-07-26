@@ -1,9 +1,11 @@
 .parrafo-texto-alto {
   font-size: 1.25rem; // 20px
+  line-height: calc(1.5 * 1em);
 }
 .parrafo-texto-desplazado {
   font-size: 1.125rem; // 18px
   font-weight: 500;
+  line-height: calc(1.5 * 1em);
 }
 .parrafo-texto-entresacado {
   color: var(--tipografia-color-3);
@@ -11,5 +13,6 @@
   line-height: calc(1.25 * 1em);
   @include mediaquery(esc) {
     font-size: 1.75rem; // 28px
+    line-height: calc(1.25 * 1em);
   }
 }
